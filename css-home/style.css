@@ -1,0 +1,144 @@
+/* resetando o comportamento padrão */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.8s;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: lightgoldenrodyellow;
+}
+ /* barra de navegação */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7E459B;
+    height: 75px;
+}
+
+.NavBar__img {
+    display: block;
+    max-height: 50px;
+    margin: 0 3rem;
+    transition: 0.8s;
+}
+
+.NavBar__img:hover {
+    max-height: 55px ;
+}
+
+.navBar__lista {
+    display: flex;
+    align-items: center;
+}
+
+.navBar__itemLista {
+    max-height: 100%;
+    color: #ffffff;
+    font-size: 21px;
+    padding: 20px;
+}
+
+ /* header ou cabeçalho da página */
+ .cabecalho {
+    background: url(../img-home/banner2.jpg) no-repeat center;
+    background-color: lightgoldenrodyellow;
+    background-size: contain;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+ }
+
+ .cabecalho__titulo {
+    color:#7E459B;
+    text-align: center;
+ }
+
+ /* sessão de alunas */
+ .alunasSection {
+    display: flex; 
+    justify-content: space-around;
+    flex-flow: row wrap;
+    padding: 2rem;
+    margin: 50px 10%;
+    background: #7E459B40;
+    border-radius: 10px;
+ }
+
+ .alunaBox {
+    padding: 20px;
+ }
+
+ .alunaImg {
+    display: block;
+    border-radius: 5px;
+    max-width: 200px;
+ }
+
+ .alunaName {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px;
+ }
+
+ /* referencia à imagem usada */
+ .referencia__banner {
+    font-size: 0.8rem;
+ }
+
+  /* footer ou rodapé da página */
+ .rodape {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    color: white;
+ }
+
+ .rodape-span {
+    font-size: 1.1rem;
+ }
+
+ .rodape-span:hover {
+    font-size: 1.3rem;
+    color: #7E459B;
+ }
+
+ @media screen and (max-width: 700px) {
+    .navBar__itemLista {
+        padding: 0;
+    }
+
+    .alunasSection {
+        margin: 50px 1%;
+        padding: 1rem;
+    }
+
+    .alunaBox {
+        padding: 10px;
+    }
+
+    .alunaImg {
+        max-width: 130px;
+    }
+ }
