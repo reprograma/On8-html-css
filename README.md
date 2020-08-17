@@ -4,83 +4,86 @@ Online-08 | Front-end | 2020 | Fundamentos de HTML e CSS
 > Plano de aula para o dia 22 de agosto, sobre HTML e CSS básico.
 > Este arquivo será alimentado conforme o andamento da semana (:
 
-<img src="http://66.media.tumblr.com/17fea920ff36ef4f5b877d5216a7aad9/tumblr_mo9xje8zZ41qcbiufo1_1280.gif" height="300" width="300">
+<img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif"  width="250">
 
 
 ## AULA 22 AGOSTO, SÁBADO, 9H - 17H
 ---
 ## CONTEÚDO AULA MANHÃ 9h - 12h
 
-- [] **Apresentação**
-- [] **Combinados**
-- []    **Preparando estrutura de desenvolvimento juntas**
-    - [] Criando pastas e arquivos
-- [] **Introdução e revisão - HTML**
-    - [] Cliente e Servidor
-    - [] O que é linguagem de marcação de hipertexto? `<!DOCTYPE html>`
-    - [] HTML vs. HTML5 | CSS vs CSS3
-    - [] Elementos `<head>` e `<body>`
-- [] **Intervalo** - 15min
-    - [] Elementos HTML: tags (etiquetas) e atributos 
-        - [] Exemplo com imagens `<img>` e seus atributos `src` e `alt` e parágrafos `<p>`
-    - [] Tags semânticas, como e porque usá-las! (: 
-        - [] `<header>` `<nav>` `<footer>` `<main>` `<section>` `<article>` `<ul>` `<ol>` `<li>` `<figure>` `<aside>`
-    - [] `<a>` - links em âncora, e seu atributo `href`
-- [] **Introdução CSS**
-    - [] CSS - Folha de estilo em cascata 
-        - [] Diferentes formas de adicionar estilo à página
-            - [] A tag e atributo `<style>`
-            - [] Importar arquivo style.css através da tag `<link>` 
-    - [] - Estilizando o CSS juntas - propriedades básicas `color` `bg-color` `font-size` `font-family`
-    - [] Seletores CSS - `.class` `#id` `elemento` `atributo` 
-    - [] Especificidade com seletores, propriedades CSS e efeito cascata
-    - [] Pseudo-seletores, ex: - `:hover` `:first-child`
+- [ ] **Apresentação**
+- [ ] **Combinados**
+- [ ]    **Preparando estrutura de desenvolvimento juntas**
+    - [ ] Criando pastas e arquivos
+- [ ] **Introdução e revisão - HTML**
+    - [ ] Cliente e Servidor
+    - [ ] O que é linguagem de marcação de hipertexto? `<!DOCTYPE html>`
+    - [ ] HTML vs. HTML5 | CSS vs CSS3
+    - [ ] Elementos `<head>` e `<body>`
+- [ ] **Intervalo** - 15min
+    - [ ] Elementos HTML: tags (etiquetas) e atributos 
+        - [ ] Exemplo com imagens `<img>` e seus atributos `src` e `alt` e parágrafos `<p>`
+    - [ ] Tags semânticas, como e porque usá-las! (: 
+        - [ ] `<header>` `<nav>` `<footer>` `<main>` `<section>` `<article>` `<ul>` `<ol>` `<li>` `<figure>` `<aside>`
+    - [ ] `<a>` - links em âncora, e seu atributo `href`
+- [ ] **Introdução CSS**
+    - [ ] CSS - Folha de estilo em cascata 
+        - [ ] Diferentes formas de adicionar estilo à página
+            - [ ] A tag e atributo `<style>`
+            - [ ] Importar arquivo style.css através da tag `<link>` 
+    - [ ] - Estilizando o CSS juntas - propriedades básicas `color` `bg-color` `font-size` `font-family`
+    - [ ] Seletores CSS - `.class` `#id` `elemento` `atributo` 
+    - [ ] Especificidade com seletores, propriedades CSS e efeito cascata
+    - [ ] Pseudo-seletores, ex: - `:hover` `:first-child`
 
 ---
-<img src="https://media.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif" height="300">
+<img src="https://media.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif" height="250">
+
+*html é a estrutura*
+*css é o estilo por cima*
 
 ## CONTEÚDO AULA TARDE 13h - 17h
-- [] **Dúvidas da manhã - dontpad**
-- [] **Codar juntas - pôr link a e img na página principal do projeto da semana**
-- [] **Box-sizings (tamanho das caixas) e displays**
-    - [] Blocos `<div>` e elementos em linha `<span>`, `<img>`
-    - [] Displays block, inline, inline-block
-    - [] Mexendo em bordas, margens, preenchimentos e conteúdo  
-            - [] `border` `margin` `padding` `width` `height`  
-            - [] border-box vs content-box
-    - [] medidas fixas `px`, e relativas `%` `rem` `em`
-- [] **Reset básico - mexendo nos estilos padrão de página**
-    [] - elemento `*`, padrões de `li` `a`  
-- [] **Display flex - o famoso Flexbox**
-    - [] Mães `<div>`as  e filhas `<div>`inhas. Display na mãe, mexe as filhas. 
-    - [] Algumas propiedades e seus valores: `justify-content` `align-items` `align-content` `flex-direction` e `flex-wrap` 
-- [] **Intervalo** - 15min 
-- [] **Codando juntas**
-    - [] Usando o inspetor de código - ctrl + shift + i (:
-    - [] Importando fontes externas (ex.: Google Fonts)
-    - [] Criando navBar e header 
-        - [] Nomeando classes pra não se perder, introdução ao método BEM
-        - [] `background-image` e suas propiedades, `linear-gradient`, `opacity`
-    - [] Indentar o código :)
-    - [] criando uma section 
-- [] **Meu primeiro formulário**    
-    - [] Elementos `<form>` `<input>` `<label>` `<textarea>` `<select>` `<option>` `<button>`
-    - [] atributos `type` `for` `name` `placeholder` 
-- [] (caso dê tempo) **Position**
-    - [] Propriedades `static` `relative` `absolute` `fixed` `sticked` 
-- [] **Retirar dúvidas, deixar o exercício para concluir até sexta e falar sobre materiais e jogos disponíveis :)**
+- [ ] **Dúvidas da manhã - dontpad**
+- [ ] **Codar juntas - pôr link a e img na página principal do projeto da semana**
+- [ ] **Box-sizings (tamanho das caixas) e displays**
+    - [ ] Blocos `<div>` e elementos em linha `<span>`, `<img>`
+    - [ ] Displays block, inline, inline-block
+    - [ ] Mexendo em bordas, margens, preenchimentos e conteúdo  
+            - [ ] `border` `margin` `padding` `width` `height`  
+            - [ ] border-box vs content-box
+    - [ ] medidas fixas `px`, e relativas `%` `rem` `em`
+- [ ] **Reset básico - mexendo nos estilos padrão de página**
+    [ ] - elemento `*`, padrões de `li` `a`  
+- [ ] **Display flex - o famoso Flexbox**
+    - [ ] Mães `<div>`as  e filhas `<div>`inhas. Display na mãe, mexe as filhas. 
+    - [ ] Algumas propiedades e seus valores: `justify-content` `align-items` `align-content` `flex-direction` e `flex-wrap` 
+- [ ] **Intervalo** - 15min 
+- [ ] **Codando juntas**
+    - [ ] Usando o inspetor de código - ctrl + shift + i (:
+    - [ ] Importando fontes externas (ex.: Google Fonts)
+    - [ ] Criando navBar e header 
+        - [ ] Nomeando classes pra não se perder, introdução ao método BEM
+        - [ ] `background-image` e suas propiedades, `linear-gradient`, `opacity`
+    - [ ] Identar o código :)
+    - [ ] criando uma section 
+- [ ] **Meu primeiro formulário**    
+    - [ ] Elementos `<form>` `<input>` `<label>` `<textarea>` `<select>` `<option>` `<button>`
+    - [ ] atributos `type` `for` `name` `placeholder` 
+- [ ] (caso dê tempo) **Position**
+    - [ ] Propriedades `static` `relative` `absolute` `fixed` `sticked` 
+- [ ] **Retirar dúvidas, deixar o exercício para concluir até sexta e falar sobre materiais e jogos disponíveis :)**
 ---
 
 <img src="https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif" height="300">
 
-**É comum e normal errar muitas vez o CSS, aprendê-lo é um joguinho de paciência**
+*É comum e normal errar muitas vez o CSS, aprendê-lo é um joguinho de paciência*
 ---
 
 ## AULA 26 AGOSTO, QUARTA, 20h-22h
-- [] **Tirar dúvidas da semana**
-- [] **Quiz**
-- [] **Position**
-    - [] Propriedades `static` `relative` `absolute` `fixed` `sticked`
+- [ ] **Tirar dúvidas da semana**
+- [ ] **Quiz**
+- [ ] **Position**
+    - [ ] Propriedades `static` `relative` `absolute` `fixed` `sticked`
 ---
 
 ### Links úteis para estudo :) 
