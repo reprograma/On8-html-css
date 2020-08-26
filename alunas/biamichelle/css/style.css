@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul li {
+   list-style: none; 
+}
+
+/* conteudo */
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7E459B;
+}
+
+.nav__lista{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.nav__img {
+    height: 50px;
+    margin: 20px;
+}
+
+/* corpo*/
+
+.titulo {
+    text-align: center;
+    color: #7E459B; 
+    padding: 10px;
+}
+
+.paragrafo {
+    display: inline-block;
+    width: 350px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.artigo__imagem {
+    display: inline-block;
+    width: 300px;
+
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.artigo {
+    text-align: center;
+    padding: 20px;
+}
+
+.sessao {
+    padding: 30px;
+}
+
+.sessao--flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sessao__caixa {
+    border: 3px solid aqua;
+}
+
+.lista {
+    border: red 2px dashed;
+}
+
+.itemLista {
+    border: purple 2px dashed;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+
+/* Meus estilos*/
+
+.head__imagem{
+    width: 1300px;
+    height: 350px;
+    opacity: 0.4;
+}
