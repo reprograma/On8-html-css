@@ -37,12 +37,41 @@ ul li {
     margin: 20px;
 }
 
+.cabecalho{
+    background: url(/alunas/biamichelle/imagens/capa.png);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+
+}
 /* corpo*/
+
+.main{
+    background-color: lavender;
+}
+.flexbox__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .titulo {
     text-align: center;
     color: #7E459B; 
     padding: 10px;
+}
+
+#h2{
+    font-size: 38px;
+    padding-bottom: 3%;
+}
+
+.branco{
+    color: white;
 }
 
 .paragrafo {
@@ -52,9 +81,14 @@ ul li {
     padding: 10px;
 }
 
+#paragrafo__artigo{
+    font-size: 26px;
+    color: floralwhite;
+}
+
 .artigo__imagem {
     display: inline-block;
-    width: 300px;
+    width: 150px;
 
     border-radius: 50%;
     padding: 10px;
@@ -64,6 +98,8 @@ ul li {
 .artigo {
     text-align: center;
     padding: 20px;
+    background-color: darksalmon;
+    padding: 5%;
 }
 
 .sessao {
@@ -76,31 +112,59 @@ ul li {
 }
 
 .sessao__caixa {
-    border: 3px solid aqua;
+    border: 3px solid #7E459B;
+    padding: 70px;
 }
 
 .lista {
-    border: red 2px dashed;
+    border: #7E459B 2px dashed;
+    margin-top: 10px;
+    padding: 30px;
 }
 
 .itemLista {
     border: purple 2px dashed;
+    padding: 20px;
+}
+
+.formulario {
+    background-color: rgb(231, 114, 29);
+    margin: 50px 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+  
+.formulario__div {
+    padding: 20px;
+    text-align: center;
+  }
+
+.rotulo{
+    padding-left: 20px;
+}
+  
+.input {
+    padding: 10px;
+    border: 1px blue solid;
+    border-radius: 10px;
+  }
+  
+#textarea {
+    width: 80%;
+    height: 200px;
+    border: 1px blueviolet;
+  }
+
+#myoctocat{
+    justify-content: center;
+    display: flex;
 }
 
 .footer {
-    height: 50px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #2e2e2e;
-    color: white;
-}
-
-
-/* Meus estilos*/
-
-.head__imagem{
-    width: 1300px;
-    height: 350px;
-    opacity: 0.4;
+    background-color: blueviolet;
+    color: lavender;
 }
