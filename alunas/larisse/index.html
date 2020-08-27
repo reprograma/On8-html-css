@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./estilos/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+
+  <title>Larisse Lima</title>
+
+
+</head>
+
+<body>
+  <nav class="navBar">
+    <a href="https://reprograma.com.br" target="_blank"><img class="NavBar__img" src="./img/logo-reprograma.png"
+        alt="logo da reprograma" /></a>
+
+    <ul class="navBar__lista">
+      <a href="#">
+        <li class="navBar__itemLista">Home</li>
+      </a>
+
+      <a href="https://github.com/LarisseLima" target="_blank">
+        <li class="navBar__itemLista">
+          <img class="NavBar__img" src="./img/github.svg" alt="github link" />
+        </li>
+      </a>
+    </ul>
+  </nav>
+
+  <header class="cabecalho">
+    <h1 class="titulo branco">Oi,eu sou a Larisse Lima</h1>
+  </header>
+
+  <main class="conteudoPrincipal">
+    <article class="artigo">
+      <h2 class="titulo">Um pouco sobre mim</h2>
+      <div class="artigo__descricao">
+        <img src="./img/lari.png" alt="fundo" class="artigo__img" />
+
+        <p class="paragrafo">
+          Oi sou a Larisse, Apaixonada por tecnologia e unicórnios 🦄. Sou Pernambucana arretada, e estudante de
+          Front-end na {reprograma} .
+          Já fui voluntária em um projeto acadêmico, onde ensinava informática a comunidade carente.
+          Sou bem entusiasta em aprender novas linguagens de programação e conceitos.Atualmente tenho me dedicado a
+          curso da reprograma, e diversos outros cursos
+          online.
+        </p>
+      </div>
+    </article>
+
+    <section class="sessao">
+      <h2 class="titulo">Minhas Listas</h2>
+      <div class="sessao__habilidades">
+        <div class="sessao__habilidades--desordenadas">
+          <h3 class="titulo">Lista de coisas que eu gosto</h3>
+          <ul class="lista">
+            <li class="lista__item">Comer bolo 🍰 </li>
+            <li class="lista__item">Estudar programação 👩‍💻</li>
+            <li class="lista__item">Unicórnios 🦄</li>
+            <li class="lista__item">Viajar 🌎</li>
+            <li class="lista__item">Adoro ficar vendo vídeos de mansões,pelo mundo.🏡</li>
+          </ul>
+        </div>
+        <div class="sessao__habilidades--ordenadas">
+          <h3 class="titulo">Minhas séries favoritas</h3>
+          <ol class="lista">
+            <li class="lista__item">Lúcifer</li>
+            <li class="lista__item">Gossip Girl</li>
+            <li class="lista__item">Breaking Bad</li>
+            <li class="lista__item">Riverdale</li>
+            <li class="lista__item">Sabrina</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="sessao--flex">
+      <figure class="figura">
+        <img src="./img/code.png" alt="code" />
+      </figure>
+      <article class="artigo">
+        <h2 class="titulo">
+          Vou te contar a história de quando... <br />
+          virei programadora :O
+        </h2>
+        <p class="paragrafo">
+          No início da quarentena desse ano, eu fui demitida.
+          Comecei a estudar Java, e desde então não parei, me apaixonei e é isso que quero para minha vida profissional.
+          Agora sou aluna da {reprograma} e não paro mais de estudar Javascript, Html, Bootstrap, Css, Java , Node.js, e
+          outros.
+        </p>
+      </article>
+    </section>
+
+    <h2 class="titulo">Entre em contato,e vamos conversar :) </h2>
+    <form class="formulario">
+      <div class="formulario__sessao">
+        <label for="text" class="rotulo">Nome</label>
+        <input class="input" required type="text" placeholder="Digite seu nome">
+      </div>
+      <div class="formulario__sessao">
+        <label for="email" class="rotulo">Email</label>
+        <input class="input" required type="email" placeholder="Digite seu email">
+      </div>
+      <div class="formulario__sessao">
+        <p class="rotulo"> Como você se sente hoje? </p>
+        <select class="input" id="dropdown" name="role" required>
+          <option value="feliz">Feliz</option>
+          <option value="anciosa">Ancioso</option>
+          <option value="animado">Animado</option>
+          <option value="triste">Triste</option>
+        </select>
+      </div>
+      <div class="formulario__sessao sessao--radio">
+        <p class="rotulo">Qual seu Hobbie favorito</p>
+        <label class="rotulo">
+          <input type="radio" name="hobbie-favorito" requested value="cinema" />
+          "Cinema"
+        </label>
+        <label class="rotulo">
+          <input type="radio" name="hobbie-favorito" requested value="praia" />
+          "Praia"
+        </label>
+        <label class="rotulo">
+          <input type="radio" name="hobbie-favorito" requested value="netflix" />
+          "Netflix"
+        </label>
+      </div>
+      <div class="formulario__sessao sessao--check">
+        <p class="rotulo">Marque se você já estudou sobre</p>
+        <label class="rotulo">
+          <input type="checkbox" name="estudo" value="html" />
+          "Html"
+        </label>
+        <label class="rotulo">
+          <input type="checkbox" name="estudo" value="css" />
+          "Css"
+        </label>
+        <label class="rotulo">
+          <input type="checkbox" name="estudo" value="javascript" />
+          "Javascript"
+        </label>
+        <label class="rotulo">
+          <input type="checkbox" name="estudo" value="react" />
+          "React"
+        </label>
+      </div>
+      <div class="formulario__sessao sessao--textarea">
+        <p class="rotulo">Conte-me mais sobre você! :) </p>
+        <textarea id="textarea" placeholder="Conte mais sobre você"> </textarea>
+      </div>
+      <button class="botao submit" type="submit">Enviar</button>
+      <button class="botao reset" type="reset">Reset</button>
+    </form>
+
+    <div class="sessao">
+      <a href="https://myoctocat.com/">
+        <p class="paragrafo">Faça seu próprio octocat :)</p>
+        <img class="artigo__img" src="img/octocat.png" />
+      </a>
+    </div>
+  </main>
+  <footer class="rodape">
+    <p class="paragrafo">Desenvolvido por Larisse Lima</p>
+  </footer>
+</body>
+
+</html>
