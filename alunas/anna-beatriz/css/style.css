@@ -48,7 +48,7 @@ ul li {
   
   /* cabeçalho da pagina */
   .cabecalho {
-    background: url(/alunas/anna-beatriz/img/ed44effd7fb5cafbc6c81f0a5fb8b3ec.jpg);
+    background-image: url(../img/background-foto.jpg);
     background-size: cover;
     background-position: 10% 5%;
     height: 50vh;
