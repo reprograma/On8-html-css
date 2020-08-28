@@ -79,14 +79,14 @@ _css é o estilo por cima_
 
 ## AULA 26 AGOSTO, QUARTA, 20h-22h
 
-- [ ] **Meu primeiro formulário**
-  - [ ] Elementos `<form>` `<input>` `<label>` `<textarea>` `<select>` `<option>` `<button>`
-  - [ ] atributos `type` `for` `name` `placeholder`
-- [ ] **Mais algumas dicas importantes**
-  - [ ] Endentar o código :)
-  - [ ] Importando fontes externas (ex.: Google Fonts)
-  - [ ] `background-image` e suas propriedades, `linear-gradient`, `opacity`
-- [ ] **Tirar dúvidas da semana**
+- [x] **Meu primeiro formulário**
+  - [x] Elementos `<form>` `<input>` `<label>` `<textarea>` `<select>` `<option>` `<button>`
+  - [x] atributos `type` `for` `name` `placeholder`
+- [x] **Mais algumas dicas importantes**
+  - [x] Endentar o código :)
+  - [x] Importando fontes externas (ex.: Google Fonts)
+  - [x] `background-image`
+- [x] **Tirar dúvidas da semana**
 
 
 ---

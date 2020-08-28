@@ -1,5 +1,4 @@
-
-    /* ESPICIFICIDADE 
+/* ESPICIFICIDADE 
     O MAIS ESPECIFICO VENCE! */
 /* DEPOIS VEM A CASCATA, O MAIS EMBAIXO VENCE */
 
@@ -11,54 +10,78 @@
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 a:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 ul li {
-   list-style: none; 
+  list-style: none;
 }
 
 /* conteudo */
 
+/* barra de navegação */
+
 .navegacao {
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #7E459B;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7e459b;
 }
 
-.nav__lista{
-    display: flex;
-    align-items: center;
-    color: #fff;
+.nav__lista {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.nav__lista > li {
+  margin-right: 20px;
+  padding: 20px;
 }
 
 .nav__img {
-    height: 50px;
-    margin: 20px;
+  height: 50px;
+  margin: 10px;
+}
+
+/* cabeçalho da pagina */
+.cabecalho {
+  background: url(/alunas/sra-gata/imagens/tres-gatinhos.jpg);
+  background-size: cover;
+  background-position: 50% 30%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 /* height = altura 
 width = largura  */
+/* main -- conteudo principal */
 
 .titulo {
-    text-align: center;
-    color: #7E459B; 
-    padding: 10px;
+  text-align: center;
+  color: #7e459b;
+  padding: 10px;
+}
+
+.branco {
+  color: #fff;
 }
 
 .paragrafo {
-    display: inline-block;
-    width: 350px;
-    text-align: justify;
-    padding: 10px;
+  display: inline-block;
+  width: 350px;
+  text-align: justify;
+  padding: 10px;
 }
 
 .artigo__imagem {
@@ -69,9 +92,8 @@ width = largura  */
     margin-right: 20px;
 }
 
-.artigo {
-    text-align: center;
-    padding: 20px;
+.img--block {
+  display: block;
 }
 
 .sobre {
@@ -86,12 +108,12 @@ width = largura  */
     color: rgb(25, 25, 26);
 }
 .sessao {
-    padding: 30px;
+  padding: 30px;
 }
 
 .sessao--flex {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .lista {
@@ -99,11 +121,12 @@ width = largura  */
 }
 
 
+/* rodapé */
 .footer {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2e2e2e;
-    color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  color: white;
 }
