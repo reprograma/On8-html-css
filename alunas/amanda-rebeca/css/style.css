@@ -1,0 +1,115 @@
+/*
+ * Reset
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul li {
+   list-style: square; 
+}
+
+/* conteudo */
+
+body {
+    background-color: #f5f8fa;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.menu {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7E459B;
+}
+
+.menu__lista{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.menu__lista li {
+    list-style: none;
+}
+
+.menu__img {
+    height: 50px;
+    margin: 20px;
+}
+
+/* height = altura 
+width = largura  */
+
+.artigo {
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo {
+    color: #7E459B; 
+    padding: 10px;
+}
+
+.artigo__imagem {
+    width: 250px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.paragrafo {
+    display: inline-block;
+    width: 350px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.content--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content--center {
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao {
+    padding: 30px;
+}
+
+.sessao__caixa {
+    width: 27%;
+}
+
+.footer {
+    min-height: 50px;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.footer .paragrafo {
+    width: 100%;
+    text-align: center;
+}
