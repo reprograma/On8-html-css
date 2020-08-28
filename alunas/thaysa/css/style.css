@@ -7,6 +7,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -63,7 +64,6 @@ width = largura  */
 .artigo__imagem {
     display: inline-block;
     width: 300px;
-
     border-radius: 50%;
     padding: 10px;
     margin-right: 20px;
@@ -74,6 +74,17 @@ width = largura  */
     padding: 20px;
 }
 
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
+
+.paragrafo {
+    line-height: 1.5;
+    color: rgb(25, 25, 26);
+}
 .sessao {
     padding: 30px;
 }
@@ -83,17 +94,10 @@ width = largura  */
     justify-content: space-around;
 }
 
-.sessao__caixa {
-    border: 3px solid aqua;
-}
-
 .lista {
-    border: red 2px dashed;
+    line-height: 2;
 }
 
-.itemLista {
-    border: purple 2px dashed;
-}
 
 .footer {
     height: 50px;
