@@ -1,0 +1,201 @@
+/* reset comportamento padrao da pagina */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul li {
+   list-style: none; 
+}
+
+/* conteudo */
+
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(222 151 133);
+}
+
+.nav__lista {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .nav__lista > li {
+    margin-right: 20px;
+    padding: 20px;
+  }
+  
+  .nav__img {
+    height: 50px;
+    margin: 10px;
+  }
+  
+  /* cabeçalho da pagina */
+  .cabecalho {
+    background: url(/alunas/anna-beatriz/img/ed44effd7fb5cafbc6c81f0a5fb8b3ec.jpg);
+    background-size: cover;
+    background-position: 10% 5%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  /* main -- conteudo principal */
+.titulo {
+    text-align: center;
+    color: #fff; 
+    padding: 10px;
+
+}
+
+.rosa {
+    color: rgb(222 151 133);
+    margin-bottom: 180px;
+    font-family: 'Krona One', sans-serif;
+    font-size: 30px;
+}
+
+.sobre-mim {
+    margin-top: 20px;
+}
+
+.titulo--background {
+    background-color:rgb(222 151 133);
+
+}
+
+.titulo--borda {
+    border-radius: 10px;
+}
+
+.paragrafo {
+    display: inline-block;
+    width: 500px;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 1%;
+}
+
+.artigo__imagem {
+    display: inline-block;
+    width: 160px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 30px;
+    align-items: center;
+}
+
+.img--block {
+    display: block;
+  }
+
+
+.artigo {
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.sessao {
+    padding: 30px;
+}
+
+.sessao--flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo--formulario {
+    font-size: 22px;
+}
+
+.paragrafo--formulario {
+    display: flex;
+   justify-content: center;
+   text-align: justify;
+   padding: 10px;
+   margin-top: 1%;
+}
+
+.formulario {
+    background-color: rgb(195 217 194);
+    margin: 10px 200px;
+    border-radius: 20px;
+}
+  
+.formulario__div {
+    padding: 20px;
+    text-align: center;
+}
+
+.paragrafo-titulo {
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+.input {
+    padding: 10px;
+    border: 5px rgb(80 84 87);
+    border-radius: 10px;
+}
+
+.rotulo {
+    padding: 5px;
+    display: flex;
+    justify-content: center ;
+    }
+
+#textarea {
+    width: 50%;
+    height: 200px;
+    border: 1px rgb(80 84 87);
+}
+
+
+  /* rodapé */
+.artigo__imagem--octocat {
+    display: inline-block;
+    width: 300px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+    align-items: center;
+
+}
+
+.paragrafo__titulo--octocat {
+    color: #000000; 
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(80 84 87);
+    color: white;
+}
+
+
