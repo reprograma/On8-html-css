@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biamichelle</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <nav class="navegacao">
+            <img class="nav__img" src="../../img-home/logo-reprograma.png" alt="logo-reprograma" /> 
+            <ul class="nav__lista">
+                <a href="../../index.html" ><li>Home</li></a>
+                <li><img class="nav__img" src="../../img-home/github.svg" alt="github--logo" /></li>
+            </ul>
+        </nav>
+
+        <header class="cabecalho">
+            <h1 class="titulo branco"> Oi, eu sou Biamichelle</h1>
+        </header>
+    
+    <main class="main">
+        <article class="artigo">
+            <h2 class="titulo" id="h2" >Um pouco sobre mim</h2>
+            <div class="flexbox__container">
+                <img
+                class="artigo__imagem" src="./imagens/breno.jpeg" alt="minha foto"
+              />
+              <p class="paragrafo" id="paragrafo__artigo">
+                  Eu sou Biamichelle. Sou uma mulher negra paraense. Eu adoro conversar, conhecer pessoas, cantar e dançar.
+              </p>
+            </div>
+          </article>
+       
+        <h2 class="titulo">Minhas listas</h2>
+        <section class="sessao sessao--flex">
+            <div class="sessao__caixa">
+                <h3 class="titulo">Meus desejos para 2021</h3>
+                    <ul class="lista">
+                        <li class="itemLista">Mais viagens</li>
+                        <li class="itemLista">Mais karaokes</li>
+                        <li class="itemLista">Mais amor</li>
+                        <li class="itemLista">Mais solidariedade</li>
+                        <li class="itemLista">Oportunidades de trabalho</li>
+                        <li class="itemLista">Terminar meu doutorado</li>
+                        <li class="itemLista">Ser amada</li>
+                    </ul>
+            </div>
+            <div class="sessao__caixa">
+                <h3 class="titulo">Filmes que eu gosto</h3>
+                    <ol class="lista">
+                        <li class="itemLista">Meu vizinho Totoro</li>
+                        <li class="itemLista">Moana</li>
+                        <li class="itemLista">Os Vingadores</li>
+                        <li class="itemLista">Rei leão</li>
+                        <li class="itemLista">Branca de Neve</li>
+                    </ol>
+            </div>
+        </section>
+
+        <section class="sessao">
+            <form class="formulario">
+                <div class="formulario__div">
+                    <label for="name" class="rotulo">Nome:</label>
+                    <input class="input" type="text" placeholder="Digite seu nome" required/>
+                </div>
+                <div class="formulario__div">
+                    <label for="email" class="rotulo">Email:</label>
+                    <input class="input" type="email" placeholder="Digite seu email" required/>
+                </div>
+                <div class="formulario__div">
+                    <label for="nascimento" class="rotulo">Data de Nascimento:</label>
+                    <input class="input" type="date" placeholder="Digite a data do seu nascimento" required/>
+                </div>
+                <div class="formulario__div">
+                    <label for="idade" class="rotulo">Idade:</label>
+                    <input class="input" type="number" placeholder="Digite sua idade" required/>
+                </div>
+                <div class="formulario__div">
+                    <p class="paragrafo"> Qual a comida que você mais gosta dessa lista?</p>
+                    <label class="rotulo">
+                        <input class="imput--label" name="comida-favorita" type="radio" valor="lasanha">
+                        Lasanha
+                    </label>
+                    <label class="rotulo">
+                        <input class="imput--label" name="comida-favorita" type="radio" valor="sushi">
+                        Sushi
+                    </label>
+                    <label class="rotulo">
+                        <input class="imput--label" name="comida-favorita" type="radio" valor="manicoba">
+                        Maniçoba
+                    </label>
+                </div>
+                <div class="formulario__div">
+                    <p class="paragrafo"> Qual estilo musical você gosta?</p>
+                    <label class="rotulo">
+                        <input class="imput--label" name="comida-favorita" type="checkbox" valor="rock">
+                        Rock
+                    </label>
+                    <label class="rotulo">
+                        <input class="imput--label" name="comida-favorita" type="checkbox" valor="pop">
+                        Pop
+                    </label>
+                    <label class="rotulo">
+                        <input class="imput--label" name="comida-favorita" type="checkbox" valor="brega">
+                        Brega
+                    </label>
+                </div>
+                <div class="formulario__div">
+                    <p class="paragrafo">Quem nasceu primeiro nesse mundão?</p>
+                    <select id="dropdown" name="role">
+                        <option value="ovo"></option>Ovo</option>
+                        <option value="galinha">Galinha</option>
+                        <option value="adao-eva">Adão e Eva</option>
+                        <option value="nenhuma">Nenhuma das opções</option>
+                    </select>
+                </div>
+                <div class="formulario__div">
+                    <p class="paragrafo">Abra o seu coração</p>
+                    <textarea id="textarea" placeholder="Conte mais sobre você"> </textarea>
+                </div>
+                <div class="formulario__div">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+
+        </section>
+        
+        <section class="sessao" id="myoctocat">
+            <a href="https://myoctocat.com/">
+              <img src="imagens/octocat.png" alt="octocat" class="artigo__imagem" />
+              <p class="paragrafo">Faça seu próprio octocat!</p>
+            </a>
+          </section>
+    </main>
+    <footer class="footer">
+        <p class="paragrago">Desenvolvido por Biamichelle com html e css</p>
+    </footer>
+</body>
+</html>
