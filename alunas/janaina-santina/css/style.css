@@ -1,0 +1,156 @@
+/* DESKTOP-FIRST 1920px */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Raleway";
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* conteudo */
+
+/* barra de navegação */
+
+.navegacao {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff6347;
+}
+
+.nav__lista {
+  display: flex;
+  align-items: center;
+  color: #ff4500;
+  padding: 10px;
+}
+
+.nav__lista > li {
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.nav__img {
+  height: 50px;
+  margin: 10px;
+}
+
+/* cabeçalho da pagina */
+.cabecalho {
+  background: url(/img/IMG_2592-1.JPG);
+  background-size: cover;
+  background-position: 50% 30%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* height = altura
+width = largura  */
+/* main -- conteudo principal */
+
+.titulo {
+  text-align: center;
+  color: #f00000;
+  padding: 30px;
+}
+
+.branco {
+  color: #ff4500;
+}
+
+.paragrafo {
+  display: inline-block;
+  width: 250px;
+  text-align: vertical-align;
+  padding: 20px;
+}
+
+.artigo {
+  text-align: center;
+  padding: 20px;
+}
+
+.artigo__imagem {
+  display: inline-block;
+  width: 300px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.img--block {
+  display: block;
+}
+
+.sessao {
+  padding: 30px;
+}
+
+.sessao--flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sessao__caixa {
+  border: 3px solid #ff6347;
+  margin: 10px;
+}
+
+.lista {
+  border: #ff7256 2px dashed;
+  margin: 10px;
+}
+
+.itemLista {
+  border: #ff7f50 2px dashed;
+  margin: 10px;
+  padding: 10px;
+}
+
+.formulario {
+  background-color: #ffa07a;
+  margin: 50px 100px;
+}
+
+.formulario__div {
+  padding: 50px;
+  text-align: center;
+}
+
+.input {
+  padding: 10px;
+  border: 1px blue solid;
+  border-radius: 10px;
+}
+
+#textarea {
+  width: 50%;
+  height: 200px;
+  border: 1px blue solid;
+}
+
+.footer-copyright {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  color: rgba(246, 99, 99, 1);
+  font-weight: lighter;
+}
