@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+        conteudo daqui pra baixo
+ul li {
+    font-style: none;
+}
+
+body {
+    background-image: url(../img/repeat.jpg);
+    background-repeat: round;
+    background-size: 20vw;
+}
+
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7E459B;
+}
+
+.nav__lista {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.nav__img {
+    height: 40px;
+    margin: 20px;
+
+}
+
+.titulo {
+    text-align:center;
+    color: #7E459B;
+    padding: 30px;
+    display: block;
+}
+
+.paragrafo {
+    display: block;
+    width: 390px;
+    text-align: justify;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin: auto;
+}
+
+.artigo__imagem {
+    display: inline-block;
+    width: 250px;
+    border-radius: 60%;
+    margin-top: 30px;
+}
+
+.artigo {
+    text-align: center;
+    padding: 20px;
+    display: block;
+}
+
+.sessao {
+    padding: 50px;
+}
+
+.sessao--flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sessao__caixa {
+    border: 2px solid purple;
+    border-radius: 20px;
+    
+}
+
+.lista {
+    border: purple 0.5px solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.itemLista {
+    border: purple 0.5px solid;
+    border-bottom: none;
+    border-right: none;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.MinhasListas {
+    text-align: center;
+}
+
+.nav__imgh {
+    height: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.formulario {
+    background-image: url(../img/caderninho.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    margin-right: 300px;
+    margin-bottom: 80px;
+    margin-left: 300px;
+    border-radius: 80px;
+    border: rebeccapurple;
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+
+.paragrafoform {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+.formulario__div {
+    text-align: center;
+    padding-top: 40px;
+    padding: 5px;
+    
+}
+
+.input {
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: justify;
+    width: 300px; 
+    border: none;
+}
+
+.input--radio {
+    margin: 5px;
+    margin-left: 40px;
+}
+
+.bverde {
+    color: green;
+    padding: 5px;
+}
+
+.bvermelho {
+    color: red;
+    padding: 5px;
+}
+
+
+.img__octo {
+    height: 250px;
+}
+
+.paragrafofooter {
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.paragrafocto {
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+
+.tituloform {
+    text-align: center;
+    padding: 20px;
+    color:#7E459B
+}
+
