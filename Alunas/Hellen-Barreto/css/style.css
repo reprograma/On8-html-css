@@ -1,0 +1,172 @@
+  /* ESPICIFICIDADE 
+    O MAIS ESPECIFICO VENCE! */
+/* DEPOIS VEM A CASCATA, O MAIS EMBAIXO VENCE */
+
+/* reset comportamento padrao da pagina */
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family:"raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none;
+}
+/*conteudo*/
+/*barra de navegação*/ 
+
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+.nav__lista{
+    display: flex;
+    align-items: center;
+    color: darkblue;
+    padding: 10px;
+
+.nav__lista > li {
+    margin-right: 20px;
+    padding: 20px;
+}
+
+}
+.nav__img{
+    height: 50px;
+    margin: 100px;
+}
+/* cabeçalho da página*/
+.cabecalho{
+    background: url(../Imagem/beautiful-tropical-beach-sea-ocean-with-coconut-palm-tree-sunrise-time_74190-7454.jpg);
+    background-size: center;
+    background-position: 50% 30%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.titulo {
+    text-align: center;
+    color: rgb(110, 11, 190);
+    padding: 0px;
+}
+.branco {
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+}
+
+.paragrafo {
+    display: inline-block;
+    width: 350px;
+    padding: 20px;
+    border-radius: 100px;
+    text-align: justify;
+    vertical-align: 250%;
+}
+.artigo {
+    text-align: center;
+    padding: 20px;
+}
+
+.artigo__imagem {
+    border-radius: 10%;
+    max-width: 200px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    margin-right: 40px;
+    display: inline-block;
+}
+
+.img--block{
+display: block;
+}
+
+.sessao{
+    padding: 30px;
+}
+.sessao--flex{
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+       
+}
+.sessao__caixa{
+    border: 3px rgb(154, 94, 211);
+}
+.lista{
+    border:rgb(91, 89, 230) 2px dashed;
+    margin:10px;
+}
+.itemlista{
+    border:rgb(158, 96, 158) 2px dashed;
+    margin: 10px;
+    padding: 10px;
+}
+.formulario{
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #6563ec;
+    border-radius: 30px;
+    display: block;
+    text-align: center;
+}
+.formulario__div{
+    padding: 1px;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.reset{
+    background-color: rgb(140, 140, 187);
+}
+.submit{
+    background-color: rgb(214, 223, 97);
+}
+.botao{
+    padding: 0.8rem;
+    border-radius: 10px;
+    margin: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.input {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 10px;
+    border-radius: 10px;
+}
+#textarea{
+    font-size: 1.2rem;
+    width: 60%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+/* rodapé */
+
+.footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 61, 185);
+    color: white;
+    text-align: center;
+}
