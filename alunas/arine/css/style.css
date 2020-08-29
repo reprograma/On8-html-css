@@ -1,0 +1,177 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+/* reset comportamento padrao da pagina */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul li {
+   list-style: none; 
+}
+
+/* conteudo */
+
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #610972;
+}
+
+.nav__lista{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.nav__img {
+    height: 30px;
+    margin: 20px;
+}
+
+.cabecalho {
+    width:100%;
+    height:400px;
+    background-image: url('../imagens/mesa-computador.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    text-align: center;
+    color: #610972; 
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 50px;
+    margin-bottom:30px ;
+}
+
+h1.titulo {
+    font-size: 45px;
+}
+
+h2.titulo {
+    font-size: 40px; 
+}
+
+h3.titulo {
+    text-align: left;
+    margin: 20px;
+
+}
+
+ul.lista{
+    margin-block-start: 0 !important;
+
+}
+
+.paragrafo {
+    display: inline-block;
+    width: 400px;
+    text-align: left;
+    padding: 10px;
+}
+
+.artigo__imagem {
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+.artigo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao {
+    padding: 30px;
+    
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  
+
+.sessao--flex {
+    display: flex;
+    justify-content: space-around;
+    background-color: #a4b4c5;
+    padding-bottom: 30px;
+}
+
+.sessao__caixa {
+    list-style-type: circle;
+
+}
+
+.lista {
+   list-style-type: circle !important; 
+}
+
+.formulario__div{
+    display: inline;
+    margin: 15px;
+}
+
+.pad-bottom{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.rotulo, #dropdown {
+    margin-left: 10px;
+}
+
+.botao {
+    height: 36px;
+    background-color: #c22ae0;
+    border-radius: 4px;
+    width: 80px;
+    border: 1px solid #c22ae0;
+    color: #fff;
+}
+
+.reset {
+    background-color: #fff;
+    color: #c22ae0;
+}
+.block{
+    display: block ;
+}
+
+.octocat {
+    display: flex;
+    justify-content: center;
+    background-color: #f6f8fa;
+}
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    color: white;
+}
