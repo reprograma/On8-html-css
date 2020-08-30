@@ -1,0 +1,220 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+a:hover{
+    font-weight:bold;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.corpo {
+    background-color: rgb(255 244 235);
+}
+/* barra navegação */
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(318, 72%, 50%);
+    height: 80px;
+}
+
+.img_barra {
+    display: block;
+    max-height: 50px;
+    margin: 0 3rem;
+    transition: 0.8s;
+}
+
+.NavBar__img {
+    max-height: 50px ;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+}
+
+.navBar__itemLista {
+    max-height: 100%;
+    color: #ffffff;
+    font-size: 21px;
+    padding: 20px;
+}
+/* fim barra de navegação */
+.cabecalho{
+    background: url(/alunas/taline/imagens/love.2.jpg);
+    background-size: cover;
+    height: 60vh;
+    background-position: 90% 98%
+}
+.título {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.titulob {
+    color: black;
+    position: absolute;
+    bottom: px;
+    bottom: 5px;
+    left: 70px;
+    top: 200px;
+    font-size: 3rem;
+}
+.texto {
+    display: inline-block;
+    width: 350px;
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.imagem_art{
+    display: inline-block;
+    width: 190px;
+    border-radius: 80%;
+    padding: 10px;
+    margin-right: 60px;
+}
+
+.artigo, .sessao{
+    text-align: center;
+    padding: 20px;
+}
+
+.sessao_habilidades {
+    display: flex;
+    justify-content: space-between;
+    border: solid 3px hsl(318, 72%, 50%);
+    margin-right: 180px;
+    margin-left: 180px;
+    padding: 20px;
+    text-align: left;
+}
+
+.desejos {
+    padding: 10px;
+    border: 3px dashed black;
+    margin-left: 120px;
+}
+
+.filmes {
+    padding: 10px;
+    border: 3px dashed black;
+    margin-right: 120px;
+}
+
+.lista {
+    padding: 20px;
+    border: hsl(3deg 98% 84%) 2px solid;
+    line-height: 30px;
+    max-width: 320px;
+}
+
+.lista__item {
+    font-size: 16px;
+    margin: 20px;
+    padding: 5px;
+    font-style: italic;
+    border: 1px dashed fuchsia;
+}
+
+/* FORMULÁRIO  */
+
+.formulario {
+    padding: 20px;
+    margin: 60px;
+    background-color: #ffa4a9;
+    border-radius: 30px;
+    display: block;
+    text-align: center;
+}
+
+.formulario__sessao {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessao--radio, .sessao--check {
+    flex-direction: column;
+}
+
+.sessao--radio label, .sessao--check > label {
+    color: black;
+}
+
+.sessao--textarea {
+    flex-direction: column;
+}
+
+.input {
+    width: 250px;
+    padding: 10px;
+}
+
+.rotulo {
+    padding: 10px;
+    font-size: 21px;
+    color: white;
+    font-weight: bold;
+    margin: 10px;    
+}
+
+textarea {
+    font-size: 18px;
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.botao {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.submit {
+    background-color: hsl(318, 72%, 50%);
+}
+
+.submit:hover {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(56, 209, 9);
+}
+
+.reset {
+    background-color: rgba(250, 50, 50, 0.4);
+}
+
+.reset:hover {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(240, 26, 26);
+}
+/* footer */
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+    color: white;
+ }
