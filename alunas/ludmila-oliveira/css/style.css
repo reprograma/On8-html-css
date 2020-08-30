@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(51, 55, 63);
+
+    height: 8em;
+    width: 100%;
+    padding: 0.8em 1.5em;
+}
+
+.img_reprograma {
+    width: 3.5em;
+    height: 3.5;
+    margin: 1em 0;
+}
+
+.lista_nav {
+    list-style: none;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img_github {
+    width: 3.5em;
+    height: 3.5em;
+}
+
+.background {
+    height: 14em;
+    width: 100%;
+
+    background: url(../img/background.jpeg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo_perfil {
+    font-size: 3.5em;
+
+    color: rgb(255, 255, 255);
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.img_perfil {
+    height: 45vh;
+    padding: 3em 0 1em 3em;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    padding: 3em 0 10em 3em
+}
+
+.sessao_perfil {
+    display: flex;
+    justify-content: center;
+}
+
+.paragrafo_perfil {
+    font-size: 1rem;
+    width: 95%;
+    text-align: justify;
+}
+
+.sessao_listas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1rem;
+}
+
+.titulo_lista {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+ol {
+    border: 2px dashed rgb(81, 105, 54);
+    margin: 1em 0;
+    width: 23em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(109, 126, 88);
+    padding: 2em;
+    width: 80%;
+    margin: 0 10%;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+fieldset {
+    margin: 1em;
+    padding: 0.7em;
+}
+
+.lista_sexo {
+    list-style:none;
+    align-self: auto;
+    padding: 0;
+}
+
+#mensagem {
+    width: 60%;
+    height: 10em;
+}
+
+.sessao_button {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 6em;
+    height: 3em;
+    border-radius: 12%;
+    margin-top: 1.2em;
+}
+
+.sessao_octocat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 3em 2em 1em 3em;
+}
+
+.container_octocat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link_octocat {
+    font-size: 1rem;
+    color: rgb(0, 0, 0)
+}
+
+.foto_octocat {
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(51, 55, 63);
+    font-size: 1.5rem;
+    padding: 1.2em;
+}
+
+footer {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3.7em;
+    width: 100%;
+
+    background-color: rgb(51, 55, 63);
+}
+
+/* para achar o em divida o valor que vc quer em pixel por */

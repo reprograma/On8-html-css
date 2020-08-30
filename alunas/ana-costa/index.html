@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <title>Ana Luiza Costa Lima</title>
+    </head>
+    <body class="corpo">
+        <nav class="navegacao">
+            <a href="https://www.reprograma.com.br" target="_blank">
+                <img class="nav-img" src="../../img-home/logo-reprograma.png" alt="logo-reprograma"/>
+            </a>
+            <ul class="nav-lista">
+                <a href="../../index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="https://github.com/reprograma" class="ancora" target="_blank">
+                    <li><img class="nav-img" src="../../img-home/github.svg" alt="logo-github"/></li>
+                </a>
+            </ul>
+        </nav>
+        <header class="cabecalho"></header>
+        <main>
+            <article class="artigo">
+                <h1 class="titulo-principal">Um Pouco Sobre Mim</h1>
+                <div class="artigo-descricao">
+                    <img class="artigo-img" src="img/dog.jpg" alt="cachorrinho na cama olhando para cima">
+                    <p class="paragrafo">Sou bióloga e especialista em micologia.<br><br> Desde quando ganhei meu primeiro computador que a tecnologia virou mais uma paixão na minha vida! Sempre fui curiosa sobre esse universo e buscava saber sobre as novidades!<br><br> Na metade de 2019 comecei a pesquisar sobre o mercado de TI e me encantei pelas áreas de experiência e interface do usuário e pela de desenvolvimento front-end!</p>
+                </div>
+            </article>
+            <h2 class="titulo-listas">MINHAS LISTAS</h2>
+            <section class="sessao sessao-flex">
+                <div class="sessao-caixa">
+                    <h3 class="titulo">Meus Desejos &#129321</h3>
+                    <ul class="lista">
+                        <li class="itemLista">Ter sempre saúde</li>
+                        <li class="itemLista">Vacina para o COVID-19</li>
+                        <li class="itemLista">Fim da pandemia</li>
+                        <li class="itemLista">Estar empregada</li>
+                        <li class="itemLista">Viagens</li>
+                        <li class="itemLista">Fazer várias tattoos</li>
+                        <li class="itemLista">Cadeira gamer</li>
+                        <li class="itemLista">Brusinhas geeks</li>
+                        <li class="itemLista"><em>"Praystation! Praystation!"</em> &#128514</li>
+                    </ul>
+                </div>
+                <div class="sessao-caixa">
+                    <h3 class="titulo">Meus Hobbies &#128522</h3>
+                    <ul class="lista">
+                        <li class="itemLista">Sair com os amigos</li>
+                        <li class="itemLista">Ir ao cinema</li>
+                        <li class="itemLista">Assistir séries e animes</li>
+                        <li class="itemLista">Jogar videogames ou assistir gameplays</li>
+                        <li class="itemLista">Ler e colecionar livros</li>
+                        <li class="itemLista">Colecionar coisas geeks</li>
+                        <li class="itemLista">Viajar</li>
+                    </ul>
+                </div>
+            </section>
+            <h2 class="titulo-contato">ENTRE EM CONTATO!</h2>
+            <form class="formulario">
+                <div class="formulario-sessao">
+                    <label for="name" class="rotulo">Nome:</label>
+                    <input class="input" type="text" placeholder="digite seu nome" required>
+                </div>
+                <div class="formulario-sessao">
+                    <label for="email" class="rotulo">E-mail:</label>
+                    <input class="input" type="email" placeholder="digite seu e-mail" required>
+                </div>
+                <div class="formulario-sessao">
+                    <label for="date" class="rotulo">Data de Nascimento:</label>
+                    <input class="input" type="date" placeholder="digite sua data de nascimento" required>
+                </div>
+                <div class="formulario-sessao">
+                    <p class="rotulo">Quem veio primeiro?</p>
+                    <select name="role" id="dropdown" class="input" required>
+                        <option value="ovo">Ovo</option>
+                        <option value="galinha">Galinha</option>
+                        <option value="eden">Adão e Eva</option>
+                        <option value="dinos">Dinossauros</option>
+                    </select>
+                </div>
+                <div class="formulario-sessao sessao-radio">
+                    <p class="rotulo">Qual sua comida favorita?</p>
+                    <label class="rotulo">
+                        <input type="radio" name="comida-favorita" value="sushi" requested>
+                        "Sushi"
+                    </label>
+                    <label class="rotulo">
+                        <input type="radio" name="comida-favorita" value="lasanha" requested>
+                        "Lasanha"
+                    </label>
+                    <label class="rotulo">
+                        <input type="radio" name="comida-favorita" value="cuscuz" requested>
+                        "Cuscuz com salsicha"
+                    </label>
+                </div>
+                <div class="formulario-sessao" class="sessao-check">
+                    <p class="rotulo">Quais estilos de música você curte?</p>
+                    <label class="rotulo">
+                        <input type="checkbox" name="musica" value="pop">
+                        "Pop"
+                    </label>
+                    <label class="rotulo">
+                        <input type="checkbox" name="musica" value="rock">
+                        "Rock"
+                    </label>
+                    <label class="rotulo">
+                        <input type="checkbox" name="musica" value="reggaeton">
+                        "Reggaeton"
+                    </label>
+                    <label class="rotulo">
+                        <input type="checkbox" name="musica" value="forro">
+                        "Forró"
+                    </label>
+                    <label class="rotulo">
+                        <input type="checkbox" name="musica" value="brega">
+                        "Brega"
+                    </label>                   
+                </div>
+                <div class="formulario-sessao sessao-textarea">
+                    <p class="rotulo">Conte um pouco mais sobre você:</p>
+                    <textarea id="textarea" placeholder="Escreva aqui" rows="50"></textarea>
+                </div>
+                <button class="botao submit" type="submit">ENVIAR</button>
+                <button class="botao reset" type="reset">APAGAR</button>
+            </form>
+            <section class="sessao-octocat">
+                <a href="https://myoctocat.com">
+                    <p class="sessao-paragrafo">Faça seu próprio Octocat!</p>
+                    <img class="sessao-img" src="img/octocat.png" alt="Octocat">
+                </a>
+            </section>
+        </main>
+        <footer>
+            <p class="footer-paragrafo">Desenvolvido por Ana Luiza com html e css &#127800&#128156</p>
+        </footer>
+    </body>
+</html>
