@@ -1,0 +1,162 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    font-weight: bold;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  /* conteudo */
+  
+  /* barra de navegação */
+  
+  .navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #61a9f1;
+  }
+  
+  .nav__lista {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .nav__lista > li {
+    margin-right: 20px;
+    padding: 20px;
+  }
+  
+  .nav__img {
+    height: 50px;
+    margin: 10px;
+  }
+  
+  /* cabeçalho da pagina */
+  .cabecalho {
+    background: url(/alunas/viviane-santos/imagens/WhatsApp\ Image\ 2020-08-29\ at\ 16.37.36.jpeg);
+    background-size: cover;
+    background-position: 50% 30%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  /* height = altura 
+  width = largura  */
+  /* main -- conteudo principal */
+  
+  .titulo {
+    text-align: center;
+    color: #4c54f1;
+    padding: 10px;
+    
+  }
+  
+  .branco {
+    color: rgb(36, 19, 102);
+    height: 150px ;
+    
+    
+    
+    
+  }
+  
+  .paragrafo {
+    display: inline-block;
+    width: 350px;
+    text-align: justify;
+    padding: 10px;
+  }
+  
+  .artigo {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .artigo__imagem {
+    display: inline-block;
+    width: 200px;
+    border-radius: 40%;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  
+  .img--block {
+    display: block;
+  }
+  
+  .sessao {
+    padding: 30px;
+  }
+  
+  .sessao--flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .sessao__caixa {
+    border: 3px ;
+    margin: 10px;
+  }
+  
+  .lista {
+    
+    margin: 10px;
+  }
+  
+  .itemLista {
+    border: purple 2px dashed;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .formulario {
+    background-color: rgb(248, 183, 3);
+    margin: 50px 100px;
+  }
+  
+  .formulario__div {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px blue solid;
+    border-radius: 10px;
+  }
+  
+  #textarea {
+    width: 50%;
+    height: 200px;
+    border: 1px blue solid;
+  }
+  
+  /* rodapé */
+  .footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    color: white;
+  }
+  
