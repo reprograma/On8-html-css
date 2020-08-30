@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <title>Página da Paty</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- stylesheet = folha de estilo -->
+  <!-- <style>
+        p {
+            background-color: aqua;
+        }
+        img {
+            border: 2px blueviolet solid;
+        }
+    </style> -->
+</head>
+
+<body class="corpo">
+  <nav class="navegacao">
+    <img src="./imagens/linkedin.png" alt="logo-linkedin" />
+    <img src="./imagens/facebook.png" alt="logo-facebook" />
+    <img src="./imagens/instagram-esbocado.png" alt="logo-instagram" />
+    <img src="./imagens/icone_home.png" alt="icone_home" />
+  </nav>
+  <main class="principal">
+    <article class="artigo">
+      <h1 class="titulo">Um pouco sobre mim</h1>
+      <div class="artigo__info">
+        <img class="artigo__imagem" src="./imagens/Euzinha.jpg" alt="foto-da-patricia" />
+        <p class="paragrafo">
+          Bom, tenho 35 anos, paulista, geminiana, me formei em Serviço Social e trabalho na área da Educação. Amo
+          sorvete e sei fazer um brownie maravilhoso!!!
+        </p>
+      </div>
+    </article>
+    <h2 class="titulo">Minhas listas</h2>
+    <section class="sessao sessao--flex">
+      <div class="sessao__caixa">
+        <div class="minhas__listas">
+          <img class="imagem_lista" src="./imagens/icone_lista-de-desejos.png" alt="imagem_lista_desejos" />
+          <h3 class="titulo">Meus desejos para 2021</h3>
+        </div>
+        <ol class="lista">
+          <li class="itemLista">Viajar muito</li>
+          <li class="itemLista">Ir ao cinema</li>
+          <li class="itemLista">Ganhar muito dinheiro</li>
+          <li class="itemLista">Trabalho na área da Programação</li>
+          <li class="itemLista">Sair a vacina para o COVID</li>
+
+        </ol>
+      </div>
+      <div class="sessao__caixa">
+        <div class="minhas__listas">
+          <img class="imagem_filme" src="./imagens/icone_filmes.png" alt="imagem_filme_pipoca" />
+          <h3 class="titulo">Filmes que eu gosto</h3>
+        </div>
+        <ol class="lista">
+          <li class="itemLista">Jardineiro Fiel</li>
+          <li class="itemLista">O vento levou</li>
+          <li class="itemLista">Jurassic Park</li>
+          <li class="itemLista">Intocáveis</li>
+          <li class="itemLista">A Era do Gelo</li>
+        </ol>
+      </div>
+    </section>
+
+
+     <section class="sessao">
+        <form class="formulario">
+          <div class="formulario__identificacao">
+          <div class="formulario__identificacao__item">
+            <label for="name" class="rotulo">Nome:</label>
+            <input
+              class="input"
+              type="text"
+              placeholder="digite seu nome"
+              required
+            />
+          </div>
+          <div class="formulario__identificacao__item">
+            <label for="email" class="rotulo">E-mail:</label>
+            <input
+              class="input"
+              type="email"
+              placeholder="digite seu e-mail"
+              required
+            />
+          </div>
+        </div>
+        <div class="formulario__identificacao">
+          <div class="formulario__identificacao__item">
+            <label for="nascimento" class="rotulo">Data de nascimento:</label>
+            <input class="input" type="date" placeholder="que dia nasceu vc?" />
+          </div>
+        </div>
+         
+          <div class="formulario__div">
+            <p class="paragrafo">Qual sua comida preferida?</p>
+            <div class="formulario__div__itens">
+
+            <label class="rotulo">
+          
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="lasanha"
+              />
+              Lasanha
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="sushi"
+              />
+              Sushi
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="couscus"
+              />
+              Macarrão
+              
+            </label>
+            
+          </div>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Quais estilos musicais você gosta?</p>
+            <div class="formulario__div__itens">
+
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="eletronica"
+              />
+              Eletrônica
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="rock"
+              />
+              Rock
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="sertaneijo"
+              />
+              Sertanejo
+            </label>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Quem nasceu primeiro nesse mundão?</p>
+            <select id="dropdown" name="role">
+              <option value="ovo">Ovo?</option>
+              <option value="galinha">Galinha?</option>
+              <option value="eva">Adão e Eva?</option>
+              <option value="dinos">Dinossauros?</option>
+            </select>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Abra o coraçãozinho:</p>
+            <textarea
+              id="textarea"
+              placeholder="conte mais sobre você"
+            ></textarea>
+          </div>
+          <div class="formulario__div__itens">
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+
+
+    <section class="sessao">
+      <a href="https://myoctocat.com/">
+        <p class="paragrafo">Faça seu próprio octocat!</p>
+        <img src="./imagens/octocat.png" alt="octocat" class="artigo__imagem" />
+      </a>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="paragrago">Desenvolvido por Paty</p>
+
+  </footer>
+</body>
+
+</html>
