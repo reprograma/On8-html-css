@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lohany Formiga</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="corpo">
+    <nav class="navegacao">
+       <a href="https://www.reprograma.com.br" target="_blank"> 
+        <img
+        class="nav__img"
+        src="../../img-home/logo-reprograma.png"
+        alt="logo-reprograma"
+      />
+
+       </a>
+      
+      <ul class="nav__lista">
+        <li><a href="../../index.html">Home</a></li>
+        <li>
+          <a href="https://github.com/reprograma" target="_blank"
+            ><img
+              class="nav__img"
+              src="../../img-home/github.svg"
+              alt="github--logo"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="cabecalho">
+    </header>
+    <main class="principal">
+      <article class="artigo">
+        <h2 class="titulo"></h2>
+        <img
+          class="artigo__imagem"
+          src="./imagem/lohany.png"
+          alt="a foto sobre uma menina"
+        />
+        <p class="paragrafo">
+          Olá,meu nome é Lohany Formiga sou formada em Designer, imigrei para área de UX Experiencia do usuario e UI design de interface.
+          e hoje sou UI/UX Designer. Sempre gostei de programação e sentir a necessidade de saber programar na área de Front-End.
+          E hoje sou aluna no reprograma em desenvolvedora Front-End
+
+        </p>
+      </article>
+      <h2 class="titulo">Minhas listas</h2>
+      <section class="sessao sessao--flex">
+        <div class="sessao__caixa">
+          <h3 class="titulo">meus desejos para 2021</h3>
+          <ul class="lista">
+            <li class="itemLista">Viagens</li>
+            <li class="itemLista">Conquistas</li>
+            <li class="itemLista">Ganhar muito dinheiro</li>
+            <li class="itemLista">Novas Amizades</li>
+            <li class="itemLista">Novas habilidades</li>
+          </ul>
+        </div>
+        <div class="sessao__caixa">
+          <h3 class="titulo">filmes que eu gosto</h3>
+          <ul class="lista">
+            <li class="itemLista">A procura da felicidade</li>
+            <li class="itemLista">Batman</li>
+            <li class="itemLista">Esposa de mentirinha</li>
+            <li class="itemLista">Creche do papai</li>
+            <li class="itemLista">Capitao america </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sessao">
+        <form class="formulario">
+          <div class="formulario__div">
+            <label for="name" class="rotulo">Nome:</label>
+            <input
+              class="input"
+              type="text"
+              placeholder="digite seu nome"
+              required
+            />
+          </div>
+          <div class="formulario__div">
+            <label for="email" class="rotulo">E-mail:</label>
+            <input
+              class="input"
+              type="email"
+              placeholder="digite seu e-mail"
+              required
+            />
+          </div>
+          <div class="formulario__div">
+            <label for="nascimento" class="rotulo">Data de nascimento:</label>
+            <input class="input" type="date" placeholder="que dia nasceu vc?" />
+          </div>
+          <div class="formulario__div">
+            <label for="idade" class="rotulo">Idade:</label>
+            <input
+              class="input"
+              type="number"
+              min="10"
+              max="100"
+              placeholder="qual sua idade:"
+            />
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Qual a sua serie favorita:</p>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="lasanha"
+              />
+              Arquivo X
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="churrasco"
+              />
+              Simpson
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="pizza"
+              />
+              Gothan city
+            </label>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Quais estilos musicais você gosta?</p>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="eletronica"
+              />
+              Eletrônica
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="rock"
+              />
+              Sertanejo
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="sertaneijo"
+              />
+              Pop 
+            </label>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Melhor super heroi da marvel?</p>
+            <select id="dropdown" name="role">
+              <option value="homem de ferro">homem de ferro</option>
+              <option value="capitao america">capitao america</option>
+              <option value="Hulk">Hulk</option>
+              <option value="thor">thor</option>
+            </select>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Cri o seu texto:</p>
+            <textarea
+              id="textarea"
+              placeholder="conte mais sobre você"
+            ></textarea>
+          </div>
+          <div class="formulario__div">
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+      <section class="sessao-octocat">
+        <a href="https://myoctocat.com/">
+          <p class="sessao-paragrafo">Faça seu próprio octocat!</p>
+          <img src="imagem/octocat.png" alt="octocat" class="sessao-imagem">
+        </a>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="paragrago">Desenvolvido por Lohany Formiga com html e css</p>
+    </footer>
+  </body>
+</html>

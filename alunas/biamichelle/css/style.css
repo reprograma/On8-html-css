@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul li {
+   list-style: none; 
+}
+
+/* conteudo */
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7E459B;
+}
+
+.nav__lista{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.nav__img {
+    height: 50px;
+    margin: 20px;
+}
+
+.cabecalho{
+    background: url(/alunas/biamichelle/imagens/capa.png);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+
+}
+/* corpo*/
+
+.main{
+    background-color: lavender;
+}
+.flexbox__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    text-align: center;
+    color: #7E459B; 
+    padding: 10px;
+}
+
+#h2{
+    font-size: 38px;
+    padding-bottom: 3%;
+}
+
+.branco{
+    color: white;
+}
+
+.paragrafo {
+    display: inline-block;
+    width: 350px;
+    text-align: justify;
+    padding: 10px;
+}
+
+#paragrafo__artigo{
+    font-size: 26px;
+    color: floralwhite;
+}
+
+.artigo__imagem {
+    display: inline-block;
+    width: 150px;
+
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.artigo {
+    text-align: center;
+    padding: 20px;
+    background-color: darksalmon;
+    padding: 5%;
+}
+
+.sessao {
+    padding: 30px;
+}
+
+.sessao--flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sessao__caixa {
+    border: 3px solid #7E459B;
+    padding: 70px;
+}
+
+.lista {
+    border: #7E459B 2px dashed;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.itemLista {
+    border: purple 2px dashed;
+    padding: 20px;
+}
+
+.formulario {
+    background-color: rgb(231, 114, 29);
+    margin: 50px 100px;
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+  
+.formulario__div {
+    padding: 20px;
+    text-align: center;
+  }
+
+.rotulo{
+    padding-left: 20px;
+}
+  
+.input {
+    padding: 10px;
+    border: 1px blue solid;
+    border-radius: 10px;
+  }
+  
+#textarea {
+    width: 80%;
+    height: 200px;
+    border: 1px blueviolet;
+  }
+
+#myoctocat{
+    justify-content: center;
+    display: flex;
+}
+
+.footer {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    color: lavender;
+}

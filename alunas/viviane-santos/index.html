@@ -1,0 +1,198 @@
+
+  <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>eu-viviane</title>
+        <link type="text/css" rel="stylesheet" href="/alunas/viviane-santos/css/style.css">
+        
+  
+  </head>
+  
+  <body class="corpo">
+    <nav class="navegacao">
+      <img
+        class="nav__img"
+        src="../../img-home/logo-reprograma.png"
+        alt="logo-reprograma"
+      />
+      <ul class="nav__lista">
+        <li><a href="../../index.html">Home</a></li>
+        <li>
+          <a href="https://github.com/reprograma" target="_blank"
+            ><img
+              class="nav__img"
+              src="../../img-home/github.svg"
+              alt="github--logo"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="cabecalho">
+      <h1 class="titulo branco">Oi lindezas!Eu sou a Viviane</h1>
+    </header>
+    <main class="principal">
+      <article class="artigo">
+        <h2 class="titulo">Um pouco sobre mim</h2>
+        <img
+          class="artigo__imagem"
+          src="./imagens/WhatsApp Image 2020-08-29 at 09.55.56.jpeg"
+          alt="moça sorrindo com flor na mão"
+        />
+        <p class="paragrafo">
+          Tenho 27 anos, moro na cidade de Guarulhos, sou formada em pedagogia e atualmente estudando administração e front-end no lugar mais lindo do mundo chamado reprograma.
+        </p>
+      </article>
+      <h2 class="titulo">Minhas listas</h2>
+      <section class="sessao sessao--flex">
+        <div class="sessao__caixa">
+          <h3 class="titulo">Meus sonhos</h3>
+          <ul class="lista">
+            <li class="itemLista">Viajar pelo mundão</li>
+            <li class="itemLista">Conquistar minha casa</li>
+            <li class="itemLista">Ajudar meus pais</li>
+            <li class="itemLista">Poder abraçar novamente</li>
+            <li class="itemLista">Comidas gostosas para sempre</li>
+            <li class="itemLista">Acordar cedo sem mau humor</li>
+            <li class="itemLista">Ser muito feliz</li>
+          </ul>
+        </div>
+        <div class="sessao__caixa">
+          <h3 class="titulo">Meu atividades prefêridas</h3>
+          <ol class="lista">
+            <li class="itemLista">Fazer atividades fisicas</li>
+            <li class="itemLista">Passear ou viajar.</li>
+            <li class="itemLista">Fazer videos para o instagram</li>
+            <li class="itemLista">Estudar</li>
+            <li class="itemLista">Fotografar</li>
+            <li class="itemLista">Programar</li>
+            <li class="itemLista">Comer</li>
+            
+          </ol>
+        </div>
+      </section>
+      <section class="sessao">
+        <form class="formulario">
+          <div class="formulario__div">
+            <label for="name" class="rotulo">Nome:</label>
+            <input
+              class="input"
+              type="text"
+              placeholder="digite seu nome"
+              required
+            />
+          </div>
+          <div class="formulario__div">
+            <label for="email" class="rotulo">E-mail:</label>
+            <input
+              class="input"
+              type="email"
+              placeholder="digite seu e-mail"
+              required
+            />
+          </div>
+          <div class="formulario__div">
+            <label for="nascimento" class="rotulo">Data de nascimento:</label>
+            <input class="input" type="date" placeholder="que dia nasceu vc?" />
+          </div>
+         
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo"> Você gosta de viajar?:</p>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="sim"
+                type="radio"
+                value="sim"
+              />
+              Sim, eu amo
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="de vez enquando"
+                type="radio"
+                value="de vez enquando"
+              />Só viajo de vez enquando
+              Sushi
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="não"
+                type="radio"
+                value="não"
+              />
+              Não gosto de viajar
+            </label>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Em quais lugares você gosta de ir?</p>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="lugares"
+                type="checkbox"
+                value="Praia"
+              />
+              Praias
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="lugares"
+                type="checkbox"
+                value="campo"
+              />
+              Campos/Sitios
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="lugares"
+                type="checkbox"
+                value="Parques"
+              />
+              Parques
+            </label>
+            <label class="rotulo">
+                <input
+                  class="input--radio"
+                  name="lugares"
+                  type="checkbox"
+                  value="paises"
+                />
+                Outros paises
+              </label>
+          </div>
+         
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Me indique um lugar para visitar:</p>
+            <textarea
+              id="textarea"
+              placeholder="vou amar ler cada indicação"
+            ></textarea>
+          </div>
+          <div class="formulario__div">
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="sessao">
+        <a href="https://myoctocat.com/">
+          <p class="paragrafo">Faça seu próprio octocat!</p>
+          <img src="/alunas/viviane-santos/imagens/octocat.png" alt="octocat"  class="artigo__imagem img--block" />
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="paragrafo">Desenvolvido por Viviane com html e css</p>
+    </footer>
+  </body>
+</html>
