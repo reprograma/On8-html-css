@@ -2,9 +2,13 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+html {
+  font-size: 10px; /*inicio*/
+}
 a {
   text-decoration: none;
-  /* color: inherit; */
+
   cursor: pointer;
   color: white;
 }
@@ -14,9 +18,16 @@ a:hover {
 }
 
 .corpo {
-  background-color: #fff5ee;
-  /* font-family: 'Balsamiq Sans', cursive; */
-  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #fff4fa;
+
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+li {
+  font-size: 1.6rem;
+  
 }
 ul li,
 ol li {
@@ -29,149 +40,263 @@ ol li {
 .navegacao {
   height: 70px;
   display: flex;
-  background-color: #7e459b;
+  background-color: palevioletred;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  /* min-width: 1200px; */
 }
 .nav-lista {
   display: flex;
   color: #fff;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  position: relative;
 }
 .nav-img {
-  height: 50px;
-  margin: 20px;
+  height: 5rem;
+  margin: 2rem;
 }
 
-.banner {
-  background: url(../img/banner.jpg) repeat center;
+/* HEADER */
 
-  background-size: contain;
+.cabecalho {
+  background: url(../img/bannerheader.jpg) center;
+  /* background-color: aqua;
+  opacity: 1; */
+  background-size: cover;
+  /* margin-left: 200px; */
   height: 50vh;
+  /* max-height: 50vh; */
+  width: 200px;
+  /* width: 200px; */
+  /* max-width: 95rem; */
+  width: 100%;
+  /* min-width: 1110px; */
+
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* width: 100%;
+  max-width: 300px; */
+  /* align-items: center; */
 }
 
-/* conteúdo */
+/* TÍTULOS E PARÁGRAFOS */
 
 .titulo {
   text-align: center;
   color: #7e459b;
   padding: 10px;
-  font-family: 'Balsamiq Sans', cursive;
-
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 2.4rem;
 }
 
-.titulo-branco{
+.titulo-branco {
+  font-family: "Anton", sans-serif;
   color: palevioletred;
   text-align: center;
   padding: 10px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: palevioletred;
+  -webkit-text-stroke-color: black;
+  font-size: 4rem;
 }
 
 .paragrafo {
-  /* display: inline-block; */
-  /* width: 350px; */
-  /* text-align: left; */
-  /* padding: 10px; */
-  display: flex;
-  font-size: 20px;
-  display: flex;
+  display: inline-block;
+  text-align: justify;
+  padding: 10px;
+
+  font-size: 1.8rem;
+
   align-items: center;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
 }
 
+/* SESSÃO ARTIGO  */
+
 .artigo-imagem {
   display: flex;
-  width: 200px;
-  border-radius: 100px;
-  padding: 10px;
-  margin-right: 20px;
-  display: flex;
+  text-align: center;
+
+  border-radius: 200px;
+  padding: 1rem;
+  margin-right: 2rem;
+
   align-items: center;
+  width: 100%;
+  max-width: 200px;
+  width: 20rem;
 }
 
 .artigo {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 2rem;
   text-align: left;
   font-size: 20px;
   align-items: center;
-  margin: 0 200px;
+  margin: 0 20rem;
+  border: 2px aqua solid;
 }
 
-.sessao {
+/* SESSÃO MINHAS LISTAS */
 
+.sessao {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 2rem;
   text-align: left;
   font-size: 20px;
   align-items: center;
-  margin: 0 200px;
+  margin: 0 20rem;
 }
 
 .sessao--flex {
   display: flex;
   justify-content: space-between;
   border: solid 3px purple;
-  padding: 20px;
+  padding: 2rem;
   text-align: left;
   font-size: 20px;
   align-items: center;
-  margin: 0 200px;
+
+  flex-wrap: wrap;
 }
 
 .sessao-caixa {
   border: aqua 2px dashed;
 
-  padding: 20px;
+  padding: 1rem;
 }
 
 .lista {
   border: 3px solid palevioletred;
-  padding: 20px;
+  padding: 2rem;
 }
 
 .itemLista {
   border: blueviolet 2px dashed;
-  padding: 20px;
+  padding: 2rem;
 }
+
+/* SESSÃO SOBRE MIM */
 
 .sobre-mim {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 2rem;
   text-align: left;
   font-size: 20px;
   align-items: center;
-  margin: 0 200px;
+  margin: 0 20rem;
+  border: 2px aqua solid;
+  margin-top: 5rem;
 }
 
 .minha-foto {
   background-image: url(../img/drifoto.jpg);
+
   background-size: cover;
+  display: block;
+  max-width: 300px;
+  width: 100%;
   height: 300px;
-  width: 2000px;
-  margin: 10px;
+  width: 200rem;
+  padding: 2rem;
 }
 .historia {
   font-size: 20px;
 }
 
-.footer {
-  display: flex;
-  height: 50px;
+/* FORMULÁRIO */
+.formulario {
+  background-color: aqua;
+  border-radius: 30px;
+  margin: 5rem 10rem;
+  width: 700px;
+}
+.formulario-div {
+  padding: 2rem;
   text-align: center;
-  justify-content: center;
-  background-color: #7e459b;
-  color: white;
- 
 }
 
-.footer p{
+.input {
+  padding: 0.8rem;
+  border: 1px blue solid;
+  text-align: center;
+}
+
+#textarea {
+  width: 50%;
+  height: 20rem;
+  border: 1px blue solid;
+}
+.rotulo {
+  font-size: 1.6rem;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.paragrafo-form {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-size: 1.7rem;
+}
+
+button {
+  background-color: palevioletred;
+  color: white;
+  border-radius: 5px;
+  width: 8rem;
+}
+
+/* GALERIA  */
+
+.galeria {
+  display: flex;
+
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.galeria-img {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  padding: 2rem;
+}
+
+.galeria-box {
+  background-color: gray;
+  margin: 2rem;
+}
+
+.paragrafo-center {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  height: 5rem;
+  text-align: center;
+  justify-content: center;
+  background-color: palevioletred;
+  color: white;
+
+  width: 100%;
+}
+
+.footer p {
   display: flex;
   font-size: 20px;
   display: flex;
@@ -179,45 +304,116 @@ ol li {
   color: white;
 }
 
-.formulario{
-  background-color: aqua;
-  border-radius: 30px;
-  margin: 50px 100px;
-  width: 700px;
-  
-}
-.formulario-div{
-  padding: 20px;
-  text-align: center;
-  
-  
- 
+/* MENU HAMBÚRGUER - RESPONSIVIDADE */
+
+#menu-desktop {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 100%;
 }
 
-.input{
-  padding: 5px;
-  border: 1px blue solid;
-  text-align: center;
+#menu-celular {
+  display: none;
 }
 
-#textarea{
-  width: 500px;
-  height: 200px;
-  border: 1px blue solid;
+.menu-responsivo {
+  position: relative;
+  cursor: pointer;
+  color: black;
 }
 
-.paragrafo-form{
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #000;
+.menu-lista-responsivo {
+  position: absolute;
+  color: palevioletred;
+  top: 60px;
+  right: 0;
+  background: grey;
+  display: none;
 }
 
-
-button{
-  background-color: palevioletred;
-  color: white;
-  border-radius: 5px;
- width: 80px;
+.menu-responsivo:hover > .menu-lista-responsivo {
+  display: block;
 }
+
+/*TAMBÉM PODE FAZER O MEDIA QUERY ASSIM: 
+@media (max-width: 650px) */
+
+/* MEDIA QUERIES - RESPONSIVIDADE */
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 8px;
+  }
+  .formulario {
+    margin: 0 auto;
+  }
+
+  .galeria {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #menu-celular {
+    display: block;
+  }
+
+  #menu-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .sessao,
+  .sessao--flex {
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .artigo,
+  .sobre-mim {
+    text-align: justify;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .titulo {
+    width: 100%;
+  }
+
+  .sessao-caixa {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  .galeria {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+}
+
+/* --- titulo 3.2 rem
+3.2 * font-size padrao ou font-size atribuída por padrão ---
+
+--- html 10px * 3.2rem = 32px ---
+
+--- com até 650px de largura de tela
+html = 8px | titulo=3.2rem | 3.2rem * 8 = 25.6 px ---
+*/
 
 /* ESPECIFICIDADE   (O MAIS ESPECÍFICO PREVALECE)
 ID -> CLASSE -> ELEMENTO
