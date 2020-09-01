@@ -201,9 +201,9 @@ ol li {
 
   background-size: cover;
   display: block;
-  max-width: 300px;
+  max-width: 280px;
   width: 100%;
-  height: 300px;
+  height: 280px;
   width: 200rem;
   padding: 2rem;
 }
@@ -342,7 +342,7 @@ button {
 
 /* MEDIA QUERIES - RESPONSIVIDADE */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   html {
     font-size: 8px;
   }
@@ -355,7 +355,7 @@ button {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 440px) {
   #menu-celular {
     display: block;
   }
@@ -364,6 +364,47 @@ button {
     display: none;
   }
 }
+
+@media screen and (max-width: 450px) {
+  #menu-celular {
+    display: block;
+    
+  }
+
+  #menu-desktop {
+    display: none;
+   
+  }
+
+  .artigo{
+    margin: 0;
+  }
+
+  .sessao,
+  .sessao--flex {
+    margin: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+  }
+  .sobre-mim {
+    text-align: justify;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navegacao{
+    width: 100%;
+  }
+  
+}
+
+
 
 @media screen and (max-width: 420px) {
   .sessao,
@@ -403,9 +444,35 @@ button {
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 607px) {
+  .artigo{
+    margin: 0;
+  }
+
 }
 
+@media screen and (max-width: 565px) {
+  .artigo{
+    margin: 0;
+  }
+
+  #menu-celular {
+    display: block;
+    
+  }
+
+  #menu-desktop {
+    display: none;
+   
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+.principal{
+  margin:0;
+}
+}
 /* --- titulo 3.2 rem
 3.2 * font-size padrao ou font-size atribuída por padrão ---
 
