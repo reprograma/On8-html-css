@@ -1,0 +1,342 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFFFFF;
+}
+html, body{
+    height: 100vh;
+}
+
+
+
+
+/* barra superior menu */
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #040C11;
+    height: 75px;
+}
+
+.reprograma{
+    position:relative;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.reprograma:hover{
+    top:-2px;box-shadow:0 2px 2px #040C11;
+}
+
+
+ul li{
+    list-style: none;
+}
+.barra{
+    display: flex;
+   align-items: center;
+   margin-right:30px ;
+}
+
+
+.home{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: white;
+    padding-right: 75px;
+}
+
+.github{
+    position: relative;
+    height: 76px;
+
+}
+
+.github:hover{
+    top:-2px;box-shadow:0 2px 2px #040C11;
+}
+
+hr{
+    margin-left: 460px;
+    margin-top: 30px;
+    width:30%;
+    height:2px;
+    border-width:0;
+    border-radius: 3px;
+    background-color: rgb(248, 246, 246);
+    
+}
+
+/* Header */
+
+.chamada{
+    background: url(../image/foto_perfil.JPG);
+    background-size: contain;
+    height: 50vh
+}
+
+.titulo{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 80px;
+    color: #F0E6EF;
+    text-shadow: 0.1em 0.1em #333
+
+}
+
+/* Main */
+
+
+
+.sobre{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+    color: #F0A6CA;
+}
+
+.artigo{
+    margin: 0 10% 0;
+    padding: 30px;
+}
+
+.artigo_descricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.artigo_descricao > p{
+    display: inline-block;
+    width: 60%;
+    padding: 30px;
+    justify-content: center;
+}
+
+.img_perfil{
+    border-radius: 50%;
+    max-width: 250px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.texto1{
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+
+/* Minha lista */
+.minha_lista{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #F0A6CA;
+}
+
+.lista{
+    height: 400px;
+    width: 1349px;
+    display: flex;
+    background-color: #0a1d29;
+
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tabela{
+    width: 300px;
+    height: 300px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white    ;
+    background-color:#FFD83B;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.favorite{
+    position: absolute;  
+}
+
+.book img{
+    height: 310px;
+    width: 310px;
+}
+
+.inspiration{
+    position: absolute;
+}
+
+.art img{
+    height: 310px;
+    width: 310px;
+}
+
+.read{
+    position: absolute;
+}
+
+.google img{
+    height: 310px;
+    width: 310px;
+}
+
+
+/* Curiosidade profissional */
+
+.curiosidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+
+.figura > img{
+    max-width: 400px;
+    margin-left: 180px;
+    border-radius: 50%;
+
+}
+
+
+.conteudo_curiosidade{
+    padding: 30px;
+    padding-right: 100px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titulo3{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: #F0A6CA;
+}
+
+
+
+.texto2{
+    text-align: center;
+    max-width: 90%;
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.saiba_mais{
+    width: 180px;
+    height: 40px;
+    background-color: #0a1d29;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 20px;
+}
+
+.botao1{ 
+    text-decoration:none;
+    color: white;
+}
+
+.saiba_mais:hover{
+    background-color: #F0A6CA;
+
+}
+
+/* formulário */
+
+#formulario{
+    margin-bottom: 30px;
+}
+fieldset{
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color:#0a1d29;    
+    padding-top: 60x;
+    text-align: center;
+    border: none;
+}
+
+
+h1{
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    text-align:center;
+    padding: 30px;
+
+}
+
+input{
+    width: 20%;
+    padding: 15px;
+    margin: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#mensagem{
+    width: 65%;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    outline: none;
+}
+
+#mensagem:focus{
+    border: 2px solid #F0A6CA;
+    outline: none;
+}
+
+input:focus{
+    border: 1px solid #F0A6CA;
+    outline: none;
+
+}
+
+
+#enviar{
+    color: white;
+    background-color:#F0A6CA;
+    border: none;
+    width: 65%;
+    font-weight: bold;
+    margin-bottom: 4%;
+    
+}
+
+#enviar:hover{
+    background-color: #ec7fb4;
+    color: white;
+    font-weight: bold;
+}
+.be_art{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    color: #f0d8e4;
+}
+
+input:invalid{
+    border-color: red;
+}
+
