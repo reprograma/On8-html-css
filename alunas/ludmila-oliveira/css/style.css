@@ -1,11 +1,20 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-size: 12px;
+
+    --color_white: rgb(255, 255, 255);
+    --color_black: rgb(0, 0, 0);
+    --color_grey: rgb(51, 55, 63);
+    --color_dashed:rgb(81, 105, 54);
+    --color_form: rgb(227, 242, 232);
 }
 
 a {
     text-decoration: none;
+
     color: inherit;
+
     cursor: pointer;
 }
 
@@ -14,133 +23,164 @@ a:hover {
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: var(--color_white);
+    color: var(--color_black);
+
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
 }
 
 .menu {
     display: flex;
     justify-content: space-between;
-    background: rgb(51, 55, 63);
 
-    height: 8em;
+    background: var(--color_grey);
+
+    height: 6rem;
     width: 100%;
-    padding: 0.8em 1.5em;
+    padding: 0.5rem 1.5rem;
 }
 
 .img_reprograma {
-    width: 3.5em;
-    height: 3.5;
-    margin: 1em 0;
+    width: 40px;
+    height: 40px;
+    margin: 1rem 0;
 }
 
 .lista_nav {
     list-style: none;
     font-size: 1rem;
-    color: rgb(255, 255, 255);
+
+    color:  var(--color_white);
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .img_github {
-    width: 3.5em;
-    height: 3.5em;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .background {
-    height: 14em;
+    height: 14rem;
     width: 100%;
 
     background: url(../img/background.jpeg) no-repeat;
     background-size: cover;
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .titulo_perfil {
-    font-size: 3.5em;
+    font-size: 3rem;
 
-    color: rgb(255, 255, 255);
+    color: var(--color_black);
+    background:  var(--color_white);
 }
 
-.grid {
+.info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
     width: 100%;
-    background-color: rgb(255, 255, 255);
+
+    background-color:  var(--color_white);
 }
 
 .img_perfil {
-    height: 45vh;
-    padding: 3em 0 1em 3em;
+    height: 40vh;
+    padding: 3rem 0 3rem 3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    border-radius: 50%;
+    border: 2px dashed var(--color_dashed);
 }
 
 article {
     display: flex;
     flex-direction: column;
-    width: 60vw;
-    padding: 3em 0 10em 3em
-}
-
-.sessao_perfil {
-    display: flex;
     justify-content: center;
+
+    width: 60vw;
+    margin: 4rem 1rem 3rem 1rem;
 }
 
 .paragrafo_perfil {
-    font-size: 1rem;
-    width: 95%;
+    font-size: 1.3rem;
     text-align: justify;
+    text-indent: 4rem;
+
+    width: 95%;
+    
+    margin: auto;
+    padding-bottom: 2.5rem;
 }
 
 .sessao_listas {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    font-size: 1rem;
+
+    width: 85%;
+    margin-bottom: 4rem;
 }
 
 .titulo_lista {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
+
+    padding-bottom: 1.5rem;
 }
 
 ol {
-    border: 2px dashed rgb(81, 105, 54);
-    margin: 1em 0;
-    width: 23em;
+    border: 2px dashed var(--color_dashed);
+
+    margin: 1rem;
+    width: 23rem;
+    height: 15rem;
+    padding: 1rem 1rem 1rem 2.5rem;
+}
+
+li {
+    font-size: 1.2rem;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    background-color: rgb(109, 126, 88);
-    padding: 2em;
+
+    background-color: var(--color_form);
+    color: var(--color_black);
+
+    padding: 2rem;
     width: 80%;
     margin: 0 10%;
-    color: rgb(255, 255, 255);
-    font-size: 1.2em;
+}
+
+legend, label, input {
+    font-size: 1.2rem;
 }
 
 fieldset {
-    margin: 1em;
-    padding: 0.7em;
+    margin: 1rem;
+    padding: 0.7rem;
 }
 
 .lista_sexo {
     list-style:none;
     align-self: auto;
+
     padding: 0;
 }
 
 #mensagem {
     width: 60%;
-    height: 10em;
+    height: 10rem;
 }
 
 .sessao_button {
@@ -150,17 +190,19 @@ fieldset {
 }
 
 button {
-    width: 6em;
-    height: 3em;
+    width: 6rem;
+    height: 3rem;
+    margin: 1.2rem 1.2rem 0 1.2rem;
+
     border-radius: 12%;
-    margin-top: 1.2em;
 }
 
 .sessao_octocat {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 3em 2em 1em 3em;
+
+    padding: 3rem 2rem 1rem 3rem;
 }
 
 .container_octocat {
@@ -171,34 +213,81 @@ button {
 
 .link_octocat {
     font-size: 1rem;
-    color: rgb(0, 0, 0)
+
+    color: var(--color_black);
 }
 
 .foto_octocat {
-    width: 6em;
-    height: 6em;
+    width: 70px;
+    height: 70px;
+
     border-radius: 50%;
 }
 
-h2 {
-    text-align: center;
-    color: rgb(51, 55, 63);
-    font-size: 1.5rem;
-    padding: 1.2em;
-}
-
 footer {
-    font-size: 1.5em;
-    color: rgb(255, 255, 255);
+    font-size: 1rem;
+
+    color:  var(--color_white);
+    background-color: var(--color_grey);
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 3.7em;
+    height: 3.7rem;
     width: 100%;
 
-    background-color: rgb(51, 55, 63);
 }
 
-/* para achar o em divida o valor que vc quer em pixel por */
+
+@media (max-width: 1560px){
+    .titulo_lista {
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-width: 1110px){
+    article {
+        width: 90%;
+        padding: 3rem;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .paragrafo_perfil {
+        width: 100%;
+    }
+
+    .img_perfil {
+        padding: 0;
+        margin-top: 3rem;
+    }
+
+@media (max-width: 700px){
+    .titulo_perfil {
+        font-size: 2.5rem;
+    }
+
+    .img_perfil {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 530px){
+    .titulo_perfil {
+        font-size: 2rem;
+    }
+
+    .img_perfil {
+        height: 25vh;
+    }
+
+    .paragrafo_perfil {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 700px){
+    .titulo_perfil {
+        font-size: 1.5rem;
+    }
