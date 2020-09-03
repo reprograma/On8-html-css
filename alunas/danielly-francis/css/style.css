@@ -1,0 +1,157 @@
+    /* ESPICIFICIDADE 
+    O MAIS ESPECIFICO VENCE! */
+/* DEPOIS VEM A CASCATA, O MAIS EMBAIXO VENCE */
+
+/* reset comportamento padrao da pagina */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul li {
+   list-style: none; 
+}
+
+/* conteudo */
+
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8FBC8B;
+}
+
+.nav__lista{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav__img {
+    height: 50px;
+    margin: 20px;
+}
+
+/* cabeçalho da pagina */
+.cabecalho {
+    background: url(/alunas/danielly-francis/img/banner.png.png);
+    background-size: cover;
+    background-position: 40% 20%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+
+/* height = altura 
+width = largura  */
+
+.titulo, .subtitulo {
+    text-align: center;
+    color: #556B2F; 
+    padding: 10px;
+}
+
+.paragrafo {
+    display: inline-block;
+    width: 350px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.artigo__imagem {
+    display: inline-block;
+    width: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.img--block {
+    display: block;
+}
+
+.artigo {
+    text-align: center;
+    padding: 20px;
+}
+
+.sessao {
+    padding: 70px;
+}
+
+.sessao--flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sessao__caixa {
+    border: 3px solid #008080;
+}
+
+.lista {
+    border: #8FBC8B 2px dashed;
+}
+
+.itemLista {
+    border: #DAA520 2px dashed;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F4F4F;
+    color: white;
+}
+
+.corpo {
+    background-color: #FFF8DC;
+}
+
+.avatar {
+    display: inline-block;
+    width: 150px;
+
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+
+}
+
+.formulario {
+    background-color: #008080;
+    margin: 40px 80px;
+  }
+  
+  .formulario__div {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px blue solid;
+    border-radius: 10px;
+  }
+  
+  #textarea {
+    width: 50%;
+    height: 200px;
+    border: 1px seagreen;
+  }
