@@ -7,6 +7,8 @@ a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 a:hover {
@@ -39,7 +41,7 @@ ul li {
 
 .cabecalho{
     background: url(/alunas/biamichelle/imagens/capa.png);
-    height: 80vh;
+    height: 85vmin;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -52,6 +54,7 @@ ul li {
 
 .main{
     background-color: lavender;
+    width: 100%;
 }
 .flexbox__container{
     display: flex;
@@ -63,6 +66,11 @@ ul li {
     text-align: center;
     color: #7E459B; 
     padding: 10px;
+    font-size: 3.2rem;
+}
+
+.subtitulo{
+    font-size: 2.6rem;
 }
 
 #h2{
@@ -76,30 +84,32 @@ ul li {
 
 .paragrafo {
     display: inline-block;
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     text-align: justify;
     padding: 10px;
-}
+    font-size: 1.8rem;
+  }
 
 #paragrafo__artigo{
     font-size: 26px;
-    color: floralwhite;
+    color: #7E459B;
 }
 
 .artigo__imagem {
     display: inline-block;
-    width: 150px;
-
+    max-width: 320px;
+    height: 300px;
+    width: 100%;
     border-radius: 50%;
-    padding: 10px;
-    margin-right: 20px;
+    padding: 1rem;
+    margin-right: 2rem;
+    position: relative;
 }
 
 .artigo {
+    padding: 2rem;
     text-align: center;
-    padding: 20px;
-    background-color: darksalmon;
-    padding: 5%;
 }
 
 .sessao {
@@ -117,54 +127,191 @@ ul li {
 }
 
 .lista {
-    border: #7E459B 2px dashed;
-    margin-top: 10px;
-    padding: 30px;
-}
-
-.itemLista {
-    border: purple 2px dashed;
-    padding: 20px;
-}
-
-.formulario {
-    background-color: rgb(231, 114, 29);
-    margin: 50px 100px;
-    margin-left: 400px;
-    margin-right: 400px;
+    border: red 2px dashed;
+    margin: 0.5rem; 
+    width: 90%;
+    height: 90%;
   }
   
-.formulario__div {
-    padding: 20px;
+  .itemLista {
+    border: purple 2px dashed;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+
+ /* galeria */
+ .galeria {
+    display: flex;
+    justify-content: space-between;
+   
+    flex-wrap: wrap;
+  }
+  
+  .galeria__box {
+    background-color: rgba(200 , 200, 200, 0.6);
+    margin: 1rem;
+  }
+  
+  .paragrafo--center {
+    text-align: center;
+  }
+  
+  .galeria__img{
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+  
+  .align-self {
+    align-self: flex-end;
+  }
+  
+   /* formulario */
+  .formulario {
+    background-color: rgb(231, 114, 29);
+    margin: 5rem 20rem 1rem 25rem;
+  }
+  
+  .formulario__div {
+    padding: 2rem 2rem 0 2rem;
+    text-align: left;
+  }
+
+  .formulario--spaceBetween{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .rotulo {
+    font-size: 1.3rem;
+    padding-left: 0.65rem;
+    align-self: center;
+  }
+  
+  .input {
+    padding: 0.7rem;
+    border: 1px blue solid;
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  
+  .flex--input {
+    display: flex;
+  }
+
+  .rotulo--modificado {
+    font-size: 0.9rem;
+    padding-left: 0.65rem;
+  }
+
+  #dropdown{
+    margin-left: 0.65rem;
+  }
+  
+  #textarea {
+    width: 70%;
+    height: 7rem;
+    border: 1px blue solid;
+    margin-left: 0.65rem;
+  }
+
+  .button--div{
+    padding-bottom: 2rem;
     text-align: center;
   }
 
-.rotulo{
-    padding-left: 20px;
+  #myoctocat{
+    /*justify-content: center;*/
+    display: flex;
+    text-align: center;
 }
-  
-.input {
+
+  .myoctocat__imagem{
+    max-width: 250px;
+    width: 100%;
+    border-radius: 50%;
+    padding: 1rem;
+  }
+
+  .paragrafo--myoctocat{
+    display: inline-block;
+    max-width: 350px;
+    text-align: justify;
     padding: 10px;
-    border: 1px blue solid;
-    border-radius: 10px;
+    font-size: 1.8rem;
   }
   
-#textarea {
-    width: 80%;
-    height: 200px;
-    border: 1px blueviolet;
+  /* rodapé */
+  .footer {
+    height: 80px;
+    display: flex;
+    background-color: #2e2e2e;
+    justify-content: center;
+    align-items: center;
   }
 
-#myoctocat{
-    justify-content: center;
-    display: flex;
+  .paragrafo--footer{
+    color: white;
+  }
+
+
+@media screen and (max-width: 576px){
+    .sessao--flex {
+        flex-direction: column;
+    }
+
+    .sessao__caixa {
+        padding: 0px;
+    }
+
+    .flexbox__container{
+        flex-direction: column;
+    }
+
+    .formulario{
+        margin: 0px;
+    }
+
+    a{
+      display: block;
+    }
+
+    /*.formulario__div {
+        padding: 5rem 0;
+    }*/
 }
 
-.footer {
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: blueviolet;
-    color: lavender;
-}
+/* max-width . Até no máximo 650px eu vou me comportar assim*/
+    /* @media screen and (max-width:650px) {
+        html {
+          font-size: 8px;
+        }
+     
+        .formulario {
+         margin: 0 auto;
+        }
+        .galeria{
+          justify-content: center;
+        }
+
+        .cabecalho{
+            height: 30vh;
+        }
+     }
+     
+     @media screen and (max-width:450px) {
+       #menu--celular {
+         display: block;
+       }
+       #menu--desktop {
+         display: none;
+       }
+     } */
+
+    
+
+
