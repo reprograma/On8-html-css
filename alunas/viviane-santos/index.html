@@ -9,16 +9,20 @@
         
   
   </head>
+
+ <body>
   
-  <body class="corpo">
+    </div>
     <nav class="navegacao">
       <img
         class="nav__img"
         src="../../img-home/logo-reprograma.png"
         alt="logo-reprograma"
-      />
-      <ul class="nav__lista">
-        <li><a href="../../index.html">Home</a></li>
+     />
+
+      <ul id="menu--desktop" class="nav__lista">
+    
+      <li><a href="../../index.html">Home</a></li>
         <li>
           <a href="https://github.com/reprograma" target="_blank"
             ><img
@@ -28,6 +32,17 @@
           /></a>
         </li>
       </ul>
+      <div id="menu--celular" class="menu--responsivo">
+        <li><a href="../../index.html">Home</a></li>
+            <a href="https://github.com/reprograma" target="_blank"
+              ><img
+                class="nav__img"
+                src="../../img-home/github.svg"
+                alt="github--logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <header class="cabecalho">
       <h1 class="titulo branco">Oi lindezas!Eu sou a Viviane</h1>
@@ -37,11 +52,12 @@
         <h2 class="titulo">Um pouco sobre mim</h2>
         <img
           class="artigo__imagem"
-          src="./imagens/WhatsApp Image 2020-08-29 at 09.55.56.jpeg"
+          src="./imagens/WhatsApp Image 2020-08-31 at 14.25.34.jpeg"
           alt="moça sorrindo com flor na mão"
         />
         <p class="paragrafo">
-          Tenho 27 anos, moro na cidade de Guarulhos, sou formada em pedagogia e atualmente estudando administração e front-end no lugar mais lindo do mundo chamado reprograma.
+          Tenho 27 anos, moro na cidade de Guarulhos, sou formada em pedagogia e atualmente estudando administração pela ETEC e front-end no lugar mais lindo do mundo chamado {Reprograma}.
+          Sou facinada por tudo que envolve criação, desde fotografia, videos, eventos, decoração e sites. Amo me sentir livre para criar, amo viajar e fico entediada facilmente quando a rotina vira minha chefe.
         </p>
       </article>
       <h2 class="titulo">Minhas listas</h2>
@@ -70,6 +86,32 @@
             <li class="itemLista">Comer</li>
             
           </ol>
+       
+
+          </div>
+        </section>
+        <h2 class="titulo">Minha galeria de fotos :)</h2>
+        <section class="galeria"> 
+           <!-- --- display flex - de inicio parece inline-block mas tu tem maior liberdade  pra organizar as filhas.  -->
+          <div class="galeria__box"> 
+            <!-- ----move as filhas //// display inline (nao consegue mexer altura e largura) / block (mexe altura e largura, mas ocupa toda largura da tela) / inline-block (mexe largura e altura e pode receber elementos ao lado.) -->
+            <img src="../viviane-santos/imagens/Campos do jordão.jpeg" alt="campos do jordão" class="galeria__img">
+            <p class="paragrafo paragrafo--center"> Campos do Jordão </p>
+          </div>
+          <div class="galeria__box">
+            <img src="../viviane-santos/imagens/Nazaré Paulista.jpeg" alt="nazare paulista" class="galeria__img">
+            <p class="paragrafo paragrafo--center"> Nazaré Paulista</p>
+          </div>
+          <div class="galeria__box">
+            <img src="../viviane-santos/imagens/prainha branca.jpeg" al="prainha branca" class="galeria__img">
+            <p class="paragrafo paragrafo--center"> Prainha Branca </p>
+          </div>
+          <div class="galeria__box">
+            <img src="../viviane-santos/imagens/Zulai.jpeg" alt="templo zulai" class="galeria__img">
+            <p class="paragrafo paragrafo--center"> Templo Zulai </p>
+          </div>
+        </section>
+          </div>
         </div>
       </section>
       <section class="sessao">
@@ -82,7 +124,6 @@
               placeholder="digite seu nome"
               required
             />
-          </div>
           <div class="formulario__div">
             <label for="email" class="rotulo">E-mail:</label>
             <input
@@ -192,7 +233,7 @@
     </main>
 
     <footer class="footer">
-      <p class="paragrafo">Desenvolvido por Viviane com html e css</p>
+      <p class="paragrafo">Desenvolvido por Viviane Santos</p>
     </footer>
   </body>
 </html>

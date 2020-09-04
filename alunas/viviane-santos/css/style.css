@@ -4,7 +4,12 @@
     margin: 0;
     font-family: "Raleway", sans-serif;
   }
-  
+
+  html, body {
+  font-size: 10px;
+  overflow-x: hidden;
+
+}
   a {
     text-decoration: none;
     color: inherit;
@@ -14,7 +19,9 @@
   a:hover {
     font-weight: bold;
   }
-  
+  li{
+    font-size: 1.9rem;
+  }
   ul li {
     list-style: none;
   }
@@ -28,25 +35,52 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #61a9f1;
+    background-color: #f7cd2d;
+   
+   
   }
   
   .nav__lista {
     display: flex;
     align-items: center;
     color: #fff;
-    padding: 10px;
+    padding: 1rem;
   }
   
   .nav__lista > li {
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 1rem;
+    padding: 1rem;
   }
   
   .nav__img {
     height: 50px;
     margin: 10px;
   }
+  
+#menu--desktop {
+  display: flex;
+}
+
+#menu--celular {
+  display: none;
+}
+
+/* menu mae */
+.menu--responsivo {
+  position: relative;
+  cursor: pointer;
+}
+ /* menu filha */
+.menu__lista--responsivo {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  color: #fff;
+  background: #f2f2f255;
+  width: 100vw;
+}
+
   
   /* cabeçalho da pagina */
   .cabecalho {
@@ -57,6 +91,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    padding: 6rem;
   }
   
   /* height = altura 
@@ -67,36 +102,43 @@
     text-align: center;
     color: #4c54f1;
     padding: 10px;
-    
+    font-size: 20px;
+  
+  }
+  .subtitulo{
+    font-size:2.6rem;
   }
   
   .branco {
     color: rgb(36, 19, 102);
     height: 150px ;
-    
-    
-    
+    font-size: 30px;
     
   }
   
   .paragrafo {
-    display: inline-block;
-    width: 350px;
-    text-align: justify;
-    padding: 10px;
+      display: inline-block;
+      max-width: 350px;
+      width: 200%;
+      text-align: justify;
+      padding: 13px;
+      font-size: 1.8rem;
+    
   }
   
   .artigo {
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
   }
   
   .artigo__imagem {
     display: inline-block;
-    width: 200px;
-    border-radius: 40%;
-    padding: 10px;
-    margin-right: 20px;
+    max-width: 200px;
+    width: 25%;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-right: 2rem;
+    position: relative;
   }
   
   .img--block {
@@ -104,49 +146,91 @@
   }
   
   .sessao {
-    padding: 30px;
+    padding: 3rem;
   }
   
   .sessao--flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 2rem;
+    width: 90%; 
+    text-align: left; 
   }
   
   .sessao__caixa {
-    border: 3px ;
-    margin: 10px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 50%;
+
   }
   
   .lista {
     
-    margin: 10px;
+    margin: 0.5rem; 
+    width: 90%;
+    height: 90%;
   }
   
   .itemLista {
-    border: purple 2px dashed;
-    margin: 10px;
-    padding: 10px;
+    border:#f7cd2d 2px dashed;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 50%;
   }
+   /* galeria */
+.galeria {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.galeria__box {
+  background-color: #5cdff2;
+  margin: 1rem;
+}
+
+.paragrafo--center {
+  text-align: center;
+}
+
+.galeria__img{
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+
+.align-self {
+  align-self: flex-end;
+}
+
+.formulario {
+  background-color:#f7cd2d;
+  margin: 5rem 10rem;
+}
+
+.formulario__div {
+  padding: 5rem;
+  text-align: center;
+}
   
-  .formulario {
-    background-color: rgb(248, 183, 3);
-    margin: 50px 100px;
-  }
-  
-  .formulario__div {
-    padding: 50px;
-    text-align: center;
-  }
-  
+.rotulo{
+  font-size: 1.6rem;
+}
   .input {
-    padding: 10px;
+    padding: 0.8rem;
     border: 1px blue solid;
     border-radius: 10px;
   }
+
+  .flex--input{
+    display: flex;
+  }
   
   #textarea {
-    width: 50%;
-    height: 200px;
+    width: 90%;
+    height: 150px;
     border: 1px blue solid;
   }
   
@@ -158,5 +242,29 @@
     justify-content: center;
     background-color: #2e2e2e;
     color: white;
+    text-align: center;
   }
   
+    html {
+      font-size: 8px;
+    }
+ 
+    .formulario {
+     margin: auto;
+    }
+    .galeria{
+      justify-content: center;
+    }
+
+@media screen and (max-width:450px) {
+ #menu--celular {
+   display: contents;
+   position: absolute;
+ } 
+  
+ #menu--desktop {
+   display: none;
+ }
+}
+
+ 
