@@ -1,0 +1,149 @@
+body {
+    background-color: aqua;
+}
+
+p {
+    color: blanchedalmond;
+    color: cadetblue;
+    color: brown;
+
+}
+
+h1 {
+    font-size: 36px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor:pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul .lista {
+    list-style: none;
+    justify-content: center;
+    color:tomato;
+}
+ol .lista {
+    list-style: none;
+    justify-content: center;
+    color:tomato;
+    }
+
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(197, 144, 247);  
+}
+
+.nav_lista {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    padding: 10px;
+
+}
+.nav__lista > li {
+    margin-right: 20px;
+    padding: 20px;
+  }
+  
+.nav_img {
+    height: 50px;
+    margin: 10px;
+
+}
+.titulo {
+    text-align: center;
+    color: blueviolet;
+    padding: 10px;
+}
+
+.paragrafo {
+    display: inline-block ;
+    width: 350px;
+    text-align: justify;
+    padding: 10px
+}
+.artigo {
+    text-align: center;
+    padding: 20px;
+}
+
+.artigo_imagem {
+    display: inline-block;
+    width: 300px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+
+}
+.img--block {
+    display: block;
+}
+.sessao {
+    padding: 30px;
+    color: #8A2BeD;
+    padding: 10px;;
+
+}
+.sessao--flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sessao_caixa {
+    border: 3px wheat;
+    margin: 10px;
+}
+.lista {
+    border: palevioletred 2px purple;
+    margin: 10px;
+}
+
+.itemLista {
+    border:maroon 2px tomato;
+    margin: 10px;
+    padding: 10px;
+
+}
+.formulario {
+    background-color: wheat;
+    margin: 80px 80px;
+}
+  
+.formulario__div {
+    padding: 10px;
+    text-align: center;
+}
+  
+.input {
+    padding: 10px;
+    border: 1px blue solid;
+    border-radius: 10px;
+  }
+  
+#textarea {
+    width: 50%;
+    height: 50px;
+    border: 1px blue solid;
+  }
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+    color: white
+    
+}

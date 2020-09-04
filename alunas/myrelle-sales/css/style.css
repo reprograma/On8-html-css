@@ -1,0 +1,193 @@
+/* ESPECIFICIDADE */
+/* O MAIS ESPECIFICO VENCE! */
+/* DEPOIS VEM A CASCATA, O MAIS EM BAIXO VENCE */
+
+
+*{
+  box-sizing: border-box;
+  margin:0;
+  font-family:'Rubik', sans-serif;
+  /* font-family:Raleway, sans-serif; */
+}
+/* body{
+  background-color: ;
+} */
+a {
+  text-decoration: none;
+  color:inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+ol, ul li {
+  list-style: none;
+  text-decoration:none;
+}
+
+.nav{
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7E459B;
+}
+
+
+.nav-lista{
+  display:flex;
+  align-items: center;
+  color:white;
+  font-size:20px;
+  /* padding:30px;  */
+
+}
+
+.nav-lista > a {
+  /* margin-right:50px; */
+  padding:0 20px;
+  flex-direction: row-wrap;
+  justify-content: space-around;
+}
+
+.nav-img{
+  height: 50px;
+  margin:10px;
+}
+
+.cabecalho{
+  background: url(/alunas/myrelle-sales/img/lamp.jpg);
+  background-size: contain;
+  height: 60vh;
+}
+
+.principal{
+  background:url(/alunas/myrelle-sales/);
+  background-size: contain;
+  /* height: 50vh; */
+  display:block;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.titulo{
+  text-align: center;
+  color:#7E459B;
+  padding:15px;
+}
+.branco{
+  color:white;
+  position: relative;
+  top:280px;
+  right:460px;
+  /* font-weight: lighter; */
+}
+.paragrafo{
+  display:inline-block;
+  width:350px;
+  text-align: justify;
+  padding:25px;
+}
+
+.artigo__imagem{
+  display: inline-block;
+  max-width:250px;
+  border-radius:50%;
+  padding:0 10px;
+  margin-right: 20px;
+}
+
+.artigo{
+  display:block;
+  text-align: center;
+  padding-bottom:10px;
+  margin-top:20px;
+  
+}
+.sessao{
+  padding:50px;
+}
+
+.sessao-gostos{
+  display:flex;
+  justify-content: space-around;
+  text-align:left;
+  padding:60px;
+  margin:10px;
+  
+}
+
+.lista--desordenadas, .lista--ordenadas{
+  padding:10px;
+  border:5px solid black;
+  background-color: rgba(137, 43, 226, 0.39);
+  line-height: 30px;
+  width:450px;
+} 
+
+.itemlista{
+  border: black 2px dashed;
+  margin:20px;
+  padding:10px;
+}
+
+.formulario{
+  background-color:#7E459B;
+  margin:80px 80px;
+  padding:30px;
+  boder:5px black solid;
+  border-radius: 5px;
+}
+
+.formulario__div{
+  padding:20px;
+  text-align: center; 
+}
+
+.input{
+  padding:20px;
+  width:50%
+  border: 1px black solid;
+  border-radius:8px
+}
+#textarea{
+  width:50%;
+  height:200px;
+  border: 1px black solid;
+  border-radius: 8px;
+  margin-right: 100px;
+}
+
+.botao{
+  cursor: pointer;
+  border: black 1px solid;
+  border-radius:3px;
+  padding: 10px;
+  color:white;
+}
+
+.enviar{
+  background-color:rgb(21, 156, 89);
+}
+.reset{
+  background-color:rgba(197, 39, 53, 0.87);
+}
+
+.artigo__octocat{
+  display: flex;
+  max-width:250px;
+  border-radius:50%;
+  padding:0 10px;
+}
+.footer{
+  height: 60px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background-color:black;
+  color:white;
+  /* text-align: center; */
+}

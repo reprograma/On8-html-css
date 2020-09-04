@@ -1,0 +1,143 @@
+/* reset comportamento padrao da pagina */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+}
+.corpo{
+    background-color: wheat;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul li {
+    
+   list-style: none; 
+}
+
+/* conteudo */
+
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7E459B;
+}
+
+.nav__lista{
+    
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.nav__img {
+    height: 50px;
+    margin: 20px;
+}
+
+/* height = altura 
+width = largura  */
+
+.titulo {
+    text-align: center;
+    color: #7E459B; 
+    padding: 20px;
+}
+
+.paragrafo {
+    display: inline-block;
+    font-size: 25px;
+    text-align: justify;
+    /* width: 350px; */
+    /* padding: 10px; */
+}
+
+.artigo__imagem {
+    display: inline-block;
+    border-radius: 50%;
+    width: 300px;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.artigo, .sessao {
+    text-align: ;
+    padding: 10px;
+}
+
+.artigo_descricao{
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao__caixa{
+    background-color: wheat;
+}
+
+
+.sessao--flex {
+    background-color: wheat;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.itemLista{
+    margin: 10px;
+    
+}
+
+
+.sessao{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.formulario {
+    background-color: #7E459B;
+    margin: 80px 100px 0px ;
+  }
+  
+  .formulario__div {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .input {
+    padding: 10px;
+    border-radius: 50px;
+  } 
+.img_block{
+    display: block;
+    border-radius: 50%;
+    width: 200px;
+    padding: 1px;
+}
+    
+  .paragrafo_octocat{
+      display: flex;
+      text-align: justify;
+      margin: 5px;
+      padding: 10px;
+    }
+
+ .footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    color: white;
+}
