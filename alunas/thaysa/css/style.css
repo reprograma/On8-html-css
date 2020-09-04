@@ -130,3 +130,17 @@ width = largura  */
   background-color: #2e2e2e;
   color: white;
 }
+
+
+
+@media only screen and (max-width: 1000px) {
+   .sobre, .sessao--flex {
+    flex-direction: column;
+    margin-top: 3%;
+  }
+
+  .titulo {
+    margin-top: 3%;
+  }
+
+}
