@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mariana</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body class="corpo">
+        <nav class="navegacao">
+            <a href="https://reprograma.com.br/" target="blank"><img class="nav-img" src="/img-home/logo-reprograma.png" alt="logo-reprograma"></a>
+            <ul class="lista-nao-ordenada">
+                <a href="../../index.html" target="blank"><li class="lista-1">Home</li></a>
+                <li><a href="https://github.com/marianaseidel" target="blank"><img class="nav-img" src="../../img-home/github.svg" alt="github-logo"></a></li>
+                
+            </ul>          
+        </nav>    
+        
+        <header class="cabecalho">
+            <h1 class="titulo">Eu sou Mariana Seidel</h1>
+        </header>
+       
+        <main>
+          
+            <article class="artigo">                
+                <h2 class="titulo-2">Um pouco sobre mim</h2>
+                <img class="artigo-imagem" src="./imagens/imagem workshop.jpg" alt="Mariana Seidel">
+                <p class="paragrafo">Olá, eu sou Mariana Seidel, sou formada em Arquitetura e Urbanismo e hoje em dia trabalho em uma empresa de tecnologia! Ocupo um cargo operacional, e estou começando a aprender um pouco sobre programação agora, na turma de front-end da {reprograma}. </p>
+                
+            </article>
+
+            <h2 class="titulo">Minhas Listas</h2>
+            <section class="sessao sessao-flex">
+                <div class="sessao-caixa">
+                    <h3 class="titulo">Meus desejos para 2021</h3>
+                    <ul class="lista lista-1">
+                        <li class="itemlista">Viajar</li>
+                        <li class="itemlista">Ir à praia</li>
+                        <li class="itemlista">Estar empregada</li>
+                        <li class="itemlista">Fim da quarentena</li>
+                        <li class="itemlista">Muito chocolate</li>
+                    </ul>
+                </div>
+
+                <div class="sessao-caixa">
+                    <h3 class="titulo">Meus filmes favoritos</h3>
+                    <ol class="lista">
+                        <li class="itemlista">Titanic</li>
+                        <li class="itemlista">A Proposta</li>
+                        <li class="itemlista">Lilo & Stitch</li>
+                        <li class="itemlista">Bacurau</li>
+                        <li class="itemlista">Ratatouille</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="sessao">
+                <h4 class="titulo-form">Entre em contato :)</h4>
+                <form class="formulario">
+                    <div class="formulario-div">
+                        <label for="name" class="rotulo bold">Nome:</label>
+                        <input class="input" type="text" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="formulario-div">
+                        <label for="email" class="rotulo bold">E-mail:</label>
+                        <input class="input" type="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="formulario-div">
+                        <label for="nascimento" class="rotulo bold">Data de nascimento:</label>
+                        <input class="input" type="date" placeholder="Digite sua data de nascimento" required>
+                    </div>
+                    
+                    <div class="formulario-div">
+                        <p class="paragrafo bold">Como você se sente hoje?</p>
+                        <select id="dropdown" name="role"> 
+                            <option value="feliz">Feliz</option>
+                            <option value="triste">Triste</option>
+                            <option value="raivoso">Raivoso</option>
+                            <option value="emotivo">Emotivo</option>
+                        </select>
+                    </div>
+
+                    <div class="formulario-div sessao--radio">
+                       <p class="paragrafo bold">Qual seu hobbie favorito?</p>
+                       <label class="rotulo">
+                           <input class="input-radio" name="hobbie favorito" type="radio" value="ler">
+                           Ler
+                       </label>
+                       <label class="rotulo">
+                        <input class="input-radio" name="hobbie favorito" type="radio" value="Assistir series/filmes">
+                        Assistir séries/filmes
+                        </label>                       
+                       <label class="rotulo">
+                           <input class="input-radio" name="hobbie favorito" type="radio" value="sair com os amigos">
+                           Sair com os amigos
+                       </label>
+                       <label class="rotulo">
+                        <input class="input-radio" name="hobbie favorito" type="radio" value="momentos com a familia">
+                        Momentos com a família
+                        </label>
+                    </div>
+
+                    <div class="formulario-div sessao--check">
+                        <p class="paragrafo bold">Quais lugares você costuma frequentar?</p>
+                        <label class="rotulo">
+                            <input class="input-checkbox" name="lugar" type="checkbox" value="praia">
+                            Praia
+                        </label>
+                        <label class="rotulo">
+                            <input class="input-checkbox" name="lugar" type="checkbox" value="casa de campo">
+                            Casa de campo
+                        </label>
+                        <label class="rotulo">
+                            <input class="input-checkbox" name="lugar" type="checkbox" value="Bares e restaurantes">
+                            Bares e restaurantes
+                        </label>
+                        <label class="rotulo">
+                            <input class="input-checkbox" name="lugar" type="checkbox" value="shopping center">
+                            Shopping center
+                        </label>
+                     </div>
+
+                     <div class="formulario-div sessao--text">
+                        <p class="paragrafo bold">Conte um pouco sobre você!</p>
+                        <textarea id="textarea" placeholder="Conte um pouco sobre você." ></textarea>
+                     </div>
+
+                     <div class="formulario-div">
+                         <button type="submit" class="submit botao">Enviar</button>
+                         <button type="reset" class="submit botao">Reset</button>
+                     </div>
+                </form>
+
+            </section>
+
+            <section class="sessao sessao-2">
+                <a href="https://myoctocat.com/" target="blank">
+                    <p class="paragrafo">Faça seu próprio Octorcat!</p>
+                    <img src="./imagens/octocat.png" alt="octocat" class="artigo-imagem imagem-octocat">
+                </a>  
+            </section>
+            
+        </main>
+
+        <footer class="footer">
+            <p class="paragrafo paragrafo-footer">Desenvolvido por Mariana Seidel com HTML e CSS</p>
+        </footer>
+        
+    </body>
+
+
+
+</html>

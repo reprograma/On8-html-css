@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha página</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stylesheet = folha de estilo -->
+    <!-- <style>
+        p {
+            background-color: aqua;
+        }
+        img {
+            border: 2px blueviolet solid;
+        }
+    </style> -->
+  </head>
+  <body class="corpo">
+    <nav class="navegacao">
+      <img
+        class="nav__img"
+        src="../../img-home/logo-reprograma.png"
+        alt="logo-reprograma"
+      />
+      <ul class="nav__lista">
+        <li><a href="../../index.html">Home</a></li>
+        <li>
+          <a href="https://github.com/reprograma" target="_blank"
+            ><img
+              class="nav__img"
+              src="../../img-home/github.svg"
+              alt="github--logo"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <main class="principal">
+      <article class="artigo">
+        <h2 class="titulo">Um pouco sobre mim</h2>
+        <img
+          class="artigo__imagem"
+          src="./img/bia1.JPG"
+          alt="gatinha deitada"
+        />
+        <p class="paragrafo">
+          Sou pernambucana e recifense com muito orgulho, tenho 21 anos - signo de escorpião, e atualmente sou aluna Front-End do curso Reprograma e trabalho como gerente de produto no CITi - empresa júnior da UFPE. Tenho 4 filhos de 4 patas, amo viajar de paixão e sedenta por conhecimento e inovação!  
+        </p>
+      </article>
+      <h2 class="titulo">Minhas listas</h2>
+      <section class="sessao sessao--flex">
+        <div class="sessao__caixa">
+          <h3 class="titulo">meus desejos para 2021</h3>
+          <ul class="lista">
+            <li class="itemLista">Vacina do corona</li>
+            <li class="itemLista">Projeto verão fitness</li>
+            <li class="itemLista">Arrumar meu primeiro job</li>
+            <li class="itemLista">Ganhar muito dinheiro</li>
+            <li class="itemLista">Aprimorar meu mandarim</li>
+            <li class="itemLista">Ser feliz</li>
+            <li class="itemLista">Codar mais e mais!</li>
+          </ul>
+        </div>
+        <div class="sessao__caixa">
+          <h3 class="titulo">filmes que eu gosto</h3>
+          <ol class="lista">
+            <li class="itemLista">La la land</li>
+            <li class="itemLista">Bacurau</li>
+            <li class="itemLista">Amanhecer parte 1</li>
+            <li class="itemLista">Parasita</li>
+            <li class="itemLista">Questão de Tempo</li>
+            <li class="itemLista">Jogos Vorazes</li>
+            <li class="itemLista">Up, altas aventuras</li>
+          </ol>
+        </div>
+      </section>
+      <section class="sessao">
+        <form class="formulario">
+          <div class="formulario__div">
+            <label for="name" class="rotulo">Nome:</label>
+            <input
+              class="input"
+              type="text"
+              placeholder="digite seu nome"
+              required
+            />
+          </div>
+          <div class="formulario__div">
+            <label for="email" class="rotulo">E-mail:</label>
+            <input
+              class="input"
+              type="email"
+              placeholder="digite seu e-mail"
+              required
+            />
+          </div>
+          <div class="formulario__div">
+            <label for="nascimento" class="rotulo">Data de nascimento:</label>
+            <input class="input" type="date" placeholder="que dia nasceu vc?" />
+          </div>
+          <div class="formulario__div">
+            <label for="idade" class="rotulo">Idade:</label>
+            <input
+              class="input"
+              type="number"
+              min="10"
+              max="100"
+              placeholder="qual sua idade:"
+            />
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Qual a comida que mais gosta, dessa lista:</p>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="lasanha"
+              />
+              Pizza
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="sushi"
+              />
+              Sushi
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="couscus"
+              />
+              Hambúrguer
+            </label>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Quais estilos musicais você gosta?</p>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="eletronica"
+              />
+              MPB
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="rock"
+              />
+              Pop
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="sertaneijo"
+              />
+              rock
+            </label>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">O que achou do meu site?</p>
+            <select id="dropdown" name="role">
+              <option value="ovo">Bonito</option>
+              <option value="galinha">Muito bonito</option>
+              <option value="eva">Pode melhorar</option>
+              <option value="dinos">Arrasou!</option>
+            </select>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Deixe uma mensagem pra mim:</p>
+            <textarea
+              id="textarea"
+              placeholder="conte mais sobre você"
+            ></textarea>
+          </div>
+          <div class="formulario__div">
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="sessao">
+        <a href="https://myoctocat.com/">
+          <p class="paragrafo">Faça seu próprio octocat!</p>
+          <img src="./img/gatoo.jpg" alt="octocat"  class="artigo__imagem img--block" />
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer"; style="font-size: 10px;";>
+      <p class="paragrafo">Desenvolvido com <strong>amor</strong> por Bia Liu, no <em>{Reprograma}</em></p>
+    </footer>
+  </body>
+</html>
