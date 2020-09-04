@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reprogramandoa40tona</title>
+    </title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stylesheet = folha de estilo -->
+    <!-- <style>
+        p {
+            background-color: aqua;
+        }
+        img {
+            border: 2px blueviolet solid;
+        }
+    </style> -->
+  </head>
+  <body class="corpo">
+    <nav class="navegacao">
+      <img
+        class="nav__img"
+        src="imagem/logo-reprograma.png"
+        alt="logo-reprograma"
+      />
+      <ul id="menu--desktop" class="nav__lista">
+        <li><a href="#listas">Listas</a></li>
+          <li><a href="#formulario">Formulário</a></li>
+        <li><a href="../../index.html">Home</a></li>
+        <li>
+          <a href="https://github.com/danibezerra" target="_blank"
+            ><img
+              class="nav__img"
+              src="imagem/github.svg"
+              alt="github--logo"
+          /></a>
+        </li>
+      </ul>
+      <div id="menu--celular" class="menu--responsivo">
+        <img class="nav__img" src="/img-home/menu-hamburger.png" alt="menu" />
+        <ul class="menu__lista--responsivo">
+          <li><a href="#listas">Listas</a></li>
+          <li><a href="#formulario">Formulário</a></li>
+          <li><a href="../../index.html">Home</a></li>
+          <li>
+            <a href="https://github.com/reprograma" target="_blank"
+              ><img
+                class="nav__img"
+                src="../../img-home/github.svg"
+                alt="github--logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header class="cabecalho">
+      <h1 class="titulo branco">Olá, eu sou a Dani Bezerra</h1>
+    </header>
+    <main class="principal">
+      <article class="artigo">
+        <h2 class="titulo">Um pouco sobre mim</h2>
+        <img
+          class="artigo__imagem"
+          src="imagem/TDC 3.jpg"    
+                          alt="perfil dani"
+        />
+        <p class="paragrafo">
+            CEO&COO TrêsBê Educação Inovação e Eventos, Voluntária​ ​na​ ​Associação​ ​Empreendeler,​ ​Co-Fundadora da Rede Ela Empreendedora, Pós-Graduando no MBA de Gestão de Negócios, Controladoria e Finanças Corporativas, ​​Mentora do Programa Nacional​ ​InovAtiva​ ​Brasil - Sebrae / MTIC, Avaliadora e Mentora do Programa Conecta - Softex, Organizadora oficial do Nasa Space Apps Challenge Recife, Coordenadora de Trilha Transformação Digital e Inovação TDC Recife 2019, Palestrante com reconhecimento na Campus Party, Contadora de Histórias, uma​ ​apaixonada​ ​pelas palavras e por Educação e Mãe de Carol e Clara.          
+        </p>
+      </article>
+      <h2 class="titulo">Minhas listas</h2>
+      <section class="sessao sessao--flex">
+        <div class="sessao__caixa">
+          <h3 class="titulo">Meus Desejos para 2021:</h3>
+          <ul class="lista">
+            <li class="itemLista">Liberdade e Mais Amor</li>
+            <li class="itemLista">Igualdade de Genêro</li>
+            <li class="itemLista">Vacina do corona</li>
+            <li class="itemLista">Fazer mais diferença</li>
+            <li class="itemLista">Comer, amar e rezar</li>
+             </ul>
+        </div>
+      </div>  <div class="sessao__caixa">
+        <h3 class="titulo subtitulo">Empresas e Trabalhos:</h3>
+        <ul class="lista">
+          <li class="itemLista">Trêsbê Educação</li>
+          <li class="itemLista">Células Empreendedoras</li>
+          <li class="itemLista">N.A.S.A Space Challenge</li>
+          <li class="itemLista">Dale Carnegie Training</li>
+          <li class="itemLista">N3 Computadores</li>
+        </ul>
+      </div>
+      <div class="sessao__caixa">
+        <h3 class="titulo subtitulo">Minhas Habilidades:</h3>
+        <ul class="lista">
+          <li class="itemLista">Comunicação Eficaz</li>
+          <li class="itemLista">Fazedora de Pontes</li>
+          <li class="itemLista">Negociação Humanizada</li>
+          <li class="itemLista">Tomadora de Decisão</li>
+          <li class="itemLista">Criatividade</li>
+          <li class="itemLista">Contadora de Histórias</li>
+          </ul>
+      </div>
+        <div class="sessao__caixa">
+          <h3 class="titulo">Em que posso te ajudar?!</h3>
+          <ol class="lista">
+            <li class="itemLista">Mentoria para gestoras</li>
+            <li class="itemLista">Desenvolvimento de Soft Skills</li>
+            <li class="itemLista">Mentoria para Reinvenção</li>
+            <li class="itemLista">Contando histórias que Motivam</li>
+            <li class="itemLista">Com meus dois ouvidos</li>
+          </ol>
+        </div>
+      </section>
+      <h2 class="titulo">Minha galeria de fotos :)</h2>
+      <section class="galeria"> 
+         <!-- --- display flex - de inicio parece inline-block mas tu tem maior liberdade  pra organizar as filhas.  -->
+        <div class="galeria__box"> 
+          <!-- ----move as filhas //// display inline (nao consegue mexer altura e largura) / block (mexe altura e largura, mas ocupa toda largura da tela) / inline-block (mexe largura e altura e pode receber elementos ao lado.) -->
+          <img src="imagem/IMG_2021.jpg"unicornio" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Palestra CPGO 2019 </p>
+        </div>
+        <div class="galeria__box">
+          <img src="imagem/IMG_9002 - Copia.jpg" alt="onibus" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Palestra Células XP MT</p>
+        </div>
+        <div class="galeria__box">
+          <img src="imagem/IMG_9455.jpg" alt="foto de perfil da ana" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Workshop Negociação</p>
+        </div>
+        <div class="galeria__box">
+          <img src="imagem/IMG_20191030_131012.jpg" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Conferência Amazônica- Manaus 2019</p>
+        </div>
+        <div class="galeria__box">
+          <img src="imagem/TDC 3.jpg"foto formatura arine" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> TDC Recife 2019</p>
+        </div>
+        <div class="galeria__box align-self">
+          <img src="imagem/DSC_0312.jpg" alt="octocat" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Paletra Dia da Mulher Hotel Ibis 2020</p>
+        </div>
+      <section class="sessao">
+        <form class="formulario">
+          <div class="formulario__div">
+            <label for="name" class="rotulo">Nome:</label>
+            <input
+              class="input"
+              type="text"
+              placeholder="digite seu nome"
+              required
+            />
+          </div>
+          <div class="formulario__div">
+            <label for="email" class="rotulo">E-mail:</label>
+            <input
+              class="input"
+              type="email"
+              placeholder="digite seu e-mail"
+              required
+            />
+          </div>
+          <div class="formulario__div">
+            <label for="nascimento" class="rotulo">Data de nascimento:</label>
+            <input class="input" type="date" placeholder="que dia nasceu vc?" />
+          </div>
+          <div class="formulario__div">
+            <label for="idade" class="rotulo">Idade:</label>
+            <input
+              class="input"
+              type="number"
+              min="10"
+              max="100"
+              placeholder="qual sua idade:"
+            />
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">O que mais te incomoda?</p>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="pessoal"
+              />
+              Vida Pessoal
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="profissional"
+              />
+              Vida Profissional
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="ambos"
+              />
+              Ambos
+            </label>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Você empreende?</p>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="sim"
+              />
+              Sim
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="nao"
+              />
+              Não
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="quero"
+              />
+              Quero aprender
+            </label>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Já passou por algum momento de reinvenção?</p>
+            <select id="dropdown" name="role">
+              <option value="varios">Vários!</option>
+              <option value="nunca">Nunca!</option>
+              <option value="acho">Acho que não!</option>
+              <option value="ajuda">Me ajuda!</option>
+            </select>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Abra o coraçãozinho:</p>
+            <textarea
+              id="textarea"
+              placeholder="conte mais sobre você"
+            ></textarea>
+          </div>
+          <div class="formulario__div">
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="sessao">
+        <a href="https://myoctocat.com/">
+          <p class="paragrafo">Faça seu próprio octocat!</p>
+          <img src="imagem/octocat.png"octocat"  class="artigo__imagem img--block" />
+        </a>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="paragrafo">Desenvolvido por uma 40tona aprendendo html e css</p>
+    </footer>
+  </body>
+</html>
