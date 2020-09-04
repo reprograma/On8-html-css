@@ -4,6 +4,9 @@
     margin: 0;
     font-family: 'Alata', sans-serif;
 }
+.html{
+    font-size: 10px;
+}
 .corpo{
     background-color: wheat;
 }
@@ -20,6 +23,14 @@ a:hover {
 ul li {
     
    list-style: none; 
+}
+
+.li{
+    font-size: 1,6rem;
+}
+
+.lista{
+    text-align: center;
 }
 
 /* conteudo */
@@ -52,10 +63,10 @@ width = largura  */
     color: #7E459B; 
     padding: 20px;
 }
-
+ 
 .paragrafo {
     display: inline-block;
-    font-size: 25px;
+    font-size: 50px;
     text-align: justify;
     /* width: 350px; */
     /* padding: 10px; */
@@ -64,18 +75,18 @@ width = largura  */
 .artigo__imagem {
     display: inline-block;
     border-radius: 50%;
-    width: 300px;
-    padding: 30px;
+    width: 100%;
+    max-width: 300px;
     margin-right: 20px;
 }
 
-.artigo, .sessao {
-    text-align: ;
+.artigo, .sessao,p {
+    text-align: justify;
     padding: 10px;
 }
 
 .artigo_descricao{
-    background-color: wheat;
+    background-color:wheat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,44 +102,78 @@ width = largura  */
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    padding: 10px;
 }
 
 .itemLista{
     margin: 10px;
-    
-}
 
-
-.sessao{
-    display: flex;
-    justify-content: center;
     
 }
 
 .formulario {
-    background-color: #7E459B;
-    margin: 80px 100px 0px ;
+    background-color: lightcoral;
+    width:100%;
+    
+    
   }
   
+  .sessao__form{
+         display: block;
+         text-align: center;
+  }
+
+  h2{
+      font-size: 20px;
+      padding: 5px;
+      background-color: seagreen;
+  }
+
+
+
   .formulario__div {
-    padding: 30px;
+    padding: 25px;
     text-align: center;
+    
   }
   
-  .input {
-    padding: 10px;
-    border-radius: 50px;
-  } 
-.img_block{
-    display: block;
-    border-radius: 50%;
+  
+  .rotulo, .paragrafo {
+    font-size: 15px;
+  }
+  
+  
+  .flex--input {
+    display: flex;
+  }
+  
+  #textarea {
+    width: 40%;
+    height: 100px;
+    border: 5px rgb(33, 119, 52) solid;
+  }
+  
+  .formulario__div_ob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sessao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+}
+  .img_block{
     width: 200px;
     padding: 1px;
 }
     
   .paragrafo_octocat{
-      display: flex;
+      /* display: flex;
       text-align: justify;
+      justify-content: center; */
       margin: 5px;
       padding: 10px;
     }
@@ -141,3 +186,50 @@ width = largura  */
     background-color: #2e2e2e;
     color: white;
 }
+
+
+/* Responsividade */
+
+@media (max-width: 768px){
+    .html{
+        font-size: 50%
+    }
+}
+
+@media (max-width: 630px){
+    .html{
+        font-size: 50%
+    }
+    .artigo__imagem {
+        display: inline-block;
+        border-radius: 50%;
+        width: 80px;
+        max-width: 300px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .artigo_descricao, .sessao--flex{
+        background-color: lightcoral;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+        
+    }
+  
+
+}
+
+@media (max-width: 480px){
+
+    .artigo_descricao{
+        background-color: lightcoral;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+     }
+    
+     
+    }
