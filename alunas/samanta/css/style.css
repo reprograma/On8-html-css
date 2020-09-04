@@ -39,7 +39,7 @@ ol .lista {
     }
 
 .navegacao {
-    height: 70px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,6 +50,8 @@ ol .lista {
     display: flex;
     align-items: center;
     color: aliceblue;
+    text-align: center;
+    justify-content: center;
     padding: 10px;
 
 }
@@ -123,7 +125,7 @@ ol .lista {
 }
   
 .formulario__div {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
   
@@ -147,3 +149,38 @@ ol .lista {
     color: white
     
 }
+@media screen (max-width: 1000px) {
+    .html {
+     padding:0;
+    }
+
+    .navegacao {
+display: block;
+text-align: center;
+}
+    .formulario {
+     margin: 0 auto;
+     display: block;
+     text-align: center;
+     justify-content: center;
+    }
+  
+ }
+ 
+ @media screen and (max-width:660px) {
+    .html {
+        padding:0;
+    }
+   
+    .navegacao {
+   display: flex;
+   text-align: center;
+   }
+    .formulario {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        justify-content: center;
+       }
+    
+    }
