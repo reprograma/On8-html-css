@@ -13,11 +13,21 @@
     <body class="corpo">
         <nav class="navegacao">
             <a href="https://reprograma.com.br/" target="blank"><img class="nav-img" src="/img-home/logo-reprograma.png" alt="logo-reprograma"></a>
-            <ul class="lista-nao-ordenada">
-                <a href="../../index.html" target="blank"><li class="lista-1">Home</li></a>
-                <li><a href="https://github.com/marianaseidel" target="blank"><img class="nav-img" src="../../img-home/github.svg" alt="github-logo"></a></li>
-                
-            </ul>          
+            <ul id="menu-desktop" class="lista-nao-ordenada">
+                <li class="lista-1"><a href="../../index.html" target="blank">Home</li></a>
+                <li class="lista-1"><a href="#listas">Listas</a></li>
+                <li class="lista-1"><a href="#formulario">Formulário</a></li>
+                <li class="lista-1"><a href="https://github.com/marianaseidel" target="blank"><img class="nav-img" src="../../img-home/github.svg" alt="github-logo"></a></li>
+            </ul> 
+            <div id="menu-celular" class="menu-responsivo">
+                <img class="nav-img" src="/alunas/mariana/imagens/pngwing.com.png" alt="menu">
+                <ul class="menu__lista-responsivo">
+                    <li class="lista-1"><a href="../../index.html" target="blank">Home</li></a>
+                    <li class="lista-1"><a href="#listas">Listas</a></li>
+                    <li class="lista-1"><a href="#formulario">Formulário</a></li>
+                </ul> 
+            </div>
+            
         </nav>    
         
         <header class="cabecalho">
@@ -28,15 +38,16 @@
           
             <article class="artigo">                
                 <h2 class="titulo-2">Um pouco sobre mim</h2>
-                <img class="artigo-imagem" src="./imagens/imagem workshop.jpg" alt="Mariana Seidel">
-                <p class="paragrafo">Olá, eu sou Mariana Seidel, sou formada em Arquitetura e Urbanismo e hoje em dia trabalho em uma empresa de tecnologia! Ocupo um cargo operacional, e estou começando a aprender um pouco sobre programação agora, na turma de front-end da {reprograma}. </p>
-                
+                <div class="artigo-box">
+                    <img class="artigo-imagem" src="./imagens/imagem workshop.jpg" alt="Mariana Seidel">
+                    <p class="paragrafo">Olá, eu sou Mariana Seidel, sou de Recife e tenho 24 anos! Sou formada em Arquitetura e Urbanismo e hoje em dia trabalho em uma empresa de tecnologia! Ocupo um cargo operacional, e estou começando a aprender um pouco sobre programação agora, na turma de front-end da {reprograma}. </p>
+                </div>
             </article>
 
-            <h2 class="titulo">Minhas Listas</h2>
-            <section class="sessao sessao-flex">
+            <h2 id="listas" class="titulo">Minhas Listas</h2>
+            <section class="sessao-flex">
                 <div class="sessao-caixa">
-                    <h3 class="titulo">Meus desejos para 2021</h3>
+                    <h3 class="titulo subtitulo">Meus desejos para 2021</h3>
                     <ul class="lista lista-1">
                         <li class="itemlista">Viajar</li>
                         <li class="itemlista">Ir à praia</li>
@@ -47,7 +58,7 @@
                 </div>
 
                 <div class="sessao-caixa">
-                    <h3 class="titulo">Meus filmes favoritos</h3>
+                    <h3 class="titulo subtitulo">Meus filmes favoritos</h3>
                     <ol class="lista">
                         <li class="itemlista">Titanic</li>
                         <li class="itemlista">A Proposta</li>
@@ -58,7 +69,26 @@
                 </div>
             </section>
 
-            <section class="sessao">
+            <section class="galeria">
+                <div class="galeria-box">
+                    <img src="../mariana/imagens/titanic22.jpeg" alt="foto octocat" class="galeria-img">
+                    <p class="paragrafo paragrafo--center">Titanic</p>
+                </div>
+                <div class="galeria-box">
+                    <img src="../mariana/imagens/apropostaa.jpg" alt="foto octocat" class="galeria-img">
+                    <p class="paragrafo paragrafo--center">A Proposta</p>
+                </div>
+                <div class="galeria-box">
+                    <img src="../mariana/imagens/lilo-e-stitch.jpeg" alt="geometria" class="galeria-img">
+                    <p class="paragrafo paragrafo--center">Lilo & Stich</p>
+                </div>
+                <div class="galeria-box">
+                    <img src="../mariana/imagens/ratatouille-filme-.jpg" alt="foto de perfil" class="galeria-img">
+                    <p class="paragrafo paragrafo--center">Ratatouille</p>
+                </div>
+            </section>
+
+            <section id="formulario" class="sessao">
                 <h4 class="titulo-form">Entre em contato :)</h4>
                 <form class="formulario">
                     <div class="formulario-div">
@@ -141,15 +171,14 @@
 
             <section class="sessao sessao-2">
                 <a href="https://myoctocat.com/" target="blank">
-                    <p class="paragrafo">Faça seu próprio Octorcat!</p>
-                    <img src="./imagens/octocat.png" alt="octocat" class="artigo-imagem imagem-octocat">
-                </a>  
+                    <p class="paragrafo">Faça seu próprio Octocat!</p>
+                    <img src="imagens/octocat.png" alt="octocat" class="imagem-octocat">
             </section>
             
         </main>
 
         <footer class="footer">
-            <p class="paragrafo paragrafo-footer">Desenvolvido por Mariana Seidel com HTML e CSS</p>
+            <p class="paragrafo-footer">Desenvolvido por Mariana Seidel com HTML e CSS</p>
         </footer>
         
     </body>
