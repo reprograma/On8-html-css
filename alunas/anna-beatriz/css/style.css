@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    font-size: 10px;
+  }  
+
 a {
     text-decoration: none;
     color: inherit;
@@ -14,6 +18,10 @@ a {
 a:hover {
     font-weight: bold;
 }
+
+li {
+    font-size: 1.4rem;
+  }
 
 ul li {
    list-style: none; 
@@ -33,18 +41,46 @@ ul li {
     display: flex;
     align-items: center;
     color: #fff;
-    padding: 10px;
+    padding: 1rem;
   }
   
   .nav__lista > li {
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 0,5rem;
+    padding: 1rem;
   }
   
   .nav__img {
-    height: 50px;
-    margin: 10px;
+    height: 60px;
   }
+
+  #menu--desktop {
+    display: flex;
+  }
+  
+  #menu--celular {
+    display: none;
+  }
+  
+  /* menu mae */
+  .menu--responsivo {
+    position: relative;
+    cursor: pointer;
+  }
+
+   /* menu filha */
+  .menu__lista--responsivo {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    color:#fff;
+    background:rgb(222 151 133);
+    width: 100vw;
+  }
+  
+  .menu--responsivo:hover .menu__lista--responsivo {
+    display: block;
+  } 
   
   /* cabeçalho da pagina */
   .cabecalho {
@@ -62,14 +98,15 @@ ul li {
     text-align: center;
     color: #fff; 
     padding: 10px;
-
+    font-size: 2rem;
+    padding: 1rem;
 }
 
-.rosa {
-    color: rgb(222 151 133);
-    margin-bottom: 180px;
+.preto {
+    color:rgb(63 68 72);
+    margin-bottom: 18vh;
     font-family: 'Krona One', sans-serif;
-    font-size: 30px;
+    font-size: 5vh;   
 }
 
 .sobre-mim {
@@ -78,7 +115,6 @@ ul li {
 
 .titulo--background {
     background-color:rgb(222 151 133);
-
 }
 
 .titulo--borda {
@@ -87,62 +123,96 @@ ul li {
 
 .paragrafo {
     display: inline-block;
-    width: 500px;
+    max-width: 350px;
+    width: 100%;
     text-align: justify;
-    padding: 10px;
-    margin-top: 1%;
-}
+    padding: 20px;
+    font-size: 1.6rem;
+  }
 
 .artigo__imagem {
     display: inline-block;
-    width: 160px;
+    max-width: 40%;
+    width: 300px;
     border-radius: 50%;
-    padding: 10px;
-    margin-right: 30px;
-    align-items: center;
+    padding: 1rem;
+    margin-right: 2rem;
+    position: relative;
 }
 
 .img--block {
     display: block;
   }
 
-
 .artigo {
     text-align: center;
-    padding: 30px;
+    padding: 2rem;
     display: flex;
     justify-content: center;
 }
 
-.sessao {
-    padding: 30px;
+.sessao__caixa {
+    padding: 3rem;
 }
 
 .sessao--flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem;
+    width: 100%;
 }
 
-.titulo--formulario {
-    font-size: 22px;
+.titulo--lista {
+  width: 450px;
+
 }
+
+ /* galeria */
+ .galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .galeria__box {
+    background-color: rgb(195 217 194);
+    margin: 3rem;
+  }
+  
+  .galeria__img{
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+
+  }
+  
+  .align-self {
+    align-self: flex-end;
+  }
+
+
+ /* formulario */
 
 .paragrafo--formulario {
-    display: flex;
+   display: flex;
    justify-content: center;
    text-align: justify;
    padding: 10px;
    margin-top: 1%;
+   font-size: 1.6rem;
 }
 
 .formulario {
     background-color: rgb(195 217 194);
-    margin: 10px 200px;
+    margin: 5rem 10rem;
     border-radius: 20px;
 }
   
 .formulario__div {
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
 }
 
@@ -153,16 +223,22 @@ ul li {
 
 
 .input {
-    padding: 10px;
+    padding: 0.8 rem;
     border: 5px rgb(80 84 87);
     border-radius: 10px;
 }
 
 .rotulo {
+    font-size: 1.6rem;
     padding: 5px;
     display: flex;
     justify-content: center ;
-    }
+
+}
+
+.flex--input {
+    display: flex;
+}
 
 #textarea {
     width: 50%;
@@ -198,4 +274,28 @@ ul li {
     color: white;
 }
 
+ /* --- max-width até no máximo de largura 650px eu vou me comportar assim  */
+ @media screen and (max-width:650px) {
+  html {
+    font-size: 8px;
+  }
 
+  .formulario {
+   margin: 0 auto;
+  }
+  .galeria{
+    justify-content: center;
+  }
+
+  .artigo {flex-wrap: wrap;}
+}
+
+
+@media screen and (max-width:650px) {
+ #menu--celular {
+   display: block;
+ }
+ #menu--desktop {
+   display: none;
+ }
+}

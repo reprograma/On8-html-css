@@ -46,7 +46,7 @@ ul li {
 .titulo {
     text-align: center;
     color: #54d4e6; 
-    padding: 235px;
+    padding: 10%;
     font-size: 50px;  
 }
 .principal {
@@ -57,6 +57,7 @@ ul li {
 .artigo {
     text-align: center;
     padding: 20px;
+    padding-left: 0%;
 }
 
 
@@ -69,7 +70,7 @@ ul li {
 .artigo__img {
     border-radius: 50%;
     display: inline-block;
-    width: 250px;
+    width: 200px;
     margin-right: 20px;
     padding: 10px;
 }
@@ -77,7 +78,7 @@ ul li {
 .artigo__texto {
     display: inline-block;
     text-align: justify;
-    width: 500px;
+    width: 70%;
     padding: 20px;
 }
 
@@ -103,24 +104,21 @@ ol li {
  }
  
  .paragrafo {
-    border-radius: 50px;
-    border: 3px solid #6fe5f5;
     text-align: center;
-    width: 300px;
-    padding: 20px;
+    width: 30%;
     font-size: 20px;
+    padding-bottom: 10px;
  }
 
  .sessao {
-    padding: 20px;
-    padding-left: 175px;
+    padding-left: 25%;
     text-align: center;
 }
 .sessao__img {
     border-radius: 50%;
-    width: 250px;
-    padding: 20px;
+    width: 60%;
     display: block;
+    padding-bottom: 20px;
 }
 
 .redes {

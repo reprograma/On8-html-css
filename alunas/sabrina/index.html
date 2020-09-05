@@ -15,10 +15,17 @@
 
     <nav>
         <a href="http://reprograma.com.br/" target="__blank"><img src="../../img-home/logo-reprograma.png" alt="logo da reprograma"></a>
-        <ul>
-            <li> <a class="home" href="../../index.html"> home</a></li> 
+        <ul class="nav--desktop">
+            <li> <a class="nav__a" href="../../index.html"> home</a></li> 
             <li><a href="https://github.com/sabrinamares" target="__blank"><img src="../../img-home/github.svg" alt="logo do hitgub"></a></li>
         </ul>
+        <div class="navclass--mobile">
+            <img src="/img-home/menu-hamburger.png" alt="menu">
+            <ul class="nav__ul--mobile">
+                <li> <a class="nav__a--mobile" href="../../index.html"> home</a></li> 
+                <li><a href="https://github.com/sabrinamares" target="__blank"><img src="../../img-home/github.svg" alt="logo do hitgub"></a></li>
+            </ul>
+          </div>
     </nav>
 
     <header>
@@ -32,7 +39,7 @@
         <article>
             <h2>um pouco sobre mim</h2>
             <div class="artigo">
-                <p class="paragrafo_sobre-mim">
+                <p class="p__sobre-mim">
                     Oi, meu nome é Sabrina, tenho 22 anos e moro na zona leste de São Paulo.
                     <br>
                     Sou apaixonada por criação desde muito nova, sempre gostei de brincar com cores e papéis, isso me levou ao design, hoje sou estudante de Design Gráfico pela Universidade Anhembi Morumbi.
@@ -49,8 +56,8 @@
         <article>
             <h2>a <span>{reprograma}</span> e eu</h2>
             <div class="artigo">
-                <img class="artigo__imagem" src="https://i.giphy.com/media/137EaR4vAOCn1S/giphy.webp">
-                <p class="paragrafo">
+                <img class="artigo__gif" src="https://i.giphy.com/media/137EaR4vAOCn1S/giphy.webp">
+                <p class="p__reprograma">
                     Quase não me inscrevi na reprograma porque não tinha autoestima suficiente pra gravar um vídeo, mas eu consegui e melhor: gostei do vídeo.
                     E isso tem resumido a minha jornada nesse bootcamp:<span> enfrento os meus medos e no final me sinto orgulhosa.</span>
 
@@ -61,7 +68,7 @@
         <section class="listas"> 
             <div class="listas__caixa">
                 <ol>
-                    <h3 class="titulo">meus desejos</h3> 
+                    <h3 class="listas__h3">meus desejos</h3> 
                     <li>morte ao coronavirus</li>
                     <li>ver minha vó</li>
                     <li>abraçar minha vó</li>
@@ -70,8 +77,8 @@
                 </ol>
             </div>
             <div class="listas__caixa">
-                <ul> 
-                    <h3 class="titulo">quero aprender </h3> 
+                <ul class="aprender"> 
+                    <h3 class="listas__h3">quero aprender </h3> 
                     <li>javascript</li>
                     <li>modelagem 3d</li>
                     <li>motion design</li>
@@ -81,7 +88,7 @@
             </div>
             <div class="listas__caixa">
                 <ul class="fav"> 
-                    <h3 class="titulo">favoritos</h3> 
+                    <h3 class="listas__h3">favoritos</h3> 
                     <li class="musica">paramore</li>
                     <li class="tv">grey's anatomy</li>
                     <li class="filme"> ponyo</li>
@@ -90,9 +97,9 @@
                 </ul>
             </div>
         </section>
-        <section class="formulario">
+        <section>
             <form>
-                <h3>oi, quero te conhecer</h3>
+                <h3 class="form__h3">oi, quero te conhecer</h3>
                 <h4>informações pessoais</h4>
                 <div>
                     <label for="nome"><p>nome:</p></label>
@@ -101,7 +108,7 @@
                 </div>
                 <div class="fotinha">
                     <label class="fotin" for="foto"><p>uma fotinha sua:</p></label>
-                    <input type="file">
+                    <input type="file" class="fotinhaa">
                 </div>
                 <div>
                     <label for="idade"><p>idade:</p></label>
@@ -110,8 +117,8 @@
                 <div>
                     <p>gênero:</p>
                     <select>
-                        <option value="" disabled="" >selecione</option>
-                        <option value="mulher">mulher</option>
+                        <option value="" disabled selected >selecione</option>
+                        <option value="mulher" >mulher</option>
                         <option value="homem">homem</option>
                         <option value="nb">não binário</option>
                     </select>
@@ -171,7 +178,16 @@
                     <h4>conte um pouquinho sobre você.</h4>
                     <textarea placeholder="um resumo sobre você, o que te define, o que você faz, o que gosta de fazer, etc"  rows="6" maxlength="400"></textarea>
                 </div>
+                <div>
+                    <label class="submit">
+                    <input type="submit">
+                    </label>
+                    <label>
+                    <input type="reset">
+                    </label>
+                </div>
             </form>
+            
         </section>
         
 
