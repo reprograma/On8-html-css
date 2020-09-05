@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFFFFF;
+}
+html, body{
+    height: 100vh;
+}
+
+/* barra superior menu */
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a1d29;
+    height: 75px;
+}
+
+.reprograma{
+    position:relative;
+    height: 30px;
+    margin-left: 30px;
+    margin-bottom:20px;
+    
+}
+
+.reprograma:hover{
+    top:-2px;box-shadow:0 2px 2px #0a1d29;
+}
+
+
+ul li{
+    list-style: none;
+}
+.barra{
+    display: flex;
+   align-items: center;
+}
+
+
+.home{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: rgb(161, 160, 160);
+    padding-right: 75px;
+    text-decoration: none;
+}
+
+.home:hover{
+    color: rgb(255, 255, 255);
+}
+.github{
+    position: relative;
+    height: 70px;
+    margin-right: 30px;
+    margin-bottom:20px;
+
+
+}
+
+.github:hover{
+    top:-2px;box-shadow:0 2px 2px #0a1d29;
+}
+
+/* Header */
+
+.chamada{
+    background: url(../image/foto_perfil.JPG);
+    background-size: contain;
+    height: 50vh; 
+    margin-top: -20px;
+}
+
+.titulo{
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    font-size: 50px;
+    color: #F0E6EF;
+    text-shadow: 0.1em 0.1em #333
+
+}
+
+hr{
+    margin-left: 460px;
+    margin-top: 30px;
+    width:30%;
+    height:2px;
+    border-width:0;
+    border-radius: 3px;
+    background-color: rgb(248, 246, 246);
+    
+}
+
+.hr2{
+    margin-left: 460px;
+    margin-top: 30px;
+    width:30%;
+    height:2px;
+    border-width:0;
+    border-radius: 3px;
+    background-color: rgb(248, 246, 246);
+    
+}
+
+
+@media screen and (max-width: 600px){
+    /* Topo */
+    nav{
+        width: 100%;
+    }
+
+    .home{
+        padding-right: 20px;
+    }
+
+    .reprograma{
+        height: 20px;
+    }
+
+    .github{
+        height: 50px;
+    }
+
+    /* Chamada */
+    .chamada{
+        background-repeat: no-repeat;
+        
+    }
+
+    .titulo{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    hr{
+        margin-left: 130px;
+        margin-top: -10px;
+    }
+
+    .hr2{
+        margin-left: 130px;
+        }
+
+}
+

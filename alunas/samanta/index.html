@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Samanta, initial-scale=1.0">
+    <title>eu sou samanta</title>
+    <link rel="stylesheet" href="css/style.css" >
+    <link
+    href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+    rel="stylesheet"
+  />
+  
+    <style>
+        p {
+            background-color: bisque;
+        }
+        img {
+            border: 2px cadetblue;
+        }
+    </style>
+</head>
+<body class="corpo">
+    <nav class="navegacao">
+        <img class="nav_img" src="../../img-home/logo-reprograma.png" alt="logo-reprograma"/>
+        <ul class="nav_lista">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="https://github.com/reprograma" target="_blank">
+        <img class="nav_img" src="../../img-home/github.svg" alt="github--logo"/></a></li>
+        </ul>
+    </nav> 
+          <h1 class="titulo">Mulher Otimista</h1>
+         <main class="principal">
+        <article class="artigo">
+            <h2 class="titulo">Um pouco sobre mim</h2>
+            <img class="artigo_imagem" src="./imagens/Otimismo.jpg "  alt="samanta otimista" />
+            <p class="paragrafo">
+                Meu nome é Samanta, tenho 42 anos,sou casada, mãe de 3 meninas lindas, sou feliz e amo demais minha família.
+                Sou bastante otimista, gosto muito de aprender, sou curiosa e muito observadora.
+                Atualmente estou muito feliz também,por ser uma das alunas na Reprograma.
+                Estou amando aprender,conhecendo mais sobre programação e pessoas novas.</p>
+                </article>
+            <h2 class="titulo">Meus interesses</h2>
+            <section class="sessao sessao--flex">
+              <div class="sessao_caixa">
+                  <h3 class="Titulo">Meus desejos para 2021  </h3>            
+                  <ul class="lista">
+                      <li class="item lista">Viajar Bastante</li>
+                      <li class="item lista">Trabalhar com Tecnologia</li>
+                      <li class="item lista">Curtir Familia</li>
+                      <li class="item lista">Ganhar Dinheiro</li>
+                      <li class="item lista">Outras conquista</li>
+                    </ul>
+                </div>                   
+                <div class="sessao_caixa">
+                    <h3 class="titulo">Coisas que amo</h3>
+                    <ol class="lista">
+                        <li class="item lista">Curtir Familia</li>
+                        <li class="item lista">Dormir</li>
+                        <li class="item lista">Comer doces</li>
+                        <li class="item lista">Viajar</li>
+                        
+                    </ol>
+                </div>
+                </section> 
+                <section class="sessao">
+                    <form class="formulario">
+                      <div class="formulario__div">
+                        <label for="name" class="rotulo">Nome:</label>
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="digite seu nome"
+                          required
+                        />
+                      </div>
+                      <div class="formulario__div">
+                        <label for="email" class="rotulo">E-mail:</label>
+                        <input
+                          class="input"
+                          type="email"
+                          placeholder="digite seu e-mail"
+                          required
+                        />
+                      </div>
+                      <div class="formulario__div">
+                        <label for="nascimento" class="rotulo">Data de nascimento:</label>
+                        <input class="input" type="date" placeholder="que dia nasceu vc?" />
+                      </div>
+                      <div class="formulario__div">
+                        <label for="idade" class="rotulo">Idade:</label>
+                        <input
+                          class="input"
+                          type="number"
+                          min="10"
+                          max="100"
+                          placeholder="qual sua idade:"
+                        />
+                      </div>
+                      <div class="formulario__div">
+                        <p class="paragrafo">O que mais te relaxa nessa lista:</p>
+                        <label class="rotulo">
+                          <input
+                            class="input--radio"
+                            name="comida-favorita"
+                            type="radio"
+                            value="massagem"
+                          />
+                          Massagem
+                        </label>
+                        <label class="rotulo">
+                          <input
+                            class="input--radio"
+                            name="comida-favorita"
+                            type="radio"
+                            value="meditacao"
+                          />
+                          Meditacao
+                        </label>
+                        <label class="rotulo">
+                          <input
+                            class="input--radio"
+                            name="comida-favorita"
+                            type="radio"
+                            value="dormir"
+                          />
+                          Dormir
+                        </label>
+                      </div>
+                      <div class="formulario__div">
+                        <p class="paragrafo">Quais estilos musicais você gosta?</p>
+                        <label class="rotulo">
+                          <input
+                            class="input--radio"
+                            name="musica"
+                            type="checkbox"
+                            value="classica"
+                          />
+                          Classica
+                        </label>
+                        <label class="rotulo">
+                          <input
+                            class="input--radio"
+                            name="musica"
+                            type="checkbox"
+                            value="mpb"
+                          />
+                          MPB
+                        </label>
+                        <label class="rotulo">
+                          <input
+                            class="input--radio"
+                            name="musica"
+                            type="checkbox"
+                            value="axe"
+                          />
+                          Axe
+                        </label>
+                      </div>
+                      <div class="formulario__div">
+                        <p class="paragrafo">Gosta de coisas esotericas?</p>
+                        <select id="dropdown" name="role">
+                          <option value="tarot">Tarot?</option>
+                          <option value="signos">Signos?</option>
+                          <option value="buzios">Buzios?</option>
+                          <option value="quiromancia">Quiromancia?</option>
+                        </select>
+                      </div>
+                      <div class="formulario__div">
+                        <p class="paragrafo">Deixe seu comentario:</p>
+                        <textarea
+                          id="textarea"
+                          placeholder="conte mais sobre você"
+                        ></textarea>
+                      </div>
+                      <div class="formulario__div">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Reset</button>
+                      </div>
+                    </form>
+                  </section>       
+            <section class="sessao"> 
+                <a href="https://myoctocat.com/">
+                    <p class="paragrafo">Faça seu prório octocat!</p>
+                    <img src="../samanta/imagens/Samoctocat.png" alt="octocat" class="artigo_imagem img--block">
+                </a>
+            </section>
+            </main>
+    <footer class="footer"> 
+        <p class="paragrafo">Desenvolvido por Samanta com html e css</p>     
+    </footer>
+</body>
+</html>
+
+
+
+
+
+>

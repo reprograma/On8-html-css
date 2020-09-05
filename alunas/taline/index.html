@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem é taline Joventino</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="corpo">
+    <nav class="barra">
+        <a href="https://reprograma.com.br" target="_blank" style="width: 49px;"><img class="img_barra" src="/alunas/taline/imagens/logo-reprograma.png"
+                alt="logo da reprograma"></a>
+        <ul class="text">
+            <a href="#form">
+                <li class="navBar__itemLista">Home</li>
+            </a>
+            <a href="https://github.com/talinejoventino" target="_blank">
+                <li class="navBar__itemLista">
+                    <img class="NavBar__img" src="/alunas/taline/imagens/github.svg" alt="git link">
+                </li>
+            </a>
+        </ul>
+    </nav>
+    <header class="cabecalho">
+        <h1 class="titulob">Quem é Taline Joventino?</h1>
+    </header>
+    <main class="principal">
+        <article class="artigo">
+            <h2 class="título">Então, quem eu sou?</h2>
+            <img class="imagem_art" src="imagens/IMG_20200629_201608_590.jpg" alt="talinejoventino" />
+            <p class="texto"> Me chamo Taline Joventino e tenho 18 anos. Vivo no litoral interior de Pernambuco
+              e meu sonho sempre foi expandir meus horizontes, por isso, eu estou no reprograma e também quero cursar Ciencia da Computação. As coisas que eu mais amo na mesma proporção é tecnologia/matématica e poesia/livros,
+               mas também constumo falar que amo de tudo um pouco: dança, animais, séries, natureza, minha família e amigos. Além disso tenho orgulho de ser católica e filha de Maria.</p>
+        </article>
+        <section class="sessao" id="form">
+            <h2 class="título">Minhas listas</h2>
+            <div class="sessao_habilidades">
+                <div class="desejos">
+                    <h3 class="título2">Desejos</h3>
+                    <ol class="lista">
+                        <li class="lista__item">Conhecer o mundo</li>
+                        <li class="lista__item">Concluir a faculdade</li>
+                        <li class="lista__item">Escrever um livro</li>
+                        <li class="lista__item">Contribuir para um mundo melhor</li>
+                        <li class="lista__item">Ler muitos livros</li>
+                    </ol>
+                </div>
+
+                <div class="filmes">
+                    <h3 class="título2"> Séries/filmes preferidos</h3>
+                    <ol class="lista">
+                        <li class="lista__item">The Vampire Diaries</li>
+                        <li class="lista__item">Elite</li>
+                        <li class="lista__item">Game Of Thrones</li>
+                        <li class="lista__item">Como Eu Era Antes de Você</li>
+                        <li class="lista__item">Siren</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+<!-- FORMULARIO INÍCIO -->
+
+<form class="formulario" >
+  <h2>Será que você me conhece?</h2>
+  <h4 class="sub">Vamos brincar? Tente adivinhar quais são as opções corretas sobre mim</h4>
+    <div class="formulario__sessao">
+      <label for="text" class="rotulo">Nome :</label>
+      <input class="input" required="" type="text" placeholder="Digite seu nome">
+    </div>
+    <div class="formulario__sessao">
+      <label for="email" class="rotulo">Email :</label>
+      <input class="input" required="" type="email" placeholder="Digite seu email">
+    </div>
+    <div class="formulario__sessao">
+      <label for="number" class="rotulo">Quantos anos você tem?</label>
+      <input class="input" type="number" min="16" max="21" placeholder="Digite sua idade">
+    </div>
+    <div class="formulario__sessao">
+      <p class="rotulo"> Qual o meu livro preferido? </p>
+      <select class="input" id="dropdown" name="role" required="">
+        <option value="rainhavermelha">A Rainha Vermelha</option>
+        <option value="perdida">Perdida</option>
+        <option value="after">After</option>
+        <option value="seleçao">Orgulho e Preconceito</option>
+        <option value="seleçao">A Seleção</option>
+      </select>
+    </div>
+    <div class="formulario__sessao sessao-comida">
+      <p class="rotulo">Qual minha comida favorita?</p>
+      <label class="rotulo">
+        <input type="radio" name="comida-favorita" requested="" value="lasanha">
+        Lasanha
+      </label>
+      <label class="rotulo">
+        <input type="radio" name="comida-favorita" requested="" value="pizza">
+        Pizza
+      </label>
+      <label class="rotulo">
+        <input type="radio" name="comida-favorita" requested="" value="empadao">
+        Empadão de frango
+      </label>
+      <label class="rotulo">
+        <input type="radio" name="comida-favorita" requested="" value="Strogonoff">
+        Strogonoff
+      </label>
+    </div>
+    <div class="formulario__sessao sessao-livre">
+      <p class="rotulo">O que eu mais gosto de fazer no tempo livre:</p>
+      <label class="rotulo">
+        <input type="checkbox" name="filme" value="ler">
+        Ler
+      </label>
+      <label class="rotulo">
+        <input type="checkbox" name="filme" value="filmesseries">
+        Ver series e filmes
+      </label>
+      <label class="rotulo">
+        <input type="checkbox" name="filme" value="logica">
+        Resolver problemas de lógica
+      </label>
+      <label class="rotulo">
+        <input type="checkbox" name="filme" value="conversar">
+        Conversar com os amigos
+      </label>
+      <label class="rotulo">
+        <input type="checkbox" name="filme" value="dançar">
+        Dançar
+      </label>
+    </div>
+    <div class="formulario__sessao sessao--textarea">
+      <p class="rotulo">Fale algo para mim :) </p>
+      <textarea id="textarea" placeholder="Escreva algo que você sempre quis me dizer"> </textarea>
+    </div>
+    <button class="botao submit" type="submit">Enviar</button>
+    <button class="botao reset" type="reset">Apagar tudo</button>
+    <p>Obs: Esse formulário é apenas um teste para meu 2º site HTML e CSS, não deve ser respondido</p>
+  </form>
+  <!-- FIM FORMULÁRIO -->
+
+        <section class="sessao">
+            <a href="https://myoctocat.com/">
+                <p class="texto_oct"> Faça seu proprio octocat!</p>
+                <img src="/alunas/taline/imagens/octocat.png" alt="octocat" class="imagem_oct">
+            </a>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="paragrafo">Desenvolvido em HTML e CSS por Taline Joventino ;)</p>
+    </footer>
+</body>
+
+</html>

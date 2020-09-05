@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myrelle Sales</title>
+  <link rel="stylesheet" href="./css/style.css"
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body class="corpo">
+  <nav class="nav">
+    <a href="https://reprograma.com.br" target="_blank">
+    <img class="nav-img" src="img/logo-reprograma.png" alt="logo-reprograma"/>
+    </a>
+    <ul id="menu--desktop" class="nav-lista">
+      <li><a href="#listas">Listas</a></li>
+      <li><a href="#formulario">Formulário</a></li>
+      <li><a href="../../index.html" target="_blank">Home</a></li>
+      <li>
+        <a href="https://github.com/myrellesales" target="_blank">
+          <img class="nav-img" src="img/github.png" alt="GitHub"/>
+        </a>
+        </Li>
+      </ul>
+
+      <div id="menu--celular" class="menu--responsivo">
+        <img class="nav-img" src="img/menu-hamburger.png" alt="Menu"/>
+        <ul class="menu__lista--responsivo">
+          <li><a href="#listas">Listas</a></li>
+          <li><a href="#formulario">Formulário</a></li>
+          <li><a href="../../index.html">Home</a></li>
+          <li>
+            <a href="https://github.com/myrellesales" target="_blank"
+            >GitHub</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+    <header class="cabecalho">
+      <h1 class="titulo branco">Eu sou a Myrelle Sales</h1>
+ </header>
+  <main class="principal">
+    <h2 class="titulo">Um pouco sobre mim</h2>
+    <article class="artigo">  
+      <img class="artigo__imagem" src="img/my__sales1.jpg" alt="Myrelle Sales">
+      <p class="paragrafo">Eu sou uma mulher negra, que acredita na representatividade e proporcionalismo de mulheres negras e diversas em todos os lugares. Adoro arte, pessoas, inovação e um dos meus hobbies favoritos é praticar esportes.
+        Eu tenho 23 anos, era estudante de arquitetura e trabalhava na área de beleza para suprir os gastos com materiais na faculdade, até que entrei em uma busca por autoconhecimento e descobri um forte interesse pela tecnologia, então resolvi migrar de área e estou muito contente com esse processo. 
+        </p>
+    </article>
+    <h2 id="listas"class="titulo">Minhas Listas</h2>
+    <section class="sessao">
+        <div class="sessao-gostos">
+          <div class="lista--desordenadas">
+          <h3 class="titulo subtitulo">Meus desejos para 2021</h3>
+          <ul>
+            <li class="itemlista">Me realizar profissionalmente na área de Tecnologia e desenvolver novas habilidades</li>
+            <li class="itemlista">Colaborar com a Reprograma e aprender mais</li>
+            <li class="itemlista">Cuidar da minha saúde mental/física e cultivar mais relações saudáveis</li>
+            <li class="itemlista">Curtir muito e viajar</li>
+            <li class="itemlista">Ganhar muito dinheiro e investir</li>
+          </ul>
+          </div>
+          <div class="lista--ordenadas">
+            <h3 class="titulo subtitulo">Meus filmes/séries favoritos</h3>
+            <ol>
+              <li class="itemlista">Como defender um assassino</li>
+              <li class="itemlista">Anne with "E" Frank</li>
+              <li class="itemlista">Greys Anatomy</li> 
+              <li class="itemlista">As Branquelas</li>
+              <li class="itemlista">Madame C.J. Walker</li>
+              <li class="itemlista">Felicidade por um fio</li>
+            </ol>
+          </div>
+        </div>
+    </section>
+
+
+    <h2 class="titulo">Minha galeria de fotos :)</h2>
+    <section class="galeria"> 
+       <!-- --- display flex - de inicio parece inline-block mas tu tem maior liberdade  pra organizar as filhas.  -->
+      <div class="galeria__box"> 
+        <!-- ----move as filhas //// display inline (nao consegue mexer altura e largura) / block (mexe altura e largura, mas ocupa toda largura da tela) / inline-block (mexe largura e altura e pode receber elementos ao lado.) -->
+        <img src="img/lapis.jpg" alt="Lápis" class="galeria__img">
+        <p class="paragrafo paragrafo--center">Arte/Criatividade</p>
+      </div>
+      <div class="galeria__box">
+        <img src="img/quadriciclo-praia.jpg" alt="Quadricilo e Praia" class="galeria__img">
+        <p class="paragrafo paragrafo--center">Aventuras/Natureza</p>
+      </div>
+      <div class="galeria__box">
+        <img src="img/note-game.jpg" alt="Notebook e Game" class="galeria__img">
+        <p class="paragrafo paragrafo--center">Jogos/Tecnologias</p>
+      </div>
+      <div class="galeria__box">
+        <img src="img/diversao.jpg" alt="Diversão" class="galeria__img">
+        <p class="paragrafo paragrafo--center">Diversão</p>
+      </div>
+      <div class="galeria__box">
+        <img src="img/festa.jpg" alt="Festa" class="galeria__img">
+        <p class="paragrafo paragrafo--center">Festas/Amigos </p>
+      </div>
+      <div class="galeria__box align-self">
+        <img src="img/carro-viagem.jpg" alt="Carro e viagem" class="galeria__img">
+        <p class="paragrafo paragrafo--center"> Carros/Viagens </p>
+      </div>
+    </section>
+
+
+
+    <section id="formulario" class="sessao"></section>   
+      <form class="formulario">
+        <div class="formulario__div">
+        <label for="name" class="rotulo">Nome:</label>
+        <input class="input"  type="text" placeholder="Digite seu nome" required/>
+        </div>
+        <div class="formulario__div">
+          <label for="e-mail" class="rotulo">E-mail:</label>
+          <input class="input" type="email" placeholder="Digite seu email" required/>
+          </div>
+        <div class="formulario__div">
+            <label for="date" class="rotulo">Data de nascimento:</label>
+            <input class="input" type="email" placeholder="Que dia você nasceu?" required/>
+            </div>
+            <div class="formulario__div">
+              <label for="number" class="rotulo">Idade:</label>
+              <input class="input" type="number" min="10" max="100" placeholder="Qual é a sua idade?">
+            </div>
+          
+      <div class="formulario__div">
+        <p class="paragrafo">Qual a comida que mais gosta, dessa lista:</p>
+        <section class="flex__input">
+
+        <label class="rotulo">
+          <input
+            class="input--radio"
+            name="comida-favorita"
+            type="radio"
+            value="lasanha"
+          />
+          Lasanha
+        </label>
+        <label class="rotulo">
+          <input
+            class="input--radio"
+            name="comida-favorita"
+            type="radio"
+            value="sushi"
+          />
+          Sushi
+        </label>
+        <label class="rotulo">
+          <input
+            class="input--radio"
+            name="comida-favorita"
+            type="radio"
+            value="strogonoff"
+          />
+          Strogonoff
+        </label>
+        <label class="rotulo">
+          <input
+            class="input--radio"
+            name="comida-favorita"
+            type="radio"
+            value="feijoada"
+          />
+          Feijoada
+        </label>
+      </div>
+    </section>
+      <div class="formulario__div">
+        <p class="paragrafo">Quais estilos musicais você gosta?</p>
+        <label class="rotulo">
+          <input
+            class="input--radio"
+            name="musica"
+            type="checkbox"
+            value="eletronica"
+          />
+          Eletrônica
+        </label>
+        <label class="rotulo">
+          <input
+            class="input--radio"
+            name="musica"
+            type="checkbox"
+            value="Samba"
+          />
+          Samba
+        </label>
+        <label class="rotulo">
+          <input
+            class="input--radio"
+            name="musica"
+            type="checkbox"
+            value="mpb"
+          />
+          MPB
+        </label>
+        <label class="rotulo">
+          <input
+            class="input--radio"
+            name="musica"
+            type="checkbox"
+            value="rap"
+          />
+          Rap
+        </label>
+        <label class="rotulo">
+          <input
+            class="input--radio"
+            name="musica"
+            type="checkbox"
+            value="todas-e-mais"
+          />
+          Todas as opções e mais alguns
+        </label>
+      </div>
+      <div class="formulario__div">
+        <p class="paragrafo">Quais lugares gosta de frequentar?</p>
+        <select id="dropdown" name="role">
+          <option value="praias">Praias?</option>
+          <option value="cinema-teatro">Cinema/Teatro?</option>
+          <option value="parques">Parques?</option>
+          <option value="balada-barzinho">Baladas/Barzinhos?</option>
+          <option value="museus">Museus?</option>
+        </select>
+      </div>
+      <div class="formulario__div">
+        <p class="paragrafo">Abra o seu coraçãozinho:</p>
+        <textarea
+          id="textarea"
+          placeholder="Conte mais sobre você"
+        ></textarea>
+      </div>
+      <div class="formulario__div">
+        <button class="botao enviar"type="submit">Enviar</button>
+        <button class="botao reset"type="reset">Reset</button>
+      </div>
+    </form>
+    </section>
+    <section class="sessao">
+      <a href="https://myoctocat.com/"> 
+        <img class="artigo__octocat"  src="img/octocat.png" alt="Octocat" ">
+        <p class="paragrafo">Faça seu próprio octocat!</p> 
+      </a>
+    </section>
+  
+    </main>
+  <footer class="footer">
+ <p class="paragrafo-rodape">Desenvolvido por {Myrelle Sales} com HTML e CSS</p>
+  </footer>
+</body>
+</html>

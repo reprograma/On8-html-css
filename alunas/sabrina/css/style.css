@@ -1,0 +1,403 @@
+/* principal */
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+:root {
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+/* textos */
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 4rem;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom:2rem;
+    text-transform: uppercase;
+}
+
+h2 span {
+    color: #7E459B;
+    font-family: monospace;
+    text-transform: lowercase;
+}
+
+.listas__h3 {
+    text-align: center;
+    color: #d348d8;
+    font-family: sans-serif;
+}
+
+.form__h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h4 {
+    margin:1.2rem 0;
+    color: lawngreen;
+}
+
+
+
+
+/* nav desktop */
+nav {
+    height: 65px; 
+    padding: 0 6rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color:lightpink;
+}
+
+.nav__a {
+    padding:10px 25px;
+    border-radius: 50px;
+    margin: 0 40px;
+}
+
+.nav__a:hover {
+    background-color: #d348d8;
+    color: lawngreen;
+}
+
+.nav__a:active {
+    background-color: lawngreen;
+    color: #d348d8;
+}
+
+nav ul, nav li {
+    display: inline-flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav img{
+    height: 35px;
+}
+
+/* nav mobile */
+
+
+.navclass--mobile {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.nav__ul--mobile {
+    position: absolute;
+    display: none;
+    top: 72px;
+    right: 0;
+    color: #d348d8;
+    width: 150px;
+    text-align: center;
+    padding: 0;
+}
+
+.navclass--mobile:hover .nav__ul--mobile {
+    display: block;
+    background: #fff;
+}
+
+.nav__ul--mobile li {
+    display: block;
+    padding: 10px 0;
+}
+
+
+/* header */
+
+header {
+    padding:20px;
+    background-color: #d348d8;
+    color:lawngreen;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+header:hover{
+    background-color: lawngreen;
+    color: #d348d8;
+    transition: 0.5s;
+}
+
+header div {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+header img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+/* main */
+
+article {
+    margin: 40px auto;
+    max-width: 650px;
+}
+
+.artigo {
+    max-width: 90%;
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.artigo__gif {
+    border-radius: 4rem;
+    width: 50%;
+}
+
+.p__sobre-mim {
+    text-align: justify;
+}
+ 
+.p__sobre-mim span, .p__reprograma span {
+    color: #d348d8;
+    font-weight: 400;
+    text-align: center;
+}
+
+.p__reprograma {
+    text-align: justify;
+    /* max-width: 60%; */
+    margin-left:  30px;
+}
+
+.listas {
+    margin: 40px auto;
+    display: flex;
+    width: 650px;
+    justify-content: space-evenly;
+}
+
+.listas__caixa {
+    min-width: 200px;
+}
+
+.listas .listas__h3 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.fav{
+    position: relative; 
+     list-style-type: none!important;
+}
+.musica::before {
+    content: url(../images/musica.ico);
+    position: absolute;
+    left : 1em;
+}
+.tv::before {
+    content: url(../images/tv.ico);
+    position: absolute;
+    left : 1em;
+}
+.filme::before {
+    content: url(../images/filme.ico);
+    position: absolute;
+    left : 1em;
+}
+.lingua::before {
+    content: url(../images/fala.ico);
+    position: absolute;
+    left : 1em;
+}
+.lugar::before {
+    content: url(../images/ondas.ico);
+    position: absolute;
+    left : 1em;
+}
+
+/* formulario */
+
+form {
+    max-width: 650px;
+    margin:auto;
+    background-color: #d348d8;
+    border-radius: 25px;
+    padding: 18px 25px;
+    color: #fff;
+    font-weight: 300;
+}
+
+form div{
+    margin-bottom: 5px;
+    width:100%;
+}
+
+.required::after {
+    content:"*"; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #d348d8;
+    position: absolute; 
+    margin: 5px 0px 0px -20px; 
+    font-size: x-large; 
+}
+
+input, select {
+    border-radius:20px;
+    height: 30px;
+    padding: 0 15px;
+    border:0;
+    outline-color: lawngreen;
+}
+
+.fotinha input {
+    border-radius: 0;
+    padding: 2px 0;
+}
+
+
+.curiosidades input {
+    height:initial;
+    margin: 4px;
+}
+
+.curiosidades label {
+    padding-right: 10px;
+    display: inline-block;
+}
+
+textarea {
+    display:block;
+    width: 100%;
+    border-radius: 20px;
+    padding:15px;
+    border:0;
+}
+
+form p {
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.submit input {
+    margin: 10px 10px 0 0;w    
+}
+
+.foto_rodape { 
+    background-image: url('../images/Graphic-Designer.jpg');
+    background-size: cover;
+    background-position: 50% 72%;
+    height: 35vh;
+    margin-top: 20px;
+}
+
+.rodape {
+    background-color: #d348d8;
+    color: #fff;
+    padding:9px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+
+
+
+@media (max-width:340px)
+{
+    .fotinhaa {
+       font-size: 10px;
+    }
+}
+
+
+@media (max-width:550px)
+{
+    :root {
+        font-size: 9px;
+    }
+
+    .artigo {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+
+    .artigo__gif {
+        width: 100%;
+    }
+
+    .p__reprograma {
+        padding: 25px 0 0;
+        margin: 0;
+        max-width:100%;
+    }
+
+    .rodape p {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    nav {
+        padding: 0 4rem;
+    }
+
+    .nav--desktop {
+        display: none;
+    }
+
+    .navclass--mobile {
+        display: initial;
+    }
+}
+
+
+
+@media (max-width: 700px)
+{
+    .listas {
+    max-width: 80%;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+    padding: 0;
+    }
+
+    .listas__caixa+.listas__caixa {
+    margin: 10px;
+    }
+
+    form {
+        width: 90%
+    }
+
+
+}

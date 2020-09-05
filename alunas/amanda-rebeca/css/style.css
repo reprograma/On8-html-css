@@ -1,0 +1,146 @@
+/*
+ * Reset
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+ul li {
+   list-style: square; 
+}
+
+/* conteudo */
+
+body {
+    background-color: #f5f8fa;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.menu {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.menu__lista{
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.menu__lista li {
+    list-style: none;
+    font-weight: bold;
+    margin: 0.6rem;
+}
+
+.menu__lista li span {
+    padding: 0.778rem 0;
+}
+
+.menu__lista li:hover span {
+    color: #7E459B;
+    height: 2.778rem;
+    box-shadow: inset 0 -4px 0 -1px #7E459B;
+}
+
+.menu__img {
+    height: 2.222rem;
+}
+
+.menu__img--opacity {
+    opacity: 0.7;
+}
+
+.menu__img:hover {
+    opacity: 1;
+}
+
+.banner {
+    background: url(../imagens/pre-wedding.jpg) center no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    height: 50vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.artigo {
+    padding: 1.11rem;
+    text-align: center;
+}
+
+.titulo {
+    color: #7E459B; 
+    padding: 0.556rem;
+}
+
+.artigo__imagem {
+    width: 13.889rem;
+    border-radius: 50%;
+    padding: 0.556rem;
+    margin-right: 1.11rem;
+}
+
+.paragrafo {
+    display: inline-block;
+    width: 24rem;
+    text-align: justify;
+    padding: 0.556rem;
+}
+
+.content--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.content--center {
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao {
+    padding: 1.667rem;
+}
+
+.sessao__caixa {
+    width: 18rem;
+    margin-bottom: 2rem;
+}
+
+.footer {
+    min-height: 2.778rem;
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.footer .paragrafo {
+    width: 100%;
+    text-align: center;
+}

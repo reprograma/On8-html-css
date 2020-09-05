@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>Sobre Mim</title>
+</head>
+
+<body class="corpo">
+    <nav class="navegacao">
+      <a href="https://reprograma.com.br/" target='_blank'>
+        <img class="nav__img" src="imagens/logo-reprograma.png" alt="logo-reprograma" /></a>
+        <ul class="nav__lista">
+            <a href="../../index.html" ><li>Home</li></a>
+              <li><img class="nav__img" src="imagens/github.svg" alt="github--logo" /></li>
+        </ul>
+    </nav>
+  <main class="principal">
+    <article class="artigo">
+      <h1 class="titulo">Um pouco sobre mim</h1>
+      <div class="artigo_descricao">
+      <img class="artigo__imagem" src="imagens/foto de perfil.jpg" alt="foto do perfil"/>
+
+      <p class="paragrafo">
+         Padawan em desenvolvimento front-end pela {reprograma} <br> Buscando as respostas para a vida, o universo e tudo mais através da tecnologia. 
+      </p>
+    </div>
+    </article>
+
+    <h1 class="titulo">Minhas listas</h1>
+
+    <section class="sessao--flex">
+      <div class="sessao__caixa">
+          <h3 class="titulo">Livros</h3>
+        <ul class="lista">
+          <li class="itemLista">Misery - Stephen King</li>
+          <li class="itemLista">Angústia - Graciliano Ramos</li>
+          <li class="itemLista">Farenheit 451 - Ray Bradbury</li>
+          <li class="itemLista">Orgulho e Preconceito - Jane Austen</li>
+          <li class="itemLista">A paixão segundo G. H. - Clarice Lispector</li>
+          <li class="itemLista">Morro dos Ventos Uivantes - Emily Brontë</li>
+        </ul>
+      </div>
+
+      <div class="sessao__caixa">
+          <h3 class="titulo">Séries</h3>
+        <ul class="lista">
+          <li class="itemLista">Dark</li>
+          <li class="itemLista">Watchman</li>
+          <li class="itemLista">Mr. Robot</li>
+          <li class="itemLista">The Office</li>
+          <li class="itemLista">Sons of Anarchy</li>
+          <li class="itemLista">Bojack Horseman</li>
+          
+        </ul>
+      </div>
+
+      <div class="sessao__caixa">
+        <h3 class="titulo">Filmes</h3>
+       <ul class="lista">
+        <li class="itemLista">Star Wars</li>
+        <li class="itemLista">Mulher-Maravilha</li>
+        <li class="itemLista">Senhor dos Anéis</li>
+        <li class="itemLista">Procurando Dory</li>
+        <li class="itemLista">Mad Max: Fury Road</li>
+        <li class="itemLista">2001: uma odisseia no espaço</li>
+      </ul>
+     </div>
+
+     </div>
+        </section>
+
+       <section class="sessao__form">
+           <form class="formulario">
+             <h2>Conte-me mais sobre você</h2>
+            <div class="formulario__div">
+              <label for="name" class="rotulo">Nome:</label>
+              <input class="input" type="text" 
+              placeholder="Digite seu nome" required
+              />
+            </div>
+
+            <div class="formulario__div">
+              <label for="email" class="rotulo">E-mail:</label>
+              <input
+                class="input"
+                type="email"
+                placeholder="Digite seu e-mail"
+                required
+              />
+            </div>
+                        
+            <div class="formulario__div">
+              <p class="paragrafo">Vou ler:</p>
+              <select id="dropdown" name="role">
+                <option value="">Nenhum</option>
+                <option value="misery">Misery</option>
+                <option value="angustia">Angústia</option>
+                <option value="farenheit">Farenheit 451</option>
+                <option value="orgulho">Orgulho e Preconceito</option>
+                <option value="paixao">A paixão segundo G. H</option>
+                <option value="morro">Morro dos Ventos Uivantes</option>
+              </select>
+            </div>
+
+            <div class="formulario__div">
+              <p class="paragrafo">Vou maratonar:</p>
+              <select id="dropdown" name="role">
+                <option value="">Nenhum</option>
+                <option value="dark">Dark</option>
+                <option value="watchman">Watchman
+                </option>
+                <option value="robot">Mr. Robot
+                </option>
+                <option value="office">The Office</option>
+                <option value="paixao">Sons of Anarchy</option>
+                <option value="horseman">Bojack Horseman</option>
+              </select>
+            </div>
+
+            <div class="formulario__div">
+              <p class="paragrafo">Vou assistir:</p>
+              <select id="dropdown" name="role">
+                <option value="">Nenhum</option>
+                <option value="wars">Star Wars</option>
+                <option value="maravilha">Mulher-Maravilha</option>
+                <option value="aneis">Senhor dos Anéis</option>
+                <option value="dory">Procurando Dory</option>
+                <option value="road">Mad Max: Fury Road</option>
+                <option value="espaco">2001: uma odisseia no espaço</option>
+              </select>
+            </div>
+
+            <div class="formulario__div_ob">
+              <p class="paragrafo">Qual a sua opinião sobre a vida, o universo e tudo mais:</p>
+              <textarea id="textarea" placeholder="..."></textarea>
+            </div>
+
+            <div class="formulario__div">
+              <button type="submit">Enviar</button>
+              <button type="reset">Reset</button>
+            </div>
+            
+          </form>
+
+          <section class="sessao">
+            <a href="https://myoctocat.com/" target='_blank'>
+            <p class="paragrafo_octocat">Faça seu próprio octocat!</p>
+
+            <img class="img_block" src="/alunas/ana-lucia/imagens/octocat-fundo-removido.png" alt="octocat"/></a>
+        </section>  
+                 
+      </main>
+
+  <footer class="footer">
+      <p class="paragrafo">Desenvolvido por Ana Lucia com html e css</p>
+  </footer>
+</body>
+</html>
+

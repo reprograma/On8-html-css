@@ -1,0 +1,301 @@
+/* reset comportamento padrao da pagina */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 10px;
+  }  
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+li {
+    font-size: 1.4rem;
+  }
+
+ul li {
+   list-style: none; 
+}
+
+/* conteudo */
+
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(222 151 133);
+}
+
+.nav__lista {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .nav__lista > li {
+    margin-right: 0,5rem;
+    padding: 1rem;
+  }
+  
+  .nav__img {
+    height: 60px;
+  }
+
+  #menu--desktop {
+    display: flex;
+  }
+  
+  #menu--celular {
+    display: none;
+  }
+  
+  /* menu mae */
+  .menu--responsivo {
+    position: relative;
+    cursor: pointer;
+  }
+
+   /* menu filha */
+  .menu__lista--responsivo {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    color:#fff;
+    background:rgb(222 151 133);
+    width: 100vw;
+  }
+  
+  .menu--responsivo:hover .menu__lista--responsivo {
+    display: block;
+  } 
+  
+  /* cabeçalho da pagina */
+  .cabecalho {
+    background-image: url(../img/background-foto.jpg);
+    background-size: cover;
+    background-position: 10% 5%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  /* main -- conteudo principal */
+.titulo {
+    text-align: center;
+    color: #fff; 
+    padding: 10px;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.preto {
+    color:rgb(63 68 72);
+    margin-bottom: 18vh;
+    font-family: 'Krona One', sans-serif;
+    font-size: 5vh;   
+}
+
+.sobre-mim {
+    margin-top: 20px;
+}
+
+.titulo--background {
+    background-color:rgb(222 151 133);
+}
+
+.titulo--borda {
+    border-radius: 10px;
+}
+
+.paragrafo {
+    display: inline-block;
+    max-width: 350px;
+    width: 100%;
+    text-align: justify;
+    padding: 20px;
+    font-size: 1.6rem;
+  }
+
+.artigo__imagem {
+    display: inline-block;
+    max-width: 40%;
+    width: 300px;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.img--block {
+    display: block;
+  }
+
+.artigo {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sessao__caixa {
+    padding: 3rem;
+}
+
+.sessao--flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem;
+    width: 100%;
+}
+
+.titulo--lista {
+  width: 450px;
+
+}
+
+ /* galeria */
+ .galeria {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .galeria__box {
+    background-color: rgb(195 217 194);
+    margin: 3rem;
+  }
+  
+  .galeria__img{
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+
+  }
+  
+  .align-self {
+    align-self: flex-end;
+  }
+
+
+ /* formulario */
+
+.paragrafo--formulario {
+   display: flex;
+   justify-content: center;
+   text-align: justify;
+   padding: 10px;
+   margin-top: 1%;
+   font-size: 1.6rem;
+}
+
+.formulario {
+    background-color: rgb(195 217 194);
+    margin: 5rem 10rem;
+    border-radius: 20px;
+}
+  
+.formulario__div {
+    padding: 2rem;
+    text-align: center;
+}
+
+.paragrafo-titulo {
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+.input {
+    padding: 0.8 rem;
+    border: 5px rgb(80 84 87);
+    border-radius: 10px;
+}
+
+.rotulo {
+    font-size: 1.6rem;
+    padding: 5px;
+    display: flex;
+    justify-content: center ;
+
+}
+
+.flex--input {
+    display: flex;
+}
+
+#textarea {
+    width: 50%;
+    height: 200px;
+    border: 1px rgb(80 84 87);
+}
+
+
+  /* rodapé */
+.artigo__imagem--octocat {
+    display: inline-block;
+    width: 300px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+    align-items: center;
+
+}
+
+.paragrafo__titulo--octocat {
+    color: #000000; 
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(80 84 87);
+    color: white;
+}
+
+ /* --- max-width até no máximo de largura 650px eu vou me comportar assim  */
+ @media screen and (max-width:650px) {
+  html {
+    font-size: 8px;
+  }
+
+  .formulario {
+   margin: 0 auto;
+  }
+  .galeria{
+    justify-content: center;
+  }
+
+  .artigo {flex-wrap: wrap;}
+}
+
+
+@media screen and (max-width:650px) {
+ #menu--celular {
+   display: block;
+ }
+ #menu--desktop {
+   display: none;
+ }
+}

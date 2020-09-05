@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+a:hover {
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none; 
+ }
+
+
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #54d4e6;
+}
+.nav__lista {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.nav__img {
+    height: 50px;
+    margin: 20px;
+}
+
+.cabecalho{
+    background: url(../img/IMG_20191210_174942.jpg) center;
+    background-size: unset;
+    height: 300px;
+}
+
+.titulo {
+    text-align: center;
+    color: #54d4e6; 
+    padding: 10%;
+    font-size: 50px;  
+}
+.principal {
+    background-color: lightgoldenrodyellow;
+}
+
+
+.artigo {
+    text-align: center;
+    padding: 20px;
+    padding-left: 0%;
+}
+
+
+.subtitulo {
+    text-align: center;
+    padding: 10px;
+    font-size: 35px;
+    color: rgb(241, 59, 150);
+}
+.artigo__img {
+    border-radius: 50%;
+    display: inline-block;
+    width: 200px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.artigo__texto {
+    display: inline-block;
+    text-align: justify;
+    width: 70%;
+    padding: 20px;
+}
+
+
+
+.sessao__flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.sessao__titulo {
+    color:  #54d4e6;
+    font-size: 30px;
+}
+
+.itemLista {
+    text-align: center;
+    font-size: 20px;
+}
+ol li {
+    list-style: none; 
+ }
+ 
+ .paragrafo {
+    text-align: center;
+    width: 30%;
+    font-size: 20px;
+    padding-bottom: 10px;
+ }
+
+ .sessao {
+    padding-left: 25%;
+    text-align: center;
+}
+.sessao__img {
+    border-radius: 50%;
+    width: 60%;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.redes {
+    text-align: center;
+}
+.social__link{
+    display: inline-block;
+    width: 175px;
+    height: 175px;
+    background-color: lightpink;
+    border-radius: 20px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    color: white;
+}

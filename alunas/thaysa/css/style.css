@@ -1,0 +1,203 @@
+/* ESPICIFICIDADE 
+    O MAIS ESPECIFICO VENCE! */
+/* DEPOIS VEM A CASCATA, O MAIS EMBAIXO VENCE */
+
+/* reset comportamento padrao da pagina */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+li {
+  font-size: 1.6rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* conteudo */
+
+/* barra de navegação */
+
+.navegacao {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7e459b;
+}
+
+.nav__lista {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 1rem;
+}
+
+.nav__lista > li {
+  margin-right: 1rem;
+  padding: 1rem;
+}
+
+.nav__img {
+  height: 50px;
+  margin: 1rem;
+}
+
+#menu--desktop {
+  display: flex;
+}
+
+#menu--celular {
+  display: none;
+}
+
+/* menu mae */
+.menu--responsivo {
+  position: relative;
+  cursor: pointer;
+}
+ /* menu filha */
+.menu__lista--responsivo {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  color: #fff;
+  background: #f2f2f255;
+  width: 100vw;
+}
+
+ /* hover -- passando o mouse por cima do menu mae; menu filha faça isso */
+.menu--responsivo:hover .menu__lista--responsivo {
+  display: block;
+}
+
+
+/* cabeçalho da pagina */
+.cabecalho {
+  background: url(/alunas/sra-gata/imagens/tres-gatinhos.jpg);
+  background-size: cover;
+  background-position: 50% 30%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* height = altura 
+width = largura  */
+/* main -- conteudo principal */
+
+.titulo {
+  text-align: center;
+  color: #7e459b;
+  font-size: 3.2rem;
+  padding: 1rem;
+}
+
+.subtitulo {
+  font-size: 2.6rem;
+}
+
+.branco {
+  color: #fff;
+}
+
+.paragrafo {
+  display: inline-block;
+  max-width: 350px;
+  width: 100%;
+  text-align: justify;
+  padding: 10px;
+  font-size: 1.8rem;
+}
+
+
+.artigo {
+  text-align: center;
+  padding: 2rem;
+}
+
+.artigo__imagem {
+  display: inline-block;
+  max-width: 320px;
+  width: 100%;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-right: 2rem;
+  position: relative;
+}
+
+.img--block {
+  display: block;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6%;
+}
+
+.paragrafo {
+    line-height: 1.5;
+    color: rgb(25, 25, 26);
+}
+.sessao {
+  padding: 3rem;
+}
+
+.sessao--flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+  width: 100%;
+}
+
+.lista {
+    line-height: 2;
+}
+
+
+/* rodapé */
+.footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e2e2e;
+  color: white;
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+   .sobre, .sessao--flex {
+    flex-direction: column;
+    margin-top: 3%;
+  }
+
+  .titulo {
+    margin-top: 3%;
+  }
+
+}

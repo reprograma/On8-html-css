@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beatriz Liu</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stylesheet = folha de estilo -->
+    <!-- <style>
+        p {
+            background-color: aqua;
+        }
+        img {
+            border: 2px blueviolet solid;
+        }
+    </style> -->
+  </head>
+  <body class="corpo">
+    <nav class="navegacao">
+      <img
+        class="nav__img"
+        src="../../img-home/logo-reprograma.png"
+        alt="logo-reprograma"
+      />
+      <ul id="menu--desktop" class="nav__lista">
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#formulario">Formulário</a></li>
+        <li><a href="../../index.html">Home</a></li>
+        <li>
+          <a href="https://github.com/reprograma" target="_blank"
+            ><img
+              class="nav__img"
+              src="../../img-home/github.svg"
+              alt="github--logo"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="cabecalho">
+      <h1 class="titulo-branco">Bem vindos ao meu site!</h1>
+    </header>
+    <main class="principal">
+      <article class="artigo">
+        <h2 class="titulo">Um pouco sobre mim</h2>
+        <img
+          class="artigo__imagem"
+          src="./img/bia1.JPG"
+          alt="gatinha deitada"
+        />
+        <p class="paragrafo">
+          Sou pernambucana e recifense com muito orgulho, tenho 21 anos - signo de escorpião, e atualmente sou aluna Front-End do curso Reprograma e trabalho como gerente de produto no CITi - empresa júnior da UFPE. Tenho 4 filhos de 4 patas, amo viajar de paixão e sedenta por conhecimento e inovação!
+        </p>
+      </article>
+      <h2 id="listas" class="titulo">Minhas listas</h2>
+      <section class="sessao sessao--flex">
+        <div class="sessao__caixa">
+          <h3 class="titulo subtitulo">meus desejos para 2021</h3>
+          <ul class="lista">
+            <li class="itemLista">Vacina do corona</li>
+            <li class="itemLista">Projeto verão fitness</li>
+            <li class="itemLista">Arrumar meu primeiro job</li>
+            <li class="itemLista">Ganhar muito dinheiro</li>
+            <li class="itemLista">Aprimorar meu mandarim</li>
+            <li class="itemLista">Ser feliz</li>
+            <li class="itemLista">Codar mais e mais!</li>
+          </ul>
+        </div>
+        <div class="sessao__caixa">
+          <h3 class="titulo subtitulo">filmes que eu gosto</h3>
+          <ul class="lista">
+            <li class="itemLista">La la land
+            </li>
+            <li class="itemLista">Bacurau</li>
+            <li class="itemLista">Amanhecer parte 1</li>
+            <li class="itemLista">Parasita</li>
+            <li class="itemLista">Questão de Tempo</li>
+            <li class="itemLista">Jogos Vorazes</li>
+            <li class="itemLista">Up, altas aventuras</li>
+          </ul>
+        </div>
+        <div class="sessao__caixa">
+          <h3 class="titulo subtitulo">meus livros favoritos</h3>
+          <ul class="lista">
+            <li class="itemLista">Criatividade S.A</li>
+            <li class="itemLista">O jeito Disney de encantar os clientes</li>
+            <li class="itemLista">Sol da meia noite</li>
+            <li class="itemLista">Todos os santos malditos</li>
+            <li class="itemLista">O pequeno príncipe</li>
+            <li class="itemLista">O mundo de sofia</li>
+            <li class="itemLista">O milagre da manhã</li>
+            <li class="itemLista">A sutil arte de ligar o foda-se</li>
+          </ul>
+        </div>
+      </section>
+      <h2 class="titulo">Minha galeria de fotos :)</h2>
+      <section class="galeria"> 
+         <!-- --- display flex - de inicio parece inline-block mas tu tem maior liberdade  pra organizar as filhas.  -->
+        <div class="galeria__box"> 
+          <!-- ----move as filhas //// display inline (nao consegue mexer altura e largura) / block (mexe altura e largura, mas ocupa toda largura da tela) / inline-block (mexe largura e altura e pode receber elementos ao lado.) -->
+          <img src="../beatriz-liu/img/eu2.png" alt="eu no templo zu lai" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Templo Zu Lai </p>
+        </div>
+        <div class="galeria__box">
+          <img src="../beatriz-liu/img/eu3.png" alt="eu e minhas amigas" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Minhas amigas </p>
+        </div>
+        <div class="galeria__box">
+          <img src="../beatriz-liu/img/eu4.png" alt="foto minha com meu namorado" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Meu namorado </p>
+        </div>
+        <div class="galeria__box">
+          <img src="../beatriz-liu/img/eu5.png" alt="eu e minha irmã" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Minha irmãzinha </p>
+        </div>
+        <div class="galeria__box">
+          <img src="../beatriz-liu/img/eu6.png" alt="eu e minha mãe" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Minha mãe e irmãos de quatro patas </p>
+        </div>
+        <div class="galeria__box">
+          <img src="../beatriz-liu/img/eu7.png" alt="eu e minhas primas" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Minhas primas </p>
+        </div>
+        <div class="galeria__box">
+          <img src="../beatriz-liu/img/family.jpeg" alt="minha familia por parte de pai" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Família por parte de pai </p>
+        </div>
+        <div class="galeria__box">
+          <img src="../beatriz-liu/img/citi.jpeg" alt="minha ejota" class="galeria__img">
+          <p class="paragrafo paragrafo--center"> Família CITi </p>
+        </div>
+      </section>
+      <section id="formulario" class="sessao">
+        <h2 class="titulo">Entre em contato!</h2>
+        <form  class="formulario">
+          <div class="formulario__div">
+            <label for="name" class="rotulo">Nome:</label>
+            <input
+              class="input"
+              type="text"
+              placeholder="digite seu nome"
+              required
+            />
+          </div>
+          <div class="formulario__div">
+            <label for="email" class="rotulo">E-mail:</label>
+            <input
+              class="input"
+              type="email"
+              placeholder="digite seu e-mail"
+              required
+            />
+          </div>
+          <div class="formulario__div">
+            <label for="nascimento" class="rotulo">Data de nascimento:</label>
+            <input class="input" type="date" placeholder="que dia nasceu vc?" />
+          </div>
+          <div class="formulario__div">
+            <label for="idade" class="rotulo">Idade:</label>
+            <input
+              class="input"
+              type="number"
+              min="10"
+              max="100"
+              placeholder="qual sua idade:"
+            />
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Qual a comida que mais gosta, dessa lista:</p>
+            <section class="flex--input">
+
+              <label class="rotulo">
+                <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="lasanha"
+                />
+                Pizza
+              </label>
+              <label class="rotulo">
+                <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="sushi"
+                />
+                Sushi
+              </label>
+              <label class="rotulo">
+                <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="couscus"
+                />
+                Hambúrguer
+              </label>
+              <label class="rotulo">
+                <input
+                class="input--radio"
+                name="comida-favorita"
+                type="radio"
+                value="pizza"
+                />
+                Sorvete
+              </label>
+            </section>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Quais estilos musicais você gosta?</p>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="eletronica"
+              />
+              MPB
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="rock"
+              />
+              Pop
+            </label>
+            <label class="rotulo">
+              <input
+                class="input--radio"
+                name="musica"
+                type="checkbox"
+                value="sertaneijo"
+              />
+              Rock
+            </label>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Quem nasceu primeiro nesse mundão?</p>
+            <select id="dropdown" name="role">
+              <option value="ovo">Ovo?</option>
+              <option value="galinha">Galinha?</option>
+              <option value="eva">Adão e Eva?</option>
+              <option value="dinos">Dinossauros?</option>
+            </select>
+          </div>
+          <div class="formulario__div">
+            <p class="paragrafo">Abra o coraçãozinho:</p>
+            <textarea
+              id="textarea"
+              placeholder="conte mais sobre você"
+            ></textarea>
+          </div>
+          <div class="formulario__div">
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+      <section class="sessao">
+        <a href="https://myoctocat.com/">
+          <p class="paragrafo">Faça seu próprio octocat!</p>
+          <img
+            src="../beatriz-liu/img/gatoo.jpg"
+            alt="octocat"
+            class="artigo__imagem img--block"
+          />
+        </a>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="paragrafo">Desenvolvido por Bia Liu no {Reprograma}</p>
+    </footer>
+  </body>
+</html>

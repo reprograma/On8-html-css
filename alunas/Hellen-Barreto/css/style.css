@@ -1,0 +1,259 @@
+  /* ESPICIFICIDADE 
+    O MAIS ESPECIFICO VENCE! */
+/* DEPOIS VEM A CASCATA, O MAIS EMBAIXO VENCE */
+
+/* reset comportamento padrao da pagina */
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:"raleway", sans-serif;
+}
+html{
+    font-size: 1.rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+li{
+    font-size: 1.rem;
+}
+
+ul li {
+    list-style: none;
+}
+/*conteudo*/
+/*barra de navegação*/ 
+
+.navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+.nav__lista{
+    display: flex;
+    align-items: center;
+    color: darkblue;
+    padding: 1rem;
+}
+.nav__lista > li {
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.nav__img {
+    height: 50px;
+    margin: 1rem;
+}
+#menu--desktop {
+    display: flex;
+}
+#menu--celular {
+    display: none;
+}
+/*menun mae*/
+.menu__lista--responsivo {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    color: #fff;
+    background: #f2f2f255;
+    width: 100vw;
+}
+/*hover --passando o mouse em cima do menu mae; menu filha faça isso*/
+.menu--responsivo:hover .menu__lista--responsivo{
+    display: block;
+}
+
+/* cabeçalho da página*/
+.cabecalho{
+    background: url(../Imagem/beautiful-tropical-beach-sea-ocean-with-coconut-palm-tree-sunrise-time_74190-7454.jpg);
+    background-size: center;
+    background-position: 50% 30%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.titulo {
+    text-align: center;
+    color: rgb(110, 11, 190);
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.titulo-contato{
+    text-align: center;
+    padding: 10rem 4rem 1rem;
+    margin: 0.5rem;
+
+}
+.subtitulo {
+    font-size: 1.2rem;
+    height: 54px;
+    padding-top: 0.5rem;
+}
+.branco {
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 120px;
+    background-color: rgb(139, 130, 130);
+    border-radius: 50%;
+    font-size: 1.7rem;
+}
+
+.paragrafo {
+    display: inline-block;
+    max-width: 350px;
+    width: 100%;
+    text-align: justify;
+    vertical-align: 250%;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+.artigo {
+    text-align: center;
+    padding: 2rem;
+}
+
+.artigo__imagem {
+    display: inline-block;
+    max-width: 330px;
+    width: 100%;
+    border-radius: 50%;
+    padding: 1rem;
+    text-align: center;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.img--block{
+    display: block;
+}
+
+.sessao{
+    padding: 1rem
+}
+.sessao--flex{
+    display: flex;
+    justify-content: space-evenly; 
+      
+}
+.sessao__caixa{
+    border-radius: 20px;
+    border: 5px;
+    height: 50vh;
+
+}
+.lista{
+    border:rgb(91, 89, 230) 2px dashed;
+    margin:1rem;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+}
+.itemlista{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+.formulario{
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #6563ec;
+    border-radius: 30px;
+    display: block;
+    text-align: center;
+}
+.formulario__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.reset{
+    background-color: rgb(140, 140, 187);
+}
+.submit{
+    background-color: rgb(214, 223, 97);
+}
+.botao{
+    padding: 0.8rem;
+    border-radius: 10px;
+    margin: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.rotulo {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: rgb(14, 13, 13);
+    
+}
+.input {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    text-align: justify;
+}
+.flex--input {
+    display: flex;
+}
+#textarea{
+    font-size: 1.2rem;
+    width: 40%;
+    height: 200px;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: 3px solid #000;
+}
+/* rodapé */
+
+.footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 61, 185);
+    color: white;
+    text-align: center;
+}
+@mediascreenand(max-width: 650px) {
+    html {
+        font-size: 8px;
+    }
+.formulario {
+    margin: 0 auto;
+}
+}
+@mediascreenand(max-width: 450px) {
+    #menu-celular {
+        display: block;
+    }
+    #menu--desktop {
+        display: none;
+    }
+}
+
+
+/* titulo 3.2 rem  
+3.2 * font-size padrao ou font-size atribuida de padrao  
+html 10px  * 3.2rem = 32px 
+
+com até 650 px de largura da tela !! 
+html = 8px - titulo = 3.2rem  ; 3.2rem * 8 = 25.6px     */

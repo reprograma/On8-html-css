@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="site pessoal criado por mim">
+  <meta name="keywords" content="site, blog, pessoal">
+  <meta name="roots" content="index, follow">
+  <meta name="author" content="Julia Barbosa">
+  <title>Site Pagina incial</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="corpo">
+  <nav class="navegacao">
+    <a href="https://reprograma.com.br/" target="_blank"> <img class="nav-img" src="../../img-home/logo-reprograma.png"
+        alt="logo-reprograma"></a>
+    <ul class="nav-lista">
+      <a href="../../index.html">
+        <li>Home</li>
+      </a>
+      <a href="https://github.com/JuliaBarbosa-dev" target="_blank">
+        <li> <img class="nav-img" src="../../img-home/github.svg" alt="Github-logo"> </li>
+      </a>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="banner">
+      <h1 class="titulo-branco"> Olá, sou a Julia Barbosa!</h1>
+
+    </div>
+
+  </header>
+
+  <h2 class="titulo">UM POUCO SOBRE MIM</h1>
+    <main class="principal">
+      <article class="artigo">
+
+        <img class="artigo-imagem"
+          src="https://avatars3.githubusercontent.com/u/62982100?s=460&u=7011a2b4548ef75b73d54e2324d7c01791d9761b&v=4"
+          alt="Julia" />
+        <p class="paragrafo">
+          Técnica em Manutenção e Suporte em Informática, atuei como freelancer em manutenção de
+          hardware e software. Acadêmica em ciência da computação. Atuo como diretora de ensino na
+          na LADSOFT, conhecida como liga academica em desenvolvimento de software na UNINASSAU.
+          Sou presidente da liga academica CodGirls. Atuo como professora de reforço escolar nas horas vagas.
+        </p>
+        <!-- <a href="">Link para meu facebook</a> -->
+      </article>
+      <h2 class="titulo"> MINHAS LISTAS </h2>
+      <section class="sessao sessao--flex">
+        <div class="sessao-caixa">
+          <h3 class="titulo">METAS PARA 2021</h3>
+          <ul class="lista">
+            <li class="itemLista">Inglês fluente</li>
+            <li class="itemLista">FullStack</li>
+            <li class="itemLista">trabalhar</li>
+            <li class="itemLista">viajar</li>
+            <li class="itemLista">Concluir novos cursos</li>
+          </ul>
+        </div>
+        <div class="sessao-caixa">
+          <h3 class="titulo">METAS PARA 2020</h3>
+          <ol class="lista">
+            <li class="itemLista">Formação Front end</li>
+            <li class="itemLista">Viajar </li>
+            <li class="itemLista">estágio</li>
+            <li class="itemLista"> +1 período</li>
+            <li class="itemLista">Ler +100 livros </li>
+          </ol>
+        </div>
+      </section>
+
+
+      <section class="sobre-mim">
+        <div class="historia">
+          <h2 class="titulo">
+            COMO ENTREI NA ÁREA DE TI
+          </h2>
+          <p class="paragrafo"> Sem estive inserida no ambiente tecnológico. Amo jogos(RPG, FPS, indie), cultura geek,
+            animes, hq's e mangás, porém, nunca tinha pensado em atuar profissionalmente na área. Após iniciar o curso
+            técnico em manutenção e suporte em informática, vi que essa realmente
+            sempre foi a minha área.
+
+          </p>
+        </div>
+
+      </section>
+
+      <section class="sessao">
+        <form class="formulario">
+          <div class="formulario-div">
+            <label for="name" class="paragrafo-form"> Nome: </label>
+            <input class="input" type="text" placeholder="Digite seu nome" required>
+          </div>
+          <div class="formulario-div">
+            <label for="email" class="paragrafo-form">E-mail: </label>
+            <input class="input" type="email" placeholder="Digite seu email" required>
+          </div>
+          <div class="formulario-div">
+            <label for="nascimento" class="paragrafo-form">Data de nascimento: </label>
+            <input class="input" type="date" placeholder="Digite a data do seu nascimento">
+          </div>
+          <div class="formulario-div">
+            <label for="idade" class="paragrafo-form">Idade: </label>
+            <input class="input" type="number" min="16" max="70" placeholder="idade: ">
+          </div>
+
+          <div class="formulario-div">
+            <p class="paragrafo-form">
+              Qual seu estilo musical preferido?</p>
+            <label class="rotulo">
+              <input name="estacao" type="radio" value="pop">
+              Verão
+            </label>
+            <label class="rotulo">
+              <input name="estacao" type="radio" value="jazz">
+              Inverno
+            </label>
+            <label class="rotulo">
+              <input name="estacao" type="radio" value="sertanejo">
+              Primavera
+            </label>
+            <label class="rotulo">
+              <input name="estacao" type="radio" value="rock">
+              Outono
+            </label>
+          </div>
+          <div class="formulario-div">
+            <p class="paragrafo-form">
+              Quais são seus pontos fortes?</p>
+            <label class="rotulo">
+              <input name="caracteristica" type="checkbox" value=organização>
+              Organização
+            </label>
+            <label class="rotulo">
+              <input name="caracteristica" type="checkbox" value="proatividade">
+              Proatividade
+            </label>
+            <label class="rotulo">
+              <input name="caracteristica" type="checkbox" value="criatividade">
+              Criatividade
+            </label>
+            <label class="rotulo">
+              <input name="caracteristica" type="checkbox" value="autocontrole">
+              Autocontrole
+            </label>
+            <label class="rotulo">
+              <input name="caracteristica" type="checkbox" value="resiliencia">
+              Resiliência
+            </label>
+          </div>
+
+          <div class="formulario-div">
+            <p class="paragrafo-form">O que você prefere?</p>
+            <select id="dropdown" name="role">
+              <option value="fome">Rico triste</option>
+              <option value="sede">Pobre feliz</option>
+
+            </select>
+
+          </div>
+          <div class="formulario-div">
+            <p class="paragrafo-form">O que você escolhe?</p>
+            <select id="dropdown" name="role">
+              <option value="felicidade">
+                Felicidade
+              </option>
+              <option value="riqueza">
+                Riqueza
+              </option>
+
+            </select>
+
+          </div>
+
+          <div class="formulario-div">
+            <p class="paragrafo-form">Abra o coraçãozinho: </p>
+            <textarea id="textarea" placeholder="Conte-me alguma coisa"></textarea>
+          </div>
+
+          <div class="formulario-div">
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+
+      </section>
+
+      <section class="sessao">
+        <a href="https://myoctocat.com/" target="_blank">
+          <p class="paragrafo">FAÇA E ESTILIZE SEU OCTOCAT !</p>
+          <img src="./img/octocat.png" alt="Octocat" class="artigo-imagem" />
+        </a>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <p>
+        Desenvolvido por Julia Barbosa &copy; 2020
+      </p>
+    </footer>
+</body>
+
+</html>
