@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto html-css</title>
+    <link rel="stylesheet" href="/alunas/michele_/css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="corpo">
+    <nav class="navegacao">
+        <a href="https://reprograma.com.br/" target="_blank">
+            <img class="nav_img" src="../../img-home/logo-reprograma.png" alt="logo-reprograma" />
+        </a>
+
+        <ul class="nav-lista">
+
+            <li><a href="https://github.com/micheleset7" target="_blank"><img class="nav_img"
+                        src="../../img-home/github.svg " alt="GitHub-logo" /></a></li>
+            <li><a href="../../index.html">Home</a></li>
+        </ul>
+    </nav>
+    <header class="cabecalho">
+        <h1 class="titulo branco">Eu sou Michele Coelho</h1>
+    </header>
+
+    <main class="principal">
+        <article class="artigo">
+            <h2 class="titulo">Um pouco sobre mim</h2>
+            <img class="artigo_imagem" src="/alunas/michele_/img/relaxing-cat.jpg" alt="gatinho">
+            <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos iste sed ducimus,
+                culpa vero molestias veniam reiciendis maiores sequi iure rerum eos modi illum nostrum tempore in cumque
+                vitae minus?</p>
+        </article>
+
+        <h2 class="titulo">Minhas listas</h2>
+        <section class="sessao sessao--flex">
+            <div class="sessao_caixa">
+                <h3>Meus desejos para 2021</h3>
+                <ul class="lista">
+                    <li class="itemLista">Paz</li>
+                    <li class="itemLista">Amor</li>
+                    <li class="itemLista">Saúde</li>
+                    <li class="itemLista">Codar</li>
+                    <li class="itemLista">Dinheiro</li>
+                </ul>
+            </div>
+
+            <div class="sessao_caixa">
+                <h3>Filmes que eu gosto</h3>
+                <ol class="lista">
+                    <li class="itemLista">Bacurau</li>
+                    <li class="itemLista">Lisbela e o prisioneiro</li>
+                    <li class="itemLista">A origem</li>
+                    <li class="itemLista">O milagre da cela 7</li>
+                    <li class="itemLista">Alto da compadecida</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="sessao">
+            <form class="formulario">
+                <div class="formulario_div">
+                    <label for="name" class="rotulo">Nome:</label>
+                    <input class="input" type="text" placeholder="Digite seu nome" required />
+                </div>
+
+                <div class="formulario_div">
+                    <label for="email" class="rotulo">E-mail:</label>
+                    <input class="input" type="email" placeholder="Digite seu e-mail" required />
+                </div>
+
+                <div class="formulario_div">
+                    <label for="nascimento" class="rotulo">Data de nascimeto:</label>
+                    <input class="input" type="date" placeholder="Digite sua data de nascimento" required />
+                </div>
+
+                <div class="formulario_div">
+                    <label for="idade" class="rotulo">Idade:</label>
+                    <input class="input" type="number" min="10" max="100" placeholder="Digite sua idade" />
+                </div>
+
+                <div class="formulario_div">
+                    <p class="paragrafo">Qual estação do ano você maisc gosta?</p>
+                    <label class="rotulo" for="">
+                        <input class="input_radio" name="estacao do ano" type="radio" value="verão" />
+                        Verão
+                    </label>
+
+                    <label class="rotulo">
+                        <input class="input_radio" name="estacao do ano" type="radio" value="inverno" />
+                        Inverno
+                    </label>
+
+                    <label class="rotulo">
+                        <input class="input_radio" name="estacao do ano" type="radio" value="outono" />
+                        Outono
+                    </label>
+
+                    <label class="rotulo">
+                        <input class="input_radio" name="estacao do ano" type="radio" value="primavera" />
+                        Primavera
+                    </label>
+                </div>
+
+                <div class="formulario_div">
+                    <p class="paragrafo">Quais seus estilos musicais favorito desta lista?</p>
+                    <label class="rotulo">
+                        <input class="input_radio" name="musica" type="checkbox" value="pop/rock" />
+                        Pop/Rock
+                    </label>
+
+                    <label class="rotulo">
+                        <input class="input_radio" name="musica" type="checkbox" value="forro" />
+                        Forró
+                    </label>
+
+                    <label class="rotulo">
+                        <input class="input_radio" name="musica" type="checkbox" value="mpb" />
+                        MPB
+                    </label>
+
+                    <label class="rotulo">
+                        <input class="input_radio" name="musica" type="checkbox" value="sertanejo" />
+                        Sertanejo
+                    </label>
+                </div>
+                <div class="formulario_div">
+                    <p class="paragrafo">Qual destas linguagens de programaçao você mais gosta?</p>
+                    <select name="role" id="dropdow">
+                        <option value="js">JavaScript</option>
+                        <option value="java">Java</option>
+                        <option value="dinossauros">Python</option>
+                        <option value="outros">C++</option>
+                    </select>
+                </div>
+
+                <div class="formulario_div">
+                    <p class="paragrafo">Comente algo sobre voce!</p>
+                    <textarea name="" id="textarea" placeholder="Deixe aqui seu comentário"></textarea>
+                </div>
+
+                <div class="formulario_div">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="sessao">
+            <a href="https://myoctocat.com/">
+                <p class="paragrafo">
+                    Faça seu próprio Octocat</p>
+                <img class="artigo_imagem img--block" src="/alunas/michele_/img/octocat.png" alt="Octocat">
+            </a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="paragrafo">Desenvolvido por Michele Coelho com HTML-CSS</p>
+    </footer>
+</body>
+
+</html>

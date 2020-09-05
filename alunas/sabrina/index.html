@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eu sou a sa mares</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./images/hi.ico" rel="icon" type="image/x-icon" />
+
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="http://reprograma.com.br/" target="__blank"><img src="../../img-home/logo-reprograma.png" alt="logo da reprograma"></a>
+        <ul>
+            <li> <a class="home" href="../../index.html"> home</a></li> 
+            <li><a href="https://github.com/sabrinamares" target="__blank"><img src="../../img-home/github.svg" alt="logo do hitgub"></a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div>
+            <h1>oie,<br>eu sou a sa</h1>
+            <a href="https://www.instagram.com/inferninhw/" target="__blank"><img src="./images/0.jpg" alt="foto da sabrina, de fundo um quadro feito por ela"></a>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <h2>um pouco sobre mim</h2>
+            <div class="artigo">
+                <p class="paragrafo_sobre-mim">
+                    Oi, meu nome é Sabrina, tenho 22 anos e moro na zona leste de São Paulo.
+                    <br>
+                    Sou apaixonada por criação desde muito nova, sempre gostei de brincar com cores e papéis, isso me levou ao design, hoje sou estudante de Design Gráfico pela Universidade Anhembi Morumbi.
+                    <br>
+                    Criativa e curiosa, sempre pesquiso sobre todas as perguntas que rondam minha cabeça e assim, aprendo muita coisa sozinha. Em umas dessas, acabei mexendo em códigos de html e css pra arrumar o theme do tumblr, isso despertou um interesse por tecnologia. 
+                    <br>
+                    <span>
+                    Me inscrevi para o bootcamp de front-end da {reprograma} e aqui estou :)
+                    </span>
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <h2>a <span>{reprograma}</span> e eu</h2>
+            <div class="artigo">
+                <img class="artigo__imagem" src="https://i.giphy.com/media/137EaR4vAOCn1S/giphy.webp">
+                <p class="paragrafo">
+                    Quase não me inscrevi na reprograma porque não tinha autoestima suficiente pra gravar um vídeo, mas eu consegui e melhor: gostei do vídeo.
+                    E isso tem resumido a minha jornada nesse bootcamp:<span> enfrento os meus medos e no final me sinto orgulhosa.</span>
+
+                </p>
+            </div>
+        </article>
+
+        <section class="listas"> 
+            <div class="listas__caixa">
+                <ol>
+                    <h3 class="titulo">meus desejos</h3> 
+                    <li>morte ao coronavirus</li>
+                    <li>ver minha vó</li>
+                    <li>abraçar minha vó</li>
+                    <li>emprego para crescimento</li>
+                    <li>litrão cozamigo</li>
+                </ol>
+            </div>
+            <div class="listas__caixa">
+                <ul> 
+                    <h3 class="titulo">quero aprender </h3> 
+                    <li>javascript</li>
+                    <li>modelagem 3d</li>
+                    <li>motion design</li>
+                    <li>audiovisual</li>
+                    <li>ilustração digital</li>
+                </ul>
+            </div>
+            <div class="listas__caixa">
+                <ul class="fav"> 
+                    <h3 class="titulo">favoritos</h3> 
+                    <li class="musica">paramore</li>
+                    <li class="tv">grey's anatomy</li>
+                    <li class="filme"> ponyo</li>
+                    <li class="lingua">francês</li>
+                    <li class="lugar">mar</li>
+                </ul>
+            </div>
+        </section>
+        <section class="formulario">
+            <form>
+                <h3>oi, quero te conhecer</h3>
+                <h4>informações pessoais</h4>
+                <div>
+                    <label for="nome"><p>nome:</p></label>
+                    <input type="text" placeholder="digite seu nome" required> 
+                    <span class="required">  </span>  
+                </div>
+                <div class="fotinha">
+                    <label class="fotin" for="foto"><p>uma fotinha sua:</p></label>
+                    <input type="file">
+                </div>
+                <div>
+                    <label for="idade"><p>idade:</p></label>
+                    <input type="number" placeholder="quantos anos você tem?">
+                </div>
+                <div>
+                    <p>gênero:</p>
+                    <select>
+                        <option value="" disabled="" >selecione</option>
+                        <option value="mulher">mulher</option>
+                        <option value="homem">homem</option>
+                        <option value="nb">não binário</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="email"><p>e-mail:</p></label>
+                    <input type="email" placeholder="digite seu e-mail" required>
+                    <span class="required"></span>
+                </div>
+                <h4>mapa astral</h4>
+                <div>
+                    <label for="nascimento"><p>data de nascimento:</p></label>
+                    <input type="date">
+                </div>
+
+                <div>
+                    <label for="hora_nascimento"><p> horário de nascimento:</p></label>
+                    <input type="time">
+                </div>
+                <div>
+                    <label for="local"><p>local de nascimento:</p></label>
+                    <input type="text" placeholder="cidade, estado e país">
+                </div>
+                <h4>curiosidades</h4>
+                <div class="curiosidades">
+                    <p>clima favorito:</p>
+                    <label><input name="lugar-favorito" type="radio" value="verão">verão
+                    </label>
+                    <label><input name="lugar-favorito" type="radio" value="outono">outono
+                    </label>
+                    <label><input name="lugar-favorito" type="radio" value="inverno">inverno
+                    </label>
+                    <label><input name="lugar-favorito" type="radio" value="primavera">primavera
+                    </label>
+                    
+                </div>
+                <div class="curiosidades">
+                    <p>você gosta de água de...</p>
+                    <label>
+                        <input name="agua" type="checkbox" value="mar"> mar
+                    </label>
+                    <label>
+                        <input name="agua" type="checkbox" value="rio"> rio
+                    </label>
+                    <label>
+                        <input name="agua" type="checkbox" value="piscina"> piscina
+                    </label>
+                    <label>
+                        <input name="agua" type="checkbox" value="chuva"> chuva
+                    </label>
+                    <label>
+                        <input name="agua" type="checkbox" value="banho"> banho
+                    </label>
+                </div>
+               
+                <div>
+                    <h4>conte um pouquinho sobre você.</h4>
+                    <textarea placeholder="um resumo sobre você, o que te define, o que você faz, o que gosta de fazer, etc"  rows="6" maxlength="400"></textarea>
+                </div>
+            </form>
+        </section>
+        
+
+    </main>
+    <section class="foto_rodape">
+    </section> 
+    <footer class="rodape">
+       <p>desenvolvido por sa para {reprograma} na aula de liana alice</p>
+    </footer>
+ 
+</body>
+</html>

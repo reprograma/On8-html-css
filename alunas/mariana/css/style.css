@@ -1,0 +1,234 @@
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+    cursor:pointer;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+.corpo {
+    background-color: rgb(223, 240, 243);
+}
+
+
+.navegacao{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#7E459B;
+}
+
+.lista-nao-ordenada{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    list-style: none;
+
+}
+
+.lista-1{
+    list-style: none;
+}
+
+.nav-img{
+    height: 50px;
+    margin: 20px;
+}
+
+.cabecalho{
+    background: url(../imagens/andrew-ridley-jR4Zf-riEjI-unsplash.jpg);
+    background-size: cover;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.artigo-imagem-1{
+    height: 190px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 2px rgb(0, 0, 0);
+}
+
+.titulo-2{
+    color:  #9162b1;
+    margin-bottom: 20px;
+    
+}
+
+.paragrafo{
+    display: inline-block;
+    width: 390px;
+    text-align: justify;
+    padding:10px;
+}
+
+.artigo-imagem{
+    border-radius: 50%;
+    display: inline-block;
+    width: 190px;
+    padding: 20px;
+    margin-right: 20px;
+    
+}
+
+.artigo, .sessão{
+    text-align: center;
+    padding: 25px;
+}
+
+.titulo{
+    text-align: center;
+    color:  #7E459B;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.sessao{
+    padding: 30px;
+}
+
+.sessao-flex{
+    display:flex;
+    justify-content: space-around;
+    border: 2px dashed rgb(169, 169, 197);
+    padding:15px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.sessao-caixa{
+    border:2px dashed rgb(79, 108, 145);
+    padding:10px;
+    
+}
+
+.lista{
+    border: 2px solid rgb(122, 169, 212);
+    padding:15px;
+}
+
+.itemlista{
+    border: #9a8aa1 1px dashed;
+    padding: 5px;
+}
+
+.titulo-form{
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: -30px ;
+    font-size: 20px;
+    color: #7E459B ;
+
+}
+
+.formulario{
+    background-color: #9a8aa1 ;
+    margin-top: 50px;
+    margin-right:170px;
+    margin-bottom: 80px;
+    margin-left: 170px;
+    border-radius: 4%;
+}
+
+.formulario-div{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sessao--check, .sessao--radio, .sessao--text{
+    flex-direction: column;
+}
+
+.bold{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.input-radio, .input-checkbox{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.input{
+    padding: 10px;
+    border: 1px #7E459B solid;
+    border-radius: 10px;
+}
+
+.submit{
+    background-color: rgb(169, 169, 197);
+}
+
+.botao{
+    padding: 8px;
+    margin: 8px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+#textarea{
+    width: 80%;
+    height: 200px;
+    border: 1px solid  #7E459B;
+    border-radius: 10px;
+}
+
+.sessao-2 a{
+    display:flex;
+    flex-direction: column;
+    margin-left: 170px;
+    margin-right: 800px;
+    margin-top: -90px;
+}
+
+.imagem-octocat{
+    width: 220px;
+}
+
+.footer{
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #7E459B;
+    color: white;
+    
+}
+
+.paragrafo-footer{
+    color:white;
+    width: 400px;
+}
+
+
+
+
+
+
+
