@@ -5,26 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-    <title>Unigata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Adrielly</title>
   </head>
   <body class="corpo">
       <nav class="navegacao">
          <a href="https://reprograma.com.br/" target="_blank"> <img class="nav-img" src="../../img-home/logo-reprograma.png" alt="logo-reprograma"></a>
-          <ul class="nav-lista">
+          <ul id="menu-desktop" class="nav-lista">
+            <li><a href="#sobre-mim"> Sobre mim</a></li>
+            <li><a href="#listas"> Minhas Listas</a></li>
+            <li><a href="#historia"> Saiba mais </a></li>
+            <li><a href="#formulario"> Formulário</a></li>
+            
             <a href="../../index.html"> <li>Home</li> </a> 
             <a href="https://github.com/adriellyscsantos" target="_blank"> <li> <img class="nav-img" src="../../img-home/github.svg" alt="Github-logo"> </li></a> 
           </ul>
-      </nav>
 
-      <header>
-        <div class="banner">
-          <h1 class="titulo-branco"> Oi, eu sou a Adrielly!</h1>
+          <div class="menu-responsivo">
+          <img class="nav-img" id="menu-celular" src="./img/menu-hamburger.png" alt="">
+          <ul class="nav-lista menu-lista-responsivo">
+            <li><a href="#sobre-mim"> Sobre mim</a></li>
+            <li><a href="#listas"> Minhas Listas</a></li>
+            <li><a href="#historia"> Saiba mais </a></li>
+            <li><a href="#formulario"> Formulário</a></li>
+            
+            <a href="../../index.html"> <li>Home</li> </a> 
+            <a href="https://github.com/adriellyscsantos" target="_blank"> <li> <img class="nav-img" src="../../img-home/github.svg" alt="Github-logo"> </li></a> 
+          </ul>
+
+        </div>
+        </nav>
+
+      <header class="cabecalho">
+        <div>
+          <h1 class="titulo-branco"> OI, EU SOU A ADRIELLY!</h1>
+          <!-- <a  class = "botaoheader" href="#">ME CONHEÇA MELHOR</a> -->
 
         </div>
        
+       
       </header>
 
-      <h2 class="titulo">Um pouco sobre mim</h1>
+      <h2 class="titulo" id="sobre-mim">Um pouco sobre mim</h1>
     <main class="principal">
       <article class="artigo">
         
@@ -34,7 +56,7 @@
         </p>
         <!-- <a href="">Link para meu facebook</a> -->
       </article>
-      <h2 class="titulo">Minhas listas</h2>
+      <h2 class="titulo" id="listas">Minhas listas</h2>
       <section class="sessao sessao--flex">
         <div class="sessao-caixa">
           <h3 class="titulo">Meus desejos para 2021</h3>
@@ -56,10 +78,20 @@
             <li class="itemLista">Falling in Reverse</li>
           </ol>
         </div>
+        <div class="sessao-caixa">
+          <h3 class="titulo">Músicas favoritas</h3>
+          <ol class="lista">
+            <li class="itemLista">Alive</li>
+            <li class="itemLista"> I Don't Wanna Miss a Thing</li>
+            <li class="itemLista">Going Under</li>
+            <li class="itemLista">Call me When You're Sober</li>
+            <li class="itemLista">Coming Home</li>
+          </ol>
+        </div>
       </section>
      
 
-      <section class="sobre-mim">
+      <section class="sobre-mim" id="historia">
         <div class="minha-foto">
          
           </div>
@@ -72,7 +104,36 @@
 
       </section>
 
-      <section class="sessao">
+      <h2 class="titulo">Minha Galeria de Fotos</h2>
+      <section class="galeria">
+      <div class="galeria-box">
+        <img src="./img/unicorn.png" alt="" class="galeria-img">
+        <p class="paragrafo-center"> Fotinha legal</p>
+        </div>
+        <div class="galeria-box">
+        <img src="./img/unicornio.png" alt="" class="galeria-img">
+        <p class="paragrafo-center"> Fotinha legal</p>
+      </div>
+      <div class="galeria-box">
+        <img src="./img/unicorniocat.jpg" alt="" class="galeria-img">
+        <p class="paragrafo-center"> Fotinha legal</p>
+      </div>
+      <div class="galeria-box">
+        <img src="./img/banner.jpg" alt="" class="galeria-img">
+        <p class="paragrafo-center"> Fotinha legal</p>
+      </div>
+      <div class="galeria-box">
+        <img src="./img/unicorniofoto.png" alt="" class="galeria-img">
+        <p class="paragrafo-center"> Fotinha legal</p>
+      </div>
+        <div class="galeria-box">
+        <img src="./img/uni.jpg" alt="" class="galeria-img">
+        <p class="paragrafo-center"> Fotinha legal</p>
+      </div>
+
+      </section>
+
+      <section class="sessao" id="formulario">
         <form class="formulario">
           <div class="formulario-div">
           <label for="name" class="paragrafo-form">  Nome: </label>
@@ -130,6 +191,8 @@ Quais seus pontos fortes?</p>
   <input name="caracteristica" type="checkbox" value="autocontrole">
  Autocontrole
 </label>
+
+
 <label class="rotulo">
   <input name="caracteristica" type="checkbox" value="humildade">
   Humildade
