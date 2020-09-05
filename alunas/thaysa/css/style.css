@@ -188,33 +188,16 @@ width = largura  */
   text-align: center;
 }
 
- /* --- max-width até no máximo de largura 650px eu vou me comportar assim  */
-@media screen and (max-width:650px) {
-   html {
-     font-size: 8px;
-   }
 
-   .formulario {
-    margin: 0 auto;
-   }
-   .galeria{
-     justify-content: center;
-   }
-}
 
-@media screen and (max-width:450px) {
-  #menu--celular {
-    display: block;
+@media only screen and (max-width: 1000px) {
+   .sobre, .sessao--flex {
+    flex-direction: column;
+    margin-top: 3%;
   }
-  #menu--desktop {
-    display: none;
+
+  .titulo {
+    margin-top: 3%;
   }
+
 }
-
-
-/* titulo 3.2 rem  
-3.2 * font-size padrao ou font-size atribuida de padrao  
-html 10px  * 3.2rem = 32px 
-
-com até 650 px de largura da tela !! 
-html = 8px - titulo = 3.2rem  ; 3.2rem * 8 = 25.6px     */
