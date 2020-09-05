@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
     background-color: #eeecec;
 }
@@ -18,6 +22,10 @@ a {
 
 a:hover {
     font-weight: bold;
+}
+
+li {
+    font-size: 1.6rem;
 }
 
 ul li {
@@ -47,13 +55,41 @@ background-position: 50% 50%;
 
 .nav__lista{
     display: flex;
-    align-items: center;
+    justify-content: space-evenly;    
     color: #fff;
+    width: 300px;
+    align-items: center
 }
 
 .nav__img {
     height: 50px;
-    margin: 20px;
+    margin: 1rem;
+}
+
+
+
+#menu--celular {
+    display: none;
+}
+
+/*menu mae */
+.menu--responsivo {
+position: relative;
+cursor: pointer;
+}
+/*menu filha */
+.menu__lista--responsivo {
+display: none;
+position: absolute;
+top: 60px;
+right: 0;
+color: cornsilk;
+background: #ff5e84
+}
+
+/*hover--passando o mouse por cima do menu mae: menu filha faça isso*/
+.menu--responsivo: :hover .menu__lista--responsivo {
+  display: block;
 }
 
 /* height = altura 
@@ -63,36 +99,41 @@ width = largura  */
     text-align: center;
     padding: 20px;
     color: rgb(46, 44, 44);
+    
 }
 
 .paragrafo {
     display: inline-block;
-    width: 40%;
+    width: 100%;
     padding: 50px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 1.4rem;
+    max-width: 350px;
+
     
 }
 
 .artigo__imagem {
     display: inline-block;
     width: 100%;
-    max-width: 280px;
+    max-width: 320px;
     margin-top: 330px;
     border-radius: 17%;
-    padding: 10px;
-    margin-right: 20px;
+    padding: 1rem;
+    margin-right: 2rem;
+    border: 2px hsl(283, 78%, 73%) solid;
     
 }
 
 .artigo {
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
+    
     
 }
 
 .sessao-octocat {
-    padding: 30px;
+    padding: 3rem;
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -111,13 +152,15 @@ width = largura  */
     border-radius: 50%;
     margin-bottom: 50px;
     margin-right: 40px;
-    border: 2px solid rgb(110, 83, 231);
+    border: 1px solid rgb(110, 83, 231);
 }
 
 
 
 .sessao__caixa {
     text-align: center;
+    border: 1px solid #ad6ee0;
+    margin: 1rem;
 }
 
 
@@ -138,19 +181,31 @@ width = largura  */
     color: white;
 }
 
+.itemLista {
+    border: #9ab8e6 2px  dashed;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* formulario */
+
 .formulario {
     background-color: #9ab8e6;
-    margin: 50px 100px;
+    margin: 5rem 10rem;
     border-radius: 20px;
   }
   
   .formulario__div {
-    padding: 50px;
+    padding: 5rem;
     text-align: center;
+  }
+
+  rotulo {
+    .font-size: 1.6rem; 
   }
   
   .input {
-    padding: 10px;
+    padding: 0.9 rem;
     border: 1px rgb(185, 89, 157) solid;
     border-radius: 10px;
   }
@@ -160,3 +215,24 @@ width = largura  */
     height: 200px;
     border: 1px #ff5e84;
   }
+
+  @media screen and (max-width: 650px) {
+      html {
+          font-size: 8px;
+      }
+
+      .formulario {
+    margin: 0 auto;
+    }
+
+    .galeria{
+        justify-content: center;
+    }
+
+    @media screen and (max-width:451px;) {
+    #menu--celular {
+      display: block;  
+    }
+    
+    }
+

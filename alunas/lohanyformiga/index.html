@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Lohany Formiga</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
@@ -17,13 +19,15 @@
         class="nav__img"
         src="../../img-home/logo-reprograma.png"
         alt="logo-reprograma"
-      />
-
+       />
        </a>
+        <ul id="menu--desktop" class="nav__lista">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="#Listas">Listas</a></li>
+          <li><a href="#formulario">formulario</a></li>
       
-      <ul class="nav__lista">
-        <li><a href="../../index.html">Home</a></li>
-        <li>
+        
+          <li>
           <a href="https://github.com/reprograma" target="_blank"
             ><img
               class="nav__img"
@@ -32,6 +36,11 @@
           /></a>
         </li>
       </ul>
+
+      <div class="menu--responsivo">
+        <img src="/img-home/menu-hamburger.png" alt="menu" />
+
+</div>
     </nav>
     <header class="cabecalho">
     </header>
@@ -48,33 +57,33 @@
           e hoje sou UI/UX Designer. Sempre gostei de programação e sentir a necessidade de saber programar na área de Front-End.
           E hoje sou aluna no reprograma em desenvolvedora Front-End
 
-        </p>
+      </p>
       </article>
-      <h2 class="titulo">Minhas listas</h2>
+      <h2 id="Listas" class="titulo">Minhas listas</h2>
       <section class="sessao sessao--flex">
         <div class="sessao__caixa">
-          <h3 class="titulo">meus desejos para 2021</h3>
+          <h1 class="titulo">Meus desejos para 2021</h1>
           <ul class="lista">
-            <li class="itemLista">Viagens</li>
+            <li class="itemLista">Novo emprego</li>
             <li class="itemLista">Conquistas</li>
-            <li class="itemLista">Ganhar muito dinheiro</li>
-            <li class="itemLista">Novas Amizades</li>
-            <li class="itemLista">Novas habilidades</li>
+            <li class="itemLista">Habilidades</li>
+            <li class="itemLista">Networking</li>
+            <li class="itemLista">Me tornar uma grande desenvolvedora</li>
           </ul>
         </div>
         <div class="sessao__caixa">
-          <h3 class="titulo">filmes que eu gosto</h3>
+          <h1 class="titulo">Filmes que eu gosto</h1>
           <ul class="lista">
             <li class="itemLista">A procura da felicidade</li>
             <li class="itemLista">Batman</li>
             <li class="itemLista">Esposa de mentirinha</li>
-            <li class="itemLista">Creche do papai</li>
-            <li class="itemLista">Capitao america </li>
+            <li class="itemLista">Pantera Negra</li>
+            <li class="itemLista">Capitão america </li>
           </ul>
         </div>
       </section>
       <section class="sessao">
-        <form class="formulario">
+        <form id="formulario" class="formulario">
           <div class="formulario__div">
             <label for="name" class="rotulo">Nome:</label>
             <input
@@ -197,7 +206,7 @@
       </section>
     </main>
     <footer class="footer">
-      <p class="paragrago">Desenvolvido por Lohany Formiga com html e css</p>
+      <p class="paragrafo">Desenvolvido por Lohany Formiga com html e css</p>
     </footer>
   </body>
 </html>
