@@ -1,0 +1,186 @@
+
+/* ESPICIFICIDADE 
+    O MAIS ESPECIFICO VENCE! */
+/* DEPOIS VEM A CASCATA, O MAIS EMBAIXO VENCE */
+
+/* reset comportamento padrao da pagina */
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Alata', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    font-weight: bold;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  /* conteudo */
+  
+  /* barra de navegação */
+  
+  .navegacao {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7e459b;
+  }
+  
+  .nav__lista {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .nav__lista > li {
+    margin-right: 20px;
+    padding: 20px;
+  }
+  
+  .nav__img {
+    height: 50px;
+    margin: 10px;
+  }
+  
+  
+  /* menu mae */
+  .menu--responsivo {
+    position: relative;
+    cursor: pointer;
+  }
+   /* menu filha */
+  .menu__lista--responsivo {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    color: #fff;
+    background: #f2f2f255;
+    width: 100vw;
+  }
+  
+   /* hover -- passando o mouse por cima do menu mae; menu filha faça isso */
+  .menu--responsivo:hover .menu__lista--responsivo {
+    display: block;
+  }
+  
+  
+  
+  /* cabeçalho da pagina */
+  .cabecalho {
+    background-size: cover;
+    background-position: 75% 50%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+  
+  }
+  
+  
+  }
+  
+  
+  /* height = altura 
+  width = largura  */
+  /* main -- conteudo principal */
+  
+  .titulo {
+    text-align: center;
+    color: #7e459b;
+    padding: 10px;
+  }
+  
+  .branco {
+    color: white;
+  }
+  
+  .paragrafo {
+    display: inline-block;
+    width: 350px;
+    text-align: justify;
+    padding: 10px;
+  }
+  
+  .artigo {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .artigo__imagem {
+    display: inline-block;
+    width: 300px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  
+  .img--block {
+    display: block;
+  }
+  
+  .sessao {
+    padding: 30px;
+  }
+  
+  .sessao--flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .sessao__caixa {
+    border: 3px solid black;
+    margin: 10px;
+    background-color: rgb(231, 29, 187);
+    margin: 50px 100px;
+  }
+  
+  
+  .formulario {
+    background-color: rgb(231, 29, 187);
+    margin: 50px 100px;
+  }
+  
+  .formulario__div {
+    padding: 5px;
+    text-align: left;
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px blue solid;
+    border-radius: 10px;
+  }
+  
+  #textarea {
+    width: 50%;
+    height: 200px;
+    border: 1px blue solid;
+  }
+  
+  /* rodapé */
+  .footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    color: white;
+    
+  }
+  
