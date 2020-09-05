@@ -55,17 +55,45 @@ ul li {
   margin: 10px;
 }
 
+
+/* menu mae */
+.menu--responsivo {
+  position: relative;
+  cursor: pointer;
+}
+ /* menu filha */
+.menu__lista--responsivo {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  color: #fff;
+  background: #f2f2f255;
+  width: 100vw;
+}
+
+ /* hover -- passando o mouse por cima do menu mae; menu filha faça isso */
+.menu--responsivo:hover .menu__lista--responsivo {
+  display: block;
+}
+
+
+
 /* cabeçalho da pagina */
 .cabecalho {
-  background:url(/imagem/dog.jpg) ;
   background-size: cover;
-  background-position: 150% 305%;
-  height: 75vh;
+  background-position: 75% 50%;
+  height: 55vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  color: white;
   
+
 }
+
+
+}
+
 
 /* height = altura 
 width = largura  */
