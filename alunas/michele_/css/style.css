@@ -3,6 +3,10 @@
     margin: 0;
     font-family: 'PT Sans Narrow', sans-serif;
 }
+html{
+    font-size:10px ;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -11,6 +15,9 @@ a {
 a:hover{
     font-weight: bold;
 } 
+li{
+    font-size: 1.6rem;
+}
 
 ul li{
     list-style: none;
@@ -21,24 +28,47 @@ ul li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #7E459B;;
-}
+    background-color: #7E459B;
+    }
 
 .nav_lista{
     display: flex;
     align-items: center;
     color: white;
-    padding: 10px;
+    padding: 10rem;
 }
 .nav_lista > li{
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 1rem;
+    padding: 1rem;
 }
 
 .nav_img{
     height: 50px;
-    margin: 10px;   
+    margin: 1rem;   
 }
+#menu_desktop{
+    display: flex;
+}
+
+#menu_ceular{
+display: none;
+} 
+.menu_responsivo{
+    position: relative;
+    cursor: pointer;
+}
+.lista_menu_responsivo{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: gray;
+    background-color: #f2f2f2f2;
+}
+.menu_responsivo:hover .lista_menu_responsivo{
+    display: block;
+}
+
 /*cabecalho da página*/
 .cabecalho{
     background: url(/alunas/michele_/img/relaxing-cat.jpg);
@@ -53,68 +83,121 @@ ul li{
 .titulo{
 text-align: center;
 color: #7E459B;
-padding: 10px;
+padding: 1rem;
+font-size: 3.2rem;
 }
+.sub-titulo{
+    font-size: 2.6rem ;
+}
+
 .branco{
     color: white;
 }
 
 .paragrafo{
     display: inline-block;
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     text-align: justify;
     padding: 10px;
+    font-size: 1.8rem;
 }
+
 .artigo{
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
    /* border-radius: 50px;
     padding: 20px;*/
 }
 
 .artigo_imagem{
 display: inline-block;
-width: 150px;
+max-width: 200px;
+width: 100%;
 border-radius: 50%;
-padding: 10px;
-margin-right: 20px;
+padding: 1rem;
+margin-right: 2rem;
 }
 .img--block{
     display: block;
 }
 .sessao{
-    padding: 30px;
+    padding: 3rem;
 }
 
 .sessao--flex{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+    width: 100%;
 }
-/*
+
 .sessao_caixa{
-    border: 3px solid aqua;
+    border: 2px solid rgb(161, 154, 221);
+    margin: 1rem;
+    height: 50vh;
+    width: 340px;
 }
 
 .lista{
-    border: red 2px dashed;
+    /*border: red 2px dashed;*/
+    margin: 0.5rem;
+    width: 90%;
+    height: 90%;
 }
+
 .itemLista{
-    border: purple 2px dashed;
-}*/
+    /*border: purple 2px dashed;*/
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    
+}
+.galeria{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.galeria_box{
+   
+    background-color: rgba(200,200, 200, 0.5);
+    margin: 1rem;
+}
+.paragrafo_center{
+    text-align: center;
+}
+.galeria_img{
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+.align_self{
+    align-self: flex-start;
+}
+
 .formulario{
     background-color: rgb(172, 167, 167);
-    margin: 50px 100px;
-    padding: 10px;
-    border-radius: 15px;
+    margin: 5rem 10rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
 }
 
 .formulario_div{
-    padding: 10px;
+    padding: 1rem;
     text-align: center;
 }
+.rotulo{
+    font-size: 1.6rem;
+}
+
 .input{
-    padding: 10px;
-    border: 1px blue solid;
+    padding: 0.8rem;
+    border: 1px rgb(255, 166, 0) solid;
     border-radius: 10px;
     text-align: center;
 }
@@ -134,4 +217,24 @@ margin-right: 20px;
     background-color: #2e2e2e;
     color: white;
     justify-items: center;
+}
+
+@media screen and (max-width:650px){
+    html{
+        font-size: 8px;
+    }
+    .formulario{
+        margin: auto;
+    }
+    .galeria{
+    justify-content: center;
+    }
+}
+@media screen and (max-width:450px){
+    #menu_celular{
+        display: block;
+    }
+    #menu_desktop{
+       *display: none;
+    }
 }

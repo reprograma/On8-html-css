@@ -18,6 +18,7 @@
         <header class="cabecalho">
             <h1 class="titulo branco"> Oi, eu sou Biamichelle</h1>
         </header>
+   
     
     <main class="main">
         <article class="artigo">
@@ -35,7 +36,7 @@
         <h2 class="titulo">Minhas listas</h2>
         <section class="sessao sessao--flex">
             <div class="sessao__caixa">
-                <h3 class="titulo">Meus desejos para 2021</h3>
+                <h3 class="titulo subtitulo">Meus desejos para 2021</h3>
                     <ul class="lista">
                         <li class="itemLista">Mais viagens</li>
                         <li class="itemLista">Mais karaokes</li>
@@ -47,7 +48,7 @@
                     </ul>
             </div>
             <div class="sessao__caixa">
-                <h3 class="titulo">Filmes que eu gosto</h3>
+                <h3 class="titulo subtitulo">Filmes que eu gosto</h3>
                     <ol class="lista">
                         <li class="itemLista">Meu vizinho Totoro</li>
                         <li class="itemLista">Moana</li>
@@ -60,66 +61,74 @@
 
         <section class="sessao">
             <form class="formulario">
-                <div class="formulario__div">
+                <div class="formulario__div  formulario--spaceBetween">
                     <label for="name" class="rotulo">Nome:</label>
                     <input class="input" type="text" placeholder="Digite seu nome" required/>
                 </div>
-                <div class="formulario__div">
+                <div class="formulario__div formulario--spaceBetween">
                     <label for="email" class="rotulo">Email:</label>
                     <input class="input" type="email" placeholder="Digite seu email" required/>
                 </div>
-                <div class="formulario__div">
+                <div class="formulario__div formulario--spaceBetween">
                     <label for="nascimento" class="rotulo">Data de Nascimento:</label>
                     <input class="input" type="date" placeholder="Digite a data do seu nascimento" required/>
                 </div>
-                <div class="formulario__div">
+                <div class="formulario__div formulario--spaceBetween">
                     <label for="idade" class="rotulo">Idade:</label>
                     <input class="input" type="number" placeholder="Digite sua idade" required/>
                 </div>
                 <div class="formulario__div">
-                    <p class="paragrafo"> Qual a comida que você mais gosta dessa lista?</p>
-                    <label class="rotulo">
-                        <input class="imput--label" name="comida-favorita" type="radio" valor="lasanha">
-                        Lasanha
-                    </label>
-                    <label class="rotulo">
-                        <input class="imput--label" name="comida-favorita" type="radio" valor="sushi">
-                        Sushi
-                    </label>
-                    <label class="rotulo">
-                        <input class="imput--label" name="comida-favorita" type="radio" valor="manicoba">
-                        Maniçoba
-                    </label>
+                    <p class="rotulo"> Qual a comida que você mais gosta dessa lista?</p>
+                    <p>
+                        <label class="rotulo--modificado">
+                            <input class="imput--label" name="comida-favorita" type="radio" valor="lasanha">
+                            Lasanha
+                        </label>
+                        <label class="rotulo--modificado">
+                            <input class="imput--label" name="comida-favorita" type="radio" valor="sushi">
+                            Sushi
+                        </label>
+                        <label class="rotulo--modificado">
+                            <input class="imput--label" name="comida-favorita" type="radio" valor="manicoba">
+                            Maniçoba
+                        </label>
+                    </p>
                 </div>
                 <div class="formulario__div">
-                    <p class="paragrafo"> Qual estilo musical você gosta?</p>
-                    <label class="rotulo">
-                        <input class="imput--label" name="comida-favorita" type="checkbox" valor="rock">
-                        Rock
-                    </label>
-                    <label class="rotulo">
-                        <input class="imput--label" name="comida-favorita" type="checkbox" valor="pop">
-                        Pop
-                    </label>
-                    <label class="rotulo">
-                        <input class="imput--label" name="comida-favorita" type="checkbox" valor="brega">
-                        Brega
-                    </label>
+                    <p class="rotulo"> Qual estilo musical você gosta?</p>
+                    <p> 
+                        <label class="rotulo--modificado">
+                            <input class="imput--label" name="comida-favorita" type="checkbox" valor="rock">
+                            Rock
+                        </label>
+                        <label class="rotulo--modificado">
+                            <input class="imput--label" name="comida-favorita" type="checkbox" valor="pop">
+                            Pop
+                        </label>
+                        <label class="rotulo--modificado">
+                            <input class="imput--label" name="comida-favorita" type="checkbox" valor="brega">
+                            Brega
+                        </label>
+                    </p>
                 </div>
                 <div class="formulario__div">
-                    <p class="paragrafo">Quem nasceu primeiro nesse mundão?</p>
-                    <select id="dropdown" name="role">
-                        <option value="ovo"></option>Ovo</option>
-                        <option value="galinha">Galinha</option>
-                        <option value="adao-eva">Adão e Eva</option>
-                        <option value="nenhuma">Nenhuma das opções</option>
-                    </select>
+                    <p class="rotulo">Quem nasceu primeiro nesse mundão?</p>
+                    <p>
+                        <select id="dropdown" name="role">
+                            <option value="ovo"></option>Ovo</option>
+                            <option value="galinha">Galinha</option>
+                            <option value="adao-eva">Adão e Eva</option>
+                            <option value="nenhuma">Nenhuma das opções</option>
+                        </select>
+                    </p>
                 </div>
                 <div class="formulario__div">
-                    <p class="paragrafo">Abra o seu coração</p>
-                    <textarea id="textarea" placeholder="Conte mais sobre você"> </textarea>
+                    <p class="rotulo">Abra o seu coração</p>
+                    <p>
+                        <textarea id="textarea" placeholder="Conte mais sobre você"> </textarea>
+                    </p>
                 </div>
-                <div class="formulario__div">
+                <div class="formulario__div button--div">
                     <button type="submit">Enviar</button>
                     <button type="reset">Reset</button>
                 </div>
@@ -129,13 +138,13 @@
         
         <section class="sessao" id="myoctocat">
             <a href="https://myoctocat.com/">
-              <img src="imagens/octocat.png" alt="octocat" class="artigo__imagem" />
-              <p class="paragrafo">Faça seu próprio octocat!</p>
+              <img src="imagens/octocat.png" alt="octocat" class="myoctocat__imagem" />
+              <p class="paragrafo--myoctocat">Faça seu próprio octocat!</p>
             </a>
           </section>
     </main>
     <footer class="footer">
-        <p class="paragrago">Desenvolvido por Biamichelle com html e css</p>
+        <p class="paragrafo--footer">desenvolvido por @Biamichelle com html e css</p>
     </footer>
 </body>
 </html>

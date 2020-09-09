@@ -16,12 +16,24 @@
             <img class="nav_img" src="../../img-home/logo-reprograma.png" alt="logo-reprograma" />
         </a>
 
-        <ul class="nav-lista">
-
-            <li><a href="https://github.com/micheleset7" target="_blank"><img class="nav_img"
-                        src="../../img-home/github.svg " alt="GitHub-logo" /></a></li>
+        <ul id="menu_desktop" class="nav-lista">
+            <li href="#listas">Listas</li>
+            <li href="#formularios">Formularios</li>
             <li><a href="../../index.html">Home</a></li>
+            <li><a href="https://github.com/micheleset7" target="_blank"><img class="nav_img"
+                        src="../../img-home/github.svg " alt="github-logo" /></a></li>
         </ul>
+        <div  id="menu_celular" class="menu_responsivo">
+        <img class="nav_img" src="../michele_/img/menu-hamburger.png" alt="menu">
+        <ul class="lista_menu_responsivo">
+            <li href="#listas">Listas</li>
+            <li href="#formularios">Formularios</li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="https://github.com/micheleset7" target="_blank"><img class="nav_img"
+                        src="../../img-home/github.svg " alt="github-logo" /></a></li>
+        </ul>
+
+        </div>
     </nav>
     <header class="cabecalho">
         <h1 class="titulo branco">Eu sou Michele Coelho</h1>
@@ -30,16 +42,16 @@
     <main class="principal">
         <article class="artigo">
             <h2 class="titulo">Um pouco sobre mim</h2>
-            <img class="artigo_imagem" src="/alunas/michele_/img/relaxing-cat.jpg" alt="gatinho">
+            <img class="artigo_imagem" src="../michele_/img/minha-foto.jpg" alt="gatinho"/>
             <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos iste sed ducimus,
                 culpa vero molestias veniam reiciendis maiores sequi iure rerum eos modi illum nostrum tempore in cumque
                 vitae minus?</p>
         </article>
 
-        <h2 class="titulo">Minhas listas</h2>
+        <h2 id="listas" class="titulo">Minhas listas</h2>
         <section class="sessao sessao--flex">
             <div class="sessao_caixa">
-                <h3>Meus desejos para 2021</h3>
+                <h3 class="titulo sub-titulo">Meus desejos para 2021</h3>
                 <ul class="lista">
                     <li class="itemLista">Paz</li>
                     <li class="itemLista">Amor</li>
@@ -50,19 +62,79 @@
             </div>
 
             <div class="sessao_caixa">
-                <h3>Filmes que eu gosto</h3>
-                <ol class="lista">
+                <h3 class="titulo sub-titulo">Filmes que gosto</h3>
+                <ul class="lista">
                     <li class="itemLista">Bacurau</li>
                     <li class="itemLista">Lisbela e o prisioneiro</li>
                     <li class="itemLista">A origem</li>
                     <li class="itemLista">O milagre da cela 7</li>
                     <li class="itemLista">Alto da compadecida</li>
+                </ul>
+            </div>
+            <div class="sessao_caixa">
+                <h3 class="titulo sub-titulo">Minha lista de doces preferidos </h3>
+                <ul class="lista">
+                    <li class="itemLista">Cocada</li>
+                    <li class="itemLista">Cholate</li>
+                    <li class="itemLista">Pudim</li>
+                    <li class="itemLista">Goiabada</li>
+                    <li class="itemLista">Paçoca</li>
+                </ul>
+            </div>
+            <div class="sessao_caixa">
+                <h3 class="titulo sub-titulo">Animais que mais gosto</h3>
+                <ul class="lista">
+                    <li class="itemLista">Cachorro</li>
+                    <li class="itemLista">Gato</li>
+                    <li class="itemLista">Coelho</li>
+                    <li class="itemLista">Cavalo</li>
+                    <li class="itemLista">Passarinho</li>
+                </ul>
+            </div>
+            <div class="sessao_caixa">
+                <h3 class="titulo sub-titulo">Paises que quero conhecer</h3>
+                <ol class="lista">
+                    <li class="itemLista">França</li>
+                    <li class="itemLista">Ingalterra</li>
+                    <li class="itemLista">Itália</li>
+                    <li class="itemLista">Tailandia</li>
+                    <li class="itemLista">EUA</li>
                 </ol>
             </div>
         </section>
+        <h2 class="titulo">Galeria de fotos</h2>
+        <section class="galeria">
+            <div class="galeria_box">
+                <img src="../michele_/img/anastasiya-pavlova-HypK5Ijgv-k-unsplash.jpg" alt="criança"
+                    class="galeria_img">
+                <p class="paragrafo paragrafo_center">Imagens aleatórias</p>
+            </div>
+            <div class="galeria_box">
+                <img src="../michele_/img/clay-banks-ZhHuillSOzE-unsplash (1).jpg" alt="ponte" class="galeria_img">
+                <p class="paragrafo paragrafo_center">Imagens aleatórias</p>
+            </div>
+            <div class="galeria_box">
+                <img src="../michele_/img/wolfgang-hasselmann-qwA09-ek0a4-unsplash.jpg" alt="animal"
+                    class="galeria_img">
+                <p class="paragrafo paragrafo_center">Imagens aleatórias</p>
+            </div>
+            <div class="galeria_box">
+                <img src="../michele_/img/matteo-vistocco-Xjj9GT4y4HU-unsplash.jpg" alt="" class="galeria_img">
+                <p class="paragrafo paragrafo_center">Imagens aleatórias</p>
+            </div>
+            <div class="galeria_box">
+                <img src="../michele_/img/mikhail-fetsik-_1EL7MVkdkc-unsplash.jpg" alt="" class="galeria_img">
+                <p class="paragrafo paragrafo_center">Imagens aleatórias</p>
+            </div>
+            <div class="galeria_box align_self">
+                <img src="../michele_/img/todd-trapani-KDVl4JG7PZU-unsplash.jpg" alt="" class="galeria_img">
+                <p class="paragrafo paragrafo_center ">Imagens aleatórias</p>
+            </div>
 
-        <section class="sessao">
-            <form class="formulario">
+        </section>
+
+        <section id="formularios" class="sessao">
+            <form  class="formulario">
                 <div class="formulario_div">
                     <label for="name" class="rotulo">Nome:</label>
                     <input class="input" type="text" placeholder="Digite seu nome" required />
@@ -84,7 +156,7 @@
                 </div>
 
                 <div class="formulario_div">
-                    <p class="paragrafo">Qual estação do ano você maisc gosta?</p>
+                    <p class="paragrafo">Qual estação do ano você mais gosta?</p>
                     <label class="rotulo" for="">
                         <input class="input_radio" name="estacao do ano" type="radio" value="verão" />
                         Verão

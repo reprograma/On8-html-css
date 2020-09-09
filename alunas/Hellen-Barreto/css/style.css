@@ -6,8 +6,11 @@
 *
 {
     box-sizing: border-box;
-    margin: 0px;
+    margin: 0;
     font-family:"raleway", sans-serif;
+}
+html{
+    font-size: 1.rem;
 }
 
 a {
@@ -18,6 +21,10 @@ a {
 
 a:hover {
     font-weight: bold;
+}
+
+li{
+    font-size: 1.rem;
 }
 
 ul li {
@@ -37,18 +44,38 @@ ul li {
     display: flex;
     align-items: center;
     color: darkblue;
-    padding: 10px;
-
+    padding: 1rem;
+}
 .nav__lista > li {
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 1rem;
+    padding: 1rem;
 }
 
-}
-.nav__img{
+.nav__img {
     height: 50px;
-    margin: 100px;
+    margin: 1rem;
 }
+#menu--desktop {
+    display: flex;
+}
+#menu--celular {
+    display: none;
+}
+/*menun mae*/
+.menu__lista--responsivo {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    color: #fff;
+    background: #f2f2f255;
+    width: 100vw;
+}
+/*hover --passando o mouse em cima do menu mae; menu filha faça isso*/
+.menu--responsivo:hover .menu__lista--responsivo{
+    display: block;
+}
+
 /* cabeçalho da página*/
 .cabecalho{
     background: url(../Imagem/beautiful-tropical-beach-sea-ocean-with-coconut-palm-tree-sunrise-time_74190-7454.jpg);
@@ -63,61 +90,85 @@ ul li {
 .titulo {
     text-align: center;
     color: rgb(110, 11, 190);
-    padding: 0px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.titulo-contato{
+    text-align: center;
+    padding: 10rem 4rem 1rem;
+    margin: 0.5rem;
+
+}
+.subtitulo {
+    font-size: 1.2rem;
+    height: 54px;
+    padding-top: 0.5rem;
 }
 .branco {
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     justify-content: center;
     text-align: center;
+    margin-bottom: 120px;
+    background-color: rgb(139, 130, 130);
+    border-radius: 50%;
+    font-size: 1.7rem;
 }
 
 .paragrafo {
     display: inline-block;
-    width: 350px;
-    padding: 20px;
-    border-radius: 100px;
+    max-width: 350px;
+    width: 100%;
     text-align: justify;
     vertical-align: 250%;
+    padding: 10px;
+    font-size: 1.2rem;
 }
 .artigo {
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
 }
 
 .artigo__imagem {
-    border-radius: 10%;
-    max-width: 200px;
-    width: 300px;
-    padding: 10px;
-    text-align: center;
-    margin-right: 40px;
     display: inline-block;
+    max-width: 330px;
+    width: 100%;
+    border-radius: 50%;
+    padding: 1rem;
+    text-align: center;
+    margin-right: 2rem;
+    position: relative;
 }
 
 .img--block{
-display: block;
+    display: block;
 }
 
 .sessao{
-    padding: 30px;
+    padding: 1rem
 }
 .sessao--flex{
     display: flex;
-    justify-content: space-around; 
-    flex-wrap: wrap;
-       
+    justify-content: space-evenly; 
+      
 }
 .sessao__caixa{
-    border: 3px rgb(154, 94, 211);
+    border-radius: 20px;
+    border: 5px;
+    height: 50vh;
+
 }
 .lista{
     border:rgb(91, 89, 230) 2px dashed;
-    margin:10px;
+    margin:1rem;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
 }
 .itemlista{
-    border:rgb(158, 96, 158) 2px dashed;
-    margin: 10px;
-    padding: 10px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
 }
 .formulario{
     padding: 2rem;
@@ -128,10 +179,10 @@ display: block;
     text-align: center;
 }
 .formulario__div{
-    padding: 1px;
-    text-align: center;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 .reset{
     background-color: rgb(140, 140, 187);
@@ -146,18 +197,30 @@ display: block;
     font-size: 1.2rem;
     text-align: center;
 }
+.rotulo {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: rgb(14, 13, 13);
+    
+}
 .input {
-    font-size: 1.2rem;
-    padding: 10px;
-    border: 10px;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
     border-radius: 10px;
+    text-align: justify;
+}
+.flex--input {
+    display: flex;
 }
 #textarea{
     font-size: 1.2rem;
-    width: 60%;
+    width: 40%;
     height: 200px;
     border-radius: 10px;
     padding: 0.5rem;
+    border: 3px solid #000;
 }
 /* rodapé */
 
@@ -170,3 +233,27 @@ display: block;
     color: white;
     text-align: center;
 }
+@mediascreenand(max-width: 650px) {
+    html {
+        font-size: 8px;
+    }
+.formulario {
+    margin: 0 auto;
+}
+}
+@mediascreenand(max-width: 450px) {
+    #menu-celular {
+        display: block;
+    }
+    #menu--desktop {
+        display: none;
+    }
+}
+
+
+/* titulo 3.2 rem  
+3.2 * font-size padrao ou font-size atribuida de padrao  
+html 10px  * 3.2rem = 32px 
+
+com até 650 px de largura da tela !! 
+html = 8px - titulo = 3.2rem  ; 3.2rem * 8 = 25.6px     */

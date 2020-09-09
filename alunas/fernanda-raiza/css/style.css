@@ -8,13 +8,15 @@ a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
+    padding-right: 0.5rem;
 }
 
 a:hover {
     font-weight: bold;
 }
 
-        conteudo daqui pra baixo
+        /* Conteudo daqui para baixo*/
+
 ul li {
     font-style: none;
 }
@@ -37,13 +39,23 @@ body {
     display: flex;
     align-items: center;
     color: #fff;
+    padding: 0.5rem;
+    list-style: none;
+    font-size: 1.02rem;
+
 }
 
 .nav__img {
-    height: 40px;
-    margin: 20px;
-
+    height: 30px;
+    margin: 10px;
+    
 }
+
+.nav__imgh {
+    height: 30px;
+}
+
+/* artigo*/
 
 .titulo {
     text-align:center;
@@ -54,7 +66,6 @@ body {
 
 .paragrafo {
     display: block;
-    width: 390px;
     text-align: justify;
     padding-top: 50px;
     padding-bottom: 40px;
@@ -73,6 +84,8 @@ body {
     padding: 20px;
     display: block;
 }
+
+/* minhas listas*/
 
 .sessao {
     padding: 50px;
@@ -102,23 +115,17 @@ body {
     border-right: none;
 }
 
-.footer {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2e2e2e;
-    color: white;
-}
 
 .MinhasListas {
     text-align: center;
 }
 
-.nav__imgh {
-    height: 30px;
-    padding-right: 30px;
-    padding-left: 30px;
+/* formulario*/
+
+.tituloform {
+    text-align: center;
+    padding: 20px;
+    color:#7E459B
 }
 
 .formulario {
@@ -148,6 +155,10 @@ body {
     
 }
 
+.rotulo {
+    font-size:0.85rem;
+}
+
 .input {
     padding: 10px;
     background-color: transparent;
@@ -164,22 +175,39 @@ body {
 
 .bverde {
     color: green;
-    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
 }
 
 .bvermelho {
     color: red;
-    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
+/* octocat*/
 
 .img__octo {
     height: 250px;
 }
 
+/* rodape*/
+
+.footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    color: white;
+}
+
 .paragrafofooter {
     line-height: 25px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .paragrafocto {
@@ -187,9 +215,194 @@ body {
     padding-left: 50px;
 }
 
-.tituloform {
-    text-align: center;
-    padding: 20px;
-    color:#7E459B
+/* responsividade daqui pra baixo*/
+
+@media screen and (min-width: 1360px) {
+    .paragrafo {
+        width: 500px;
+
+    }
 }
 
+@media screen and (max-width: 1360px) {
+    .formulario {
+        margin-right: 50px;
+        margin-left: 50px;
+
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .formulario {
+        margin-right: 50px;
+        margin-left: 50px;
+        padding-top: 5rem;
+    }
+
+    body {
+        background-size: 50vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .formulario {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .input--radio {
+        margin-left: 0;
+    }
+
+    body {
+        background-size: 50vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .formulario {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .input--radio {
+        margin-left: 0;
+    }
+
+    body {
+        background-size: 50vw;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .formulario {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-top: 20rem;
+        padding-bottom: 15rem;
+    }
+
+    .input--radio {
+        margin-left: 0;
+    }
+
+    .sessao--flex {
+        flex-wrap: wrap;
+        }
+    
+        .sessao__caixa {
+        margin-bottom: 2rem;
+        }
+
+        body {
+            background-size: 50vw;
+        }
+}
+
+@media screen and (max-width: 620px) {
+    .formulario {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-top: 20rem;
+        padding-bottom: 15rem;
+    }
+
+    .input--radio {
+        margin-left: 0;
+    }
+
+    .sessao--flex {
+        flex-wrap: wrap;
+        }
+    
+        .sessao__caixa {
+        margin-bottom: 2rem;
+        }
+
+        body {
+            background-size: 50vw;
+        }
+}
+
+@media screen and (max-width: 520px) {
+    .formulario {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-top: 20rem;
+        padding-bottom: 15rem;
+    }
+
+    .input--radio {
+        margin-left: 0;
+    }
+
+    .sessao--flex {
+        flex-wrap: wrap;
+        }
+    
+        .sessao__caixa {
+        margin-bottom: 2rem;
+        }
+
+        body {
+            background-size: 50vw;
+        }
+
+}
+
+@media screen and (max-width: 420px) {
+    .formulario {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-top: 20rem;
+        padding-bottom: 15rem;
+    }
+
+    .input--radio {
+        margin-left: 0;
+    }
+
+    .rotulo {
+        font-size: 0.85rem;
+    }
+
+    .paragrafoform {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    #textarea {
+        width: 13rem;
+        height: 3rem;
+    }
+
+
+    .sessao--flex {
+    flex-wrap: wrap;
+    }
+
+    .sessao__caixa {
+    margin-bottom: 2rem;
+    }
+
+    body {
+        background-size: 50vw;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .sessao--flex {
+        flex-wrap: wrap;
+    }
+
+    .sessao__caixa {
+        margin-bottom: 2rem;
+    }
+
+    .paragrafofooter {
+        text-align: center;
+    }
+    body {
+        background-size: 50vw;
+    }
+}

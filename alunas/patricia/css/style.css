@@ -11,6 +11,7 @@ html, body{
     font-family: 'Noto Serif', serif;
     background: #f5efec;
     color:#685A57;
+    font-size: 1em;
 }
 
 
@@ -37,6 +38,14 @@ ul li {
     align-items: center;
     background-color: #e5989b;
 }
+
+@media (max-width:768px) {
+    .navegacao{
+    width: 100%;
+
+    }
+}
+
 
 .navegacao img {
     width: 40px;
@@ -78,7 +87,15 @@ width = largura  */
     text-align: center;
     color: #6d6875; 
     padding: 10px;
+    font-size: 1em;
+
 }
+
+@media (max-width: 768px) { 
+    .titulo {
+      color: red; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+    }
+  }
 
 .paragrafo {
     display: inline-block;
@@ -109,14 +126,38 @@ width = largura  */
     padding: 30px;
 }
 
+.sessao_form {
+    padding: 30px;
+}
+
+@media (max-width: 780px) {
+    .sessao_form {
+        padding: 0;
+        display: block;
+    }
+}
+
 .sessao--flex {
     display: flex;
     justify-content: center;
+}
 
+@media (max-width: 780px) {
+    .sessao--flex {
+        display:block;
+    }
 }
 
 .sessao__caixa {
     margin: 0 100px;
+
+}
+
+@media (max-width: 780px) {
+    .sessao__caixa{
+        margin:0;
+    }
+    
 
 }
 
@@ -152,10 +193,24 @@ width: 35px;
     margin: 0 auto;
     }
 
+    @media (max-width: 768px) {
+        .formulario {
+            width: fit-content;
+        } 
+            
+    }
+
   .formulario__identificacao {
       display: flex;
       justify-content: space-around;
      
+  }
+
+  @media (max-width: 780px) {
+      .formulario__identificacao {
+          display: block;
+          justify-content: space-around;
+      }
   }
   
   .formulario__identificacao__item{

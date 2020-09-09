@@ -28,17 +28,18 @@ ul li {
     align-items: center;
     background-color: hsl(318, 72%, 50%);
     height: 80px;
+    width: 100%;
 }
 
 .img_barra {
     display: block;
-    max-height: 50px;
+    max-height: 5%;
     margin: 0 3rem;
     transition: 0.8s;
 }
 
 .NavBar__img {
-    max-height: 50px ;
+    max-height: 4rem ;
 }
 
 .text {
@@ -49,36 +50,40 @@ ul li {
 .navBar__itemLista {
     max-height: 100%;
     color: #ffffff;
-    font-size: 21px;
+    font-size: 1.6rem;
     padding: 20px;
 }
 /* fim barra de navegação */
 .cabecalho{
     background: url(/alunas/taline/imagens/love.2.jpg);
     background-size: cover;
-    height: 60vh;
-    background-position: 90% 98%
+    height: 70vh;
+    background-position: 90% 98%;
+    align-items: center;
+    display: flex;
+}
+.título2, .título {
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 .título {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    font-size: 2rem;
 }
-
 .titulob {
     color: black;
     position: absolute;
-    bottom: px;
-    bottom: 5px;
-    left: 70px;
-    top: 200px;
+    text-align: center;
+    bottom: 5%;
+    left: 7%;
+    top: 20%;
     font-size: 3rem;
 }
 .texto {
     display: inline-block;
     width: 350px;
     text-align: justify;
-    padding: 10px;
+    padding: 1.2%;
     font-size: 1.1rem;
 }
 
@@ -86,75 +91,81 @@ ul li {
     display: inline-block;
     width: 190px;
     border-radius: 80%;
-    padding: 10px;
-    margin-right: 60px;
+    padding: 1%;
 }
 
 .artigo, .sessao{
     text-align: center;
-    padding: 20px;
+    padding: 2%;
 }
 
 .sessao_habilidades {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border: solid 3px hsl(318, 72%, 50%);
-    margin-right: 180px;
-    margin-left: 180px;
-    padding: 20px;
+    margin-right: 17%;
+    margin-left: 17%;
+    padding: 3%;
     text-align: left;
 }
 
 .desejos {
-    padding: 10px;
+    padding: 2%;
     border: 3px dashed black;
-    margin-left: 120px;
+    margin-left: 12%;
 }
 
 .filmes {
-    padding: 10px;
+    padding: 2%;
     border: 3px dashed black;
-    margin-right: 120px;
+    margin-right: 12%;
 }
 
 .lista {
-    padding: 20px;
+    padding: 3%;
     border: hsl(3deg 98% 84%) 2px solid;
     line-height: 30px;
     max-width: 320px;
 }
 
 .lista__item {
-    font-size: 16px;
-    margin: 20px;
-    padding: 5px;
+    font-size: 120%;
+    margin: 10%;
+    padding: 2.5%;
     font-style: italic;
-    border: 1px dashed fuchsia;
+    border: 1.2px dashed fuchsia;
 }
 
 /* FORMULÁRIO  */
 
+.sub{
+    color: white;
+}
+
 .formulario {
     padding: 20px;
-    margin: 60px;
+    margin: 200px;
+    margin-bottom: 60px;
+    margin-top: 60px;
     background-color: #ffa4a9;
     border-radius: 30px;
     display: block;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .formulario__sessao {
     display: flex;
-    padding: 10px;
+    padding: 1.5%;
     align-items: center;
     justify-content: center;
 }
 
-.sessao--radio, .sessao--check {
+.sessao-comida, .sessao-livre {
     flex-direction: column;
 }
 
-.sessao--radio label, .sessao--check > label {
+.sessao-comida label, .sessao-livre > label {
     color: black;
 }
 
@@ -163,13 +174,13 @@ ul li {
 }
 
 .input {
-    width: 250px;
-    padding: 10px;
+    width: 60%;
+    padding: 1%;
 }
 
 .rotulo {
     padding: 10px;
-    font-size: 21px;
+    font-size: 1.2rem;
     color: white;
     font-weight: bold;
     margin: 10px;    
@@ -177,17 +188,17 @@ ul li {
 
 textarea {
     font-size: 18px;
-    width: 80%;
+    width: 90%;
     height: 150px;
     border-radius: 10px;
     padding: 10px;
 }
 
 .botao {
-    padding: 15px;
-    border-radius: 10px;
-    margin: 15px;
-    font-size: 18px;
+    padding: 1.5%;
+    border-radius: inherit;
+    margin: 1.5%;
+    font-size: 100%;
 }
 
 .submit {
@@ -209,12 +220,82 @@ textarea {
     color: white;
     background-color: rgb(240, 26, 26);
 }
+
+.imagem_oct{
+    display: block;
+    width: 20%;
+    border-radius: 80%;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto_oct{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    font-size: 1.2rem;
+}
 /* footer */
 .footer {
     height: 50px;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     background-color: #141414;
     color: white;
+ }
+
+
+ @media screen and (max-width:768px) {
+    .sessao_habilidades {
+        display: inline-grid;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .desejos {
+        margin-left: 0px;
+    }
+    .filmes {
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+    .lista {
+        margin: auto;
+    }
+    .titulob {
+         left: 30px;
+        top: 100px; 
+        font-size: 2.5rem;
+    }
+    .formulario {
+        margin: 6%;
+    }
+    .imagem_oct {
+        width:30%
+    }
+ }
+
+ @media screen and (min-width:768px){
+    .imagem_art {
+         margin-right: 6%;
+     }
+    .desejos, .filmes {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+ }
+
+ @media screen and (max-width:370px){
+     .barra {
+         max-width: 100%;
+     }
+     .texto{
+        width: 100%;
+     }
+     .text{
+         padding-inline-start: 0px;
+     }
  }

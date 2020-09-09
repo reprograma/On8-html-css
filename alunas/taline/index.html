@@ -12,7 +12,7 @@
 
 <body class="corpo">
     <nav class="barra">
-        <a href="https://reprograma.com.br" target="_blank"><img class="img_barra" src="/alunas/taline/imagens/logo-reprograma.png"
+        <a href="https://reprograma.com.br" target="_blank" style="width: 49px;"><img class="img_barra" src="/alunas/taline/imagens/logo-reprograma.png"
                 alt="logo da reprograma"></a>
         <ul class="text">
             <a href="#form">
@@ -36,11 +36,11 @@
               e meu sonho sempre foi expandir meus horizontes, por isso, eu estou no reprograma e também quero cursar Ciencia da Computação. As coisas que eu mais amo na mesma proporção é tecnologia/matématica e poesia/livros,
                mas também constumo falar que amo de tudo um pouco: dança, animais, séries, natureza, minha família e amigos. Além disso tenho orgulho de ser católica e filha de Maria.</p>
         </article>
-        <section class="sessao">
+        <section class="sessao" id="form">
             <h2 class="título">Minhas listas</h2>
             <div class="sessao_habilidades">
                 <div class="desejos">
-                    <h3 class="título">Desejos</h3>
+                    <h3 class="título2">Desejos</h3>
                     <ol class="lista">
                         <li class="lista__item">Conhecer o mundo</li>
                         <li class="lista__item">Concluir a faculdade</li>
@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="filmes">
-                    <h3 class="título"> Séries/filmes preferidos</h3>
+                    <h3 class="título2"> Séries/filmes preferidos</h3>
                     <ol class="lista">
                         <li class="lista__item">The Vampire Diaries</li>
                         <li class="lista__item">Elite</li>
@@ -65,18 +65,19 @@
 
 <!-- FORMULARIO INÍCIO -->
 
-<form class="formulario" id="form">
+<form class="formulario" >
   <h2>Será que você me conhece?</h2>
+  <h4 class="sub">Vamos brincar? Tente adivinhar quais são as opções corretas sobre mim</h4>
     <div class="formulario__sessao">
-      <label for="text" class="rotulo">Nome</label>
+      <label for="text" class="rotulo">Nome :</label>
       <input class="input" required="" type="text" placeholder="Digite seu nome">
     </div>
     <div class="formulario__sessao">
-      <label for="email" class="rotulo">Email</label>
+      <label for="email" class="rotulo">Email :</label>
       <input class="input" required="" type="email" placeholder="Digite seu email">
     </div>
     <div class="formulario__sessao">
-      <label for="number" class="rotulo">Quantos anos eu pareço ter?</label>
+      <label for="number" class="rotulo">Quantos anos você tem?</label>
       <input class="input" type="number" min="16" max="21" placeholder="Digite sua idade">
     </div>
     <div class="formulario__sessao">
@@ -85,29 +86,30 @@
         <option value="rainhavermelha">A Rainha Vermelha</option>
         <option value="perdida">Perdida</option>
         <option value="after">After</option>
+        <option value="seleçao">Orgulho e Preconceito</option>
         <option value="seleçao">A Seleção</option>
       </select>
     </div>
-    <div class="formulario__sessao sessao--radio">
+    <div class="formulario__sessao sessao-comida">
       <p class="rotulo">Qual minha comida favorita?</p>
       <label class="rotulo">
-        <input type="radio" name="passeio-favorito" requested="" value="lasanha">
+        <input type="radio" name="comida-favorita" requested="" value="lasanha">
         Lasanha
       </label>
       <label class="rotulo">
-        <input type="radio" name="passeio-favorito" requested="" value="pizza">
+        <input type="radio" name="comida-favorita" requested="" value="pizza">
         Pizza
       </label>
       <label class="rotulo">
-        <input type="radio" name="passeio-favorito" requested="" value="empadao">
+        <input type="radio" name="comida-favorita" requested="" value="empadao">
         Empadão de frango
       </label>
       <label class="rotulo">
-        <input type="radio" name="passeio-favorito" requested="" value="Strogonoff">
+        <input type="radio" name="comida-favorita" requested="" value="Strogonoff">
         Strogonoff
       </label>
     </div>
-    <div class="formulario__sessao sessao--check">
+    <div class="formulario__sessao sessao-livre">
       <p class="rotulo">O que eu mais gosto de fazer no tempo livre:</p>
       <label class="rotulo">
         <input type="checkbox" name="filme" value="ler">
@@ -142,8 +144,8 @@
 
         <section class="sessao">
             <a href="https://myoctocat.com/">
-                <p class="texto"> Faça seu proprio octocat!</p>
-                <img src="/alunas/taline/imagens/octocat.png" alt="octocat" class="imagem_art">
+                <p class="texto_oct"> Faça seu proprio octocat!</p>
+                <img src="/alunas/taline/imagens/octocat.png" alt="octocat" class="imagem_oct">
             </a>
         </section>
     </main>

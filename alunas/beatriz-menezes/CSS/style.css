@@ -1,0 +1,96 @@
+/* DESKTOP-FIRST 1920px */
+/* GERAL */
+
+.body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Raleway";
+  }
+  
+  /* cabeçalho da pagina */
+  .cabecalho {
+    background: url(/alunas/beatriz-menezes/IMG/@Carneiro.wmv-64.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2bx black;
+    text-align: center;
+  }
+  
+  /* height = altura 
+  width = largura  */
+  /* main -- conteudo principal */
+  
+  .titulo {
+    text-align: center;
+    color: black;
+    padding: 10px;
+  }
+  
+  .branco {
+    color: #fff;
+  }
+  
+  .paragrafo {
+    display: inline-block;
+    width: 350px;
+    text-align: justify;
+    padding: 10px;
+  }
+  
+  .artigo {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .artigo__imagem {
+    display: inline-block;
+    width: 300px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+  }
+  
+  .img--block {
+    display: block;
+  }
+  
+  .sessao {
+    padding: 30px;
+  }
+  
+  .sessao--flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .sessao__caixa {
+    border: 3px solidb black;
+    margin: 10px;
+  }
+  
+  .lista {
+    border:yellow 2px dashed;
+    margin: 10px;
+  }
+  
+  .itemLista {
+    border: purple 2px dashed;
+    margin: 10px;
+    padding: 10px;
+  }
+   
+  /* rodapé */
+  .footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    color: white;
+  }
