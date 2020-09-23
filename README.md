@@ -12,6 +12,7 @@ Online-08 | Front-end | 2020 | Fundamentos de HTML e CSS
 ---
 
 [link para o arquivo dontpad](http://dontpad.com/htmlcssOn8);
+[Deploy do resultado final => https://online8-reprograma.netlify.app](https://online8-reprograma.netlify.app/);
 
 ---
 
